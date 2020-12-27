@@ -1,0 +1,24 @@
+{
+  "name": "11ty-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run sass && eleventy",
+    "watch:eleventy": "eleventy --serve",
+    "watch:sass": "npm run sass -- --watch",
+    "start": "npm-run-all sass --parallel watch:*",
+    "dev": "eleventy --serve --watch",
+    "sass": "sass --style=compressed assets/scss/styles.scss assets/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "handlebars": "^4.6.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "sass": "^1.30.0"
+  }
+}
