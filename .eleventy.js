@@ -44,11 +44,9 @@ module.exports = (eleventyConfig) => {
 
 			// 4. If there is more than a single "section" there is more to do
 			if (contentArray.length > 3) {
-				const sectionModifierClass = 'landmark -double'
-
 				// 4.1 For first section we need to wrap a `<section>` element around it
 				const preFirstH2 = `
-					<section class="${sectionModifierClass}">
+					<section>
 						${contentArray[0]}
 					</section>
 				`;
@@ -68,12 +66,9 @@ module.exports = (eleventyConfig) => {
 							// 4.3.2 Getting HTML for the section
 							const sectionContent = contentArray[index + 2];
 
-							// 4.3.3 If it's not last section then we want somem extra classes
-							const modifierClass = index !== contentArray.length - 3 ? sectionModifierClass : '';
-
-							// 4.3.4  Creating the HTML for the section
+							// 4.3.3  Creating the HTML for the section
 							processedHtml = `
-								<section ${modifierClass !== '' ? `class="${modifierClass}"` : ''}>
+								<section>
 									<h2>${headingText}</h2>
 									${sectionContent}
 								</section>
