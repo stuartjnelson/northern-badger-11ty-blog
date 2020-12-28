@@ -144,6 +144,8 @@
 
 // CONTENT
 .banner__content {
+    margin: 0 auto;
+    max-width: $container-width-content;
     padding: $spacing-unit 0 $half-spacing-unit;
 
     @include mq($until: nav-break-1) {
