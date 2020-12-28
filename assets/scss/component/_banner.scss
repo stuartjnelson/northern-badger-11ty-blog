@@ -193,7 +193,10 @@
     a { @include get-color(white); }
 }
 
-.banner__date { display: block; }
+.banner__date {
+    display: block;
+    margin-top: $half-spacing-unit;
+}
 
 .banner__meta-list {
     @include inline-list--ib;
