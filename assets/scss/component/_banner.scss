@@ -10,3 +10,198 @@
 // ==========================================================================
 //    BASE
 // ==========================================================================
+
+.banner {
+    &.-featured {
+        @include base-background;
+        @include background-overlay(black);
+        @include base-trans;
+        color: color-get(white);
+
+        // These styles are to ensure blue has clean defined edge
+        overflow: hidden;
+
+        &:after {
+            height: calc(100% + 15px);
+            width: calc(100% + 15px);
+        }
+
+        @include mq(medium) { height: 90vh; }
+
+        &.lazyload { opacity: 0; }
+
+        &.lazyloaded { opacity: 1; }
+
+
+        .site-logo .site-logo__icon {
+            fill: color-get(white);
+
+            .badger-logo__face-bg { fill: color-get(off-white) }
+
+            .badger-logo__face { fill: color-get(black) }
+        }
+
+        .banner__navigation {
+            position: relative;
+            z-index: $z-lvl-2;
+        }
+
+        .navigation__link { color: currentColor; }
+
+
+        .banner__content {
+            position: relative;
+            z-index: $z-lvl-2;
+
+            @include mq(medium) {
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                width: 100%;
+            }
+        }
+    }
+
+    &.-contact {
+        .banner__copy + .navigation {
+            margin-top: $half-spacing-unit;
+        }
+    }
+}
+
+.banner__bg-img {
+    @include base-background;
+    bottom: 0;
+    left: 0;
+    margin: -5px -10px -10px -5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.banner__inner {
+    @include container;
+
+    .-article & {
+        @include mq($until: nav-break-1) {
+            position: relative;
+
+            &::after {
+                @include get-bgc(black);
+                bottom: (#{$quarter-spacing-unit} + #{$quarter-spacing-unit / 2});
+                content: "";
+                height: 2px;
+                left: $half-spacing-unit;
+                position: absolute;
+                width: calc(100% - #{$spacing-unit});
+            }
+        }
+    }
+}
+
+.banner__navigation {
+    display: block;
+    margin-bottom: $half-spacing-unit;
+
+    @include mq(nav-break-1) {
+        align-items: center;
+        display: flex;
+        margin-bottom: $spacing-unit;
+    }
+}
+
+
+.site-logo {
+    display: block;
+    @include mq(nav-break-1) { margin-right: auto; }
+
+    &:focus { outline: solid 2px get-color(primary); }
+
+    @include mq(medium) {
+        transition: transform ease-in-out 0.5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .site-logo__icon {
+        margin-bottom: $quarter-spacing-unit;
+        height: 70px;
+        width: 100%;
+
+        @include mq(nav-break-1) {
+            height: auto;
+            margin-bottom: 0;
+            margin-right: auto;
+            width: 120px;
+        }
+    }
+}
+
+
+
+// CONTENT
+.banner__content {
+    padding: $spacing-unit 0 $half-spacing-unit;
+
+    @include mq($until: nav-break-1) {
+        border-top: solid 2px color-get(grey, dark);
+    }
+}
+
+.banner__heading {
+    @include heading(alpha);
+    color: color-get(primary);
+    margin-bottom: 0;
+    text-align: center;
+
+    &--left { text-align: left; }
+
+    span {
+        color: color-get(white);
+        display: block;
+        margin-top: $quarter-spacing-unit;
+    }
+
+    & + .banner__copy,
+    & + .banner__date {
+        margin-top: $half-spacing-unit;
+
+        @include mq(nav-break-1) { margin-top: $spacing-unit; }
+    }
+}
+
+.banner__copy {
+    @include text-shadow;
+    @include fsz(large);
+    color: color-get(white);
+    margin: 0 auto;
+    max-width: $container-width-reduced;
+    text-align: center;
+
+    & + .banner__secondary-navigation {
+        margin-top: $half-spacing-unit;
+
+        @include mq(nav-break-1) { margin-top: $spacing-unit; }
+    }
+
+    // @TODO: Fix the creation of `text--white` and `text--black.
+    //        Currently both are classes names are their property,
+    //        `text--#000` & `text--#fff`
+    a { @include get-color(white); }
+}
+
+.banner__date { display: block; }
+
+.banner__meta-list {
+    @include inline-list--ib;
+    flex-wrap: wrap;
+    margin-bottom: -($quarter-spacing-unit);
+    margin-top: $quarter-spacing-unit;
+
+    @include mq(nav-break-1) { margin-top: $half-spacing-unit; }
+
+    li { margin-bottom: $quarter-spacing-unit; }
+}

@@ -5,9 +5,9 @@
 		<link rel="stylesheet" href="/assets/style.css">
 	</head>
 <body>
-	<div>
-		{{> header test=true}}
+	{{> header test=true}}
 
+	<main>
 		{{#each collections.posts}}
 		<li>
 			<a href="{{ this.url }}">
@@ -22,6 +22,6 @@
 			</ul>
 		</li>
 		{{/each}}
-	</div>
+	</main>
 </body>
 </html>
