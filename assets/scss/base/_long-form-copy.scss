@@ -48,9 +48,18 @@
     a { @include base-link; }
 
     pre,
-    code { background-color: rgba(0, 0, 0, 0.05); }
+    code {
+        background-color: rgba(0, 0, 0, 0.05);
+        font-family: Roboto Mono, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+    }
 
-    pre { padding: $half-spacing-unit; }
+    pre {
+        overflow-x: auto;
+        padding: $half-spacing-unit;
+        white-space: pre;
+
+        > code { background-color: transparent; }
+    }
 
     code {
         font-size: 1rem;
