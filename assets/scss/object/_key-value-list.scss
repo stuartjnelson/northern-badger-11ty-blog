@@ -1,0 +1,32 @@
+// ==========================================================================
+// KEY VALUE LIST
+//
+// Description: create horizontally laid-out lists with
+// optional spacing and dividers
+// ==========================================================================
+
+
+// ==========================================================================
+// # BASE
+// ==========================================================================
+
+.key-value-list {
+    li {
+        &:not(:last-of-type) { margin-bottom: dimension(gutter)/4; }
+
+        @include mq($until: small) { display: inline-block; }
+    }
+}
+
+.key-value-list__key {
+    display: inline-block;
+
+    @include mq(small) {
+        display: block;
+        padding-right: $quarter-gutter-width/2;
+    }
+}
+
+.key-value-list__value {
+    @include mq($until: small) { display: block; }
+}

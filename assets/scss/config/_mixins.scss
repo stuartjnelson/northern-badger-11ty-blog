@@ -1,0 +1,822 @@
+// ==========================================================================
+// # MIXINS
+//
+// Ncce useful utils mixins
+// ==========================================================================
+
+// ==========================================================================
+//  GENERAL - @TODO need to name this better...
+// ==========================================================================
+
+@mixin clearfix {
+    &::after {
+        display: table;
+        clear: both;
+        content: "";
+    }
+}
+
+
+
+
+
+// CONTAINER
+@mixin container($max-width: $container-width) {
+    display: block;
+    margin: 0 auto;
+    width:  100%;
+    max-width: $max-width;
+    padding-left: $half-spacing-unit;
+    padding-right: $half-spacing-unit;
+}
+
+
+
+
+
+// VISUAL HIDDEN
+//
+// To hide content visually but leave it readable to screenreaders
+// Taken from HTML5 Boilerplate - https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css
+@mixin vh() {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+
+    &.focusable {
+        &:active,
+        &:focus {
+            clip: auto;
+            -webkit-clip-path: none;
+            clip-path: none;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto;
+            white-space: inherit;
+        }
+    }
+}
+
+
+
+
+
+// LANDMARK
+// Adding `margin-bottom` to an element
+// ==========================================================================
+@mixin landmark($spacing: $half-spacing-unit, $desktop: true) {
+    margin-bottom: $spacing;
+
+    @if($desktop == true) {
+        @include mq(medium) { margin-bottom: $spacing * 2; }
+    }
+}
+
+
+
+
+// BAND
+// Adding padding to an element. By default applied above & below
+// ==========================================================================
+@mixin band($spacing: $half-spacing-unit, $apply: both) {
+    @if($apply != "both" and $apply == "top" or $apply == "bottom") {
+        $padding: "padding-#{$apply}";
+        #{$padding}: $spacing;
+
+        @include mq(medium) { #{$padding}: $spacing * 2; }
+    } @else {
+        padding-top: $spacing;
+        padding-bottom: $spacing;
+
+        @include mq(medium) {
+            padding-top: $spacing * 2;
+            padding-bottom: $spacing * 2;
+        }
+    }
+}
+
+
+
+
+
+// Flex Col
+// @param {attribute} $x-align - X asis positioning
+// @param {attribute} $y-align - Y asis positioning
+@mixin flex-col($x-align: center, $y-align: flex-start, $ie: false) {
+    @if($ie == true) {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    @supports (display: flex) {
+        align-items: $x-align;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: $y-align;
+    }
+}
+
+
+
+
+
+// ==========================================================================
+// # COLORS
+// ==========================================================================
+
+@mixin get-color($color, $shade: default) {
+    color: get-color($color, $shade);
+}
+
+@mixin get-bgc($color, $shade: default) {
+    background-color: get-color($color, $shade);
+}
+
+
+
+
+
+// ==========================================================================
+// # TYPE
+// ==========================================================================
+
+
+// # HEADINGS
+// ====================
+
+// This was on _title.scss but needed to be moved to be used on _typography.scss
+@mixin heading($key: false) {
+
+    // iterate through definition
+    @each $size, $config in map-get($headings-typeset, $key) {
+        @if ($size == default) {
+            @include _heading($config);
+        } @else {
+            @include mq($until: $size) {
+                @include _heading($config);
+            }
+        }
+    }
+}
+
+@mixin _heading($config) {
+    // get config
+    $font-size:   map-get($config, font-size);
+    $line-height: map-get($config, line-height);
+
+    // munge line height
+    @if ($line-height > 3) {
+        $line-height: $line-height / $font-size;
+    }
+
+    // output
+    font-size:   $font-size;
+    line-height: $line-height;
+}
+
+
+// # ALT TYPE SIZES
+// # Gets values from `$alt-body-type` map
+// ==========================================================================
+
+@mixin fsz($key: false) {
+    @if($key != false) {
+        font-size: map-deep-get($alt-body-typeset, $key, font-size);
+        line-height: map-deep-get($alt-body-typeset, $key, line-height);
+    }
+}
+
+
+@mixin text-shadow() {
+    text-shadow: 2px 2px 10px get-color(black);
+}
+
+
+
+
+// ==========================================================================
+//  LISTS
+// ==========================================================================
+
+@mixin list-reset() {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+@mixin inline-list($spacing: 0, $x-align: flex-start, $y-align: flex-start) {
+    @include list-reset;
+    @include flex-col($x-align, $y-align);
+
+    .inline-list__item,
+    > li {
+        display: flex;
+
+        &:not(:last-of-type) { margin-bottom: $spacing; }
+    }
+}
+
+@mixin inline-list--ib($spacing: $spacing-unit, $x-align: flex-start, $y-align: flex-start) {
+    @include list-reset;
+    align-items: $y-align;
+    display: flex;
+    justify-content: $x-align;
+
+    .inline-list__item,
+    > li {
+        display: flex;
+
+        &:not(:last-of-type) { margin-right: $spacing; }
+    }
+}
+
+
+@mixin inline-list--seperated($spacing: $spacing-unit, $x-align: flex-start, $y-align: flex-start) {
+    @include inline-list--ib($spacing, $x-align, $y-align);
+    flex-wrap: wrap;
+
+    .inline-list__item,
+    > li {
+        // line-height: 1;
+        position: relative;
+
+        &:not(:last-of-type) {
+            &:after {
+                background-color: currentColor;
+                content: "";
+                height: 100%;
+                position: absolute;
+                right: -($spacing/2);
+                width: 2px;
+
+                @supports (display: grid) {
+                    height: 80%;
+                    top: 50%;
+                    transform: translateY(calc(-50% - 2px)) skew(-15deg);
+                }
+            }
+        }
+    }
+}
+
+@mixin inline-list-mobile-verticle($spacing: 40px, $bp: small) {
+    @include mq($until: $bp) {
+        flex-direction: column;
+        margin-right: 0;
+
+        .inline-list__item,
+        > li {
+
+            &:not(:last-of-type) { margin-bottom: $spacing / 2; }
+        }
+    }
+}
+
+
+
+
+// ==========================================================================
+//  LINKS STYLES
+// ==========================================================================
+
+@mixin link-underline($color: primary, $size: -2px) {
+    text-decoration: none;
+    transition: box-shadow linear $transition-length;
+
+    @if($color == currentColor) {
+        box-shadow: inset 0 $size currentColor;
+    } @else {
+        box-shadow: inset 0 $size get-color($color);
+    }
+}
+
+// @mixin link-underline
+
+@mixin link-outline($inset: null, $outline-size: 2px, $color: primary) {
+    @if($inset == true) {
+        $inset: 'inset';
+    }
+
+    box-shadow: 0px 0px 0px $outline-size get-color($color) #{$inset};
+}
+
+@mixin link-external($top: -0.3rem, $right: 0, $width: 0.75rem) {
+    padding-right: $half-spacing-unit * 0.75;
+    position: relative;
+
+    &:after {
+        @include base-trans;
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23262626' class='svg-icon -external-link'%3E%3Cpath d='M14 16V5l-1 1v9H1V3h9l1-1H0v14z'/%3E%3Cpath d='M16 0h-5l1.8 1.8L6 8.6 7.4 10l6.8-6.8L16 5z'/%3E%3C/svg%3E%0A");
+        color: currentColor;
+        height: 100%;
+        position: absolute;
+        right: $right;
+        top: $top;
+        transform: translate3d(0, 0, 0);
+        width: $width;
+    }
+
+    @include mq(medium) {
+        &:hover {
+            &:after { transform: scale(1.15) translate3d(0.1rem, -0.1rem, 0); }
+        }
+    }
+}
+
+@mixin base-link() {
+     @include link-underline(primary, -3px);
+
+    &:focus {
+        @include link-underline(primary, 0);
+        outline: solid 3px get-color(primary);
+        outline-offset: 1px;
+        transition: none;
+    }
+
+    @include hover {
+        @include link-underline(primary, -5px);
+        transition: box-shadow $default-transition $transition-length;
+    }
+}
+
+
+
+
+
+// ==========================================================================
+// # IMAGES
+// ==========================================================================
+
+// # BASE BACKGROUND
+// Used for bleed background components
+@mixin base-background($position: 50% 0%, $bgc: 'off-white') {
+    @if($bgc != false) {
+        background-color: get-color($bgc);
+    }
+    background-position: $position;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin background-overlay($color: white, $opacity: 0.65, $el: 'after') {
+    background-blend-mode: multiply;
+    position: relative;
+
+    &:#{$el} {
+        background-color: color-get($color);
+        bottom: 0;
+        content: "";
+        left: 0;
+        opacity: $opacity;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: $z-lvl-1;
+    }
+}
+
+@mixin image-zoom {
+    transition: transform ease-in-out 1s;
+    will-change: transform;
+}
+
+
+
+
+
+// ==========================================================================
+// # SEPARATOR LINE
+// ==========================================================================
+
+@mixin separator-line($height: 2px, $top: 2px) {
+    // scss-lint:disable PropertyUnits
+    &:after {
+        background-color: currentColor;
+        content: "";
+        height: $height;
+        left: 0;
+        position: absolute;
+        top: $top;
+        width: 24px;
+    }
+}
+
+
+
+
+
+// ==========================================================================
+// # BOX
+// ==========================================================================
+
+@mixin box($spacing: $half-spacing-unit) { padding: $spacing; }
+
+
+
+
+
+// ==========================================================================
+// # TRANSITIONS
+// ==========================================================================
+
+@mixin base-trans($duration: $transition-length, $type: all) {
+    transition: $type $default-transition $duration;
+}
+
+
+
+
+
+// ==========================================================================
+// # BUTTONS & CTA/LINKS
+// ==========================================================================
+
+@mixin base-btn() {
+    @include ffm(base);
+    @include fsz(larger);
+    @include fwt(bold);
+    appearance: none;
+    -webkit-appearance: none;
+    background: get-color(primary);
+    border-radius: 0;
+    -webkit-border-radius:0px;
+    color: get-color(wh);
+    display: inline-block;
+    padding: $quarter-spacing-unit $double-spacing-unit $quarter-spacing-unit $half-spacing-unit;
+    text-align: left;
+    text-decoration: none;
+    transition: background 150ms, color 150ms, transform 300ms;
+    transform: translate3d(0, 0, 0);
+    vertical-align: middle;
+
+
+    @include mq(medium) {
+        min-width: 176px;
+        padding: $quarter-spacing-unit $spacing-unit*1.5 $quarter-spacing-unit $half-spacing-unit;
+    }
+}
+
+
+// # LOZENGER
+// ==============
+
+@mixin lozenger($color: bk, $bgColor: grey, $activeColor: wh, $activeBgColor: primary) {
+    @include ffm(base);
+    @include fsz(base);
+    @include fwt(bold);
+    @include base-trans;
+    background-color: get-color($bgColor);
+    border-radius: $half-spacing-unit;
+    color: get-color($color);
+    line-height: 1;
+    padding: $half-spacing-unit $half-spacing-unit;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    white-space: nowrap;
+
+    @include hover-focus(false, true) { @include lozenger-active($activeColor, $activeBgColor); }
+}
+
+@mixin lozenger-active($color: wh, $bgColor: primary) {
+    background-color: get-color($bgColor);
+    color: get-color($color);
+    transform: translate3d(0, rem(-2), 0);
+}
+
+
+// # CTA
+// ==============
+
+@mixin cta($underline-color: primary, $color: bk) {
+    color: get-color($color);
+    padding: 0 2px 2px 2px;
+    outline: 0;
+    position: relative;
+    text-decoration: none;
+    z-index: $z-lvl-1;
+
+    &:after {
+        background-color: get-color($underline-color);
+        bottom: 0;
+        content: "";
+        left: 0;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+
+        @include mq(medium) { @include base-trans; }
+    }
+
+    @include hover-focus(false, true) {
+        &:after {
+            height: calc(100% + 4px);
+        }
+    }
+}
+
+/**
+ * HOVER FOCUS
+ * Checking if device input "can hover"
+ *
+ * @return  {content}  Your CSS rules
+ */
+@mixin hover-focus($selector: false, $no-outline: false) {
+  @if($selector == false) {
+    &:focus {
+      @if($no-outline == true) { outline: 0; }
+
+      @content;
+    }
+  } @else {
+    #{$selector}:focus { @content; }
+  }
+
+  @media (hover: hover) {
+    @if($selector == false) {
+      &:hover { @content; }
+    } @else {
+      #{$selector}:hover { @content; }
+    }
+  }
+}
+
+@mixin inline-link($color: primary, $size: -2px, $active-size: -4px) {
+    @include link-underline($color, $size);
+
+    @include hover-focus {
+        @include base-trans;
+        @include link-underline($color, $active-size);
+    }
+}
+
+
+
+
+// ==========================================================================
+// # CSS LOADING SPINNER
+// ==========================================================================
+
+@mixin loading-spinner($time: 1.5s, $selector: "&:before") {
+    @keyframes spinner {
+        0% {
+            transform: translate3d(-50%, -50%, 0) rotate(0deg);
+        }
+
+        100% {
+            transform: translate3d(-50%, -50%, 0) rotate(360deg);
+        }
+    }
+
+    #{$selector} {
+        @include base-trans;
+        animation: 1.5s linear infinite spinner;
+        border: solid rem(3) get-color(grey);
+        border-bottom-color: get-color(primary);
+        border-radius: 50%;
+        content: "";
+        height: $spacing-unit;
+        left: 50%;
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: $spacing-unit;
+        z-index: $z-lvl-2;
+    }
+}
+
+
+
+
+
+// ==========================================================================
+// # LOADING OVERLAY
+// ==========================================================================
+
+@mixin loading-overlay() {
+    position: relative;
+    transition: opacity 0.2s linear;
+
+    &:after {
+        @include base-trans(0.01);
+        background-color: rgba(get-color(bk), 0.75);
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transform: translate3d(-100%, -100%, 0);
+        width: 100%;
+        z-index: $z-lvl-1;
+    }
+
+    &.-loading {
+        @include loading-spinner;
+
+        &:after {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
+
+
+
+
+
+// ==========================================================================
+// # CSS TRIANGLE
+// ==========================================================================
+
+@mixin css-triangle($direction: down, $color: bk, $size: rem(6)) {
+    $border-color: "border-top-color";
+    $border-direction: "border-bottom-width";
+
+    @if($direction == up) {
+        $border-color: "border-bottom-color";
+        $border-direction: "border-top-width";
+    }
+
+    content: " ";
+    border: $size solid transparent; // want width to be 12px
+    #{$border-color}: get-color($color);
+    #{$border-direction}: 0;
+    height: 0;
+    width: 0;
+}
+
+
+@mixin svg-chevron($color: primary) {
+    $hex-string: get-color($color);
+    $hex: str-replace("#{$hex-string}", "#", "");
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 11' fill='%23#{$hex}'%3E%3Cpath d='M9.5 11a1.51 1.51 0 0 1-1.06-.44l-8-8A1.5 1.5 0 0 1 2.56.44L9.5 7.38 16.44.44a1.5 1.5 0 0 1 2.12 2.12l-8 8A1.51 1.51 0 0 1 9.5 11z' /%3E%3C/svg%3E%0A");
+}
+
+
+
+
+
+// ==========================================================================
+// # CUSTOM SELECT ICON
+// ==========================================================================
+
+@mixin custom-select-icon {
+    @include svg-chevron;
+    background-color: transparent;
+    height: 100%;
+    fill: get-color(primary);
+    right: 0;
+    position: absolute;
+    top: 50%;
+    @include base-trans;
+    transform: translate3d(0, calc(-50% - 20px), 0);
+    width: 100%;
+}
+
+
+
+
+
+// ==========================================================================
+// # FULL HEIGHT SECTION
+// ==========================================================================
+
+@mixin full-height-section() {
+    display: table;
+    min-height: 100vh;
+    width: 100%;
+
+    .full-height-section__inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    @supports (display: flex) {
+        @include flex-col(center, center);
+        width: 100%;
+
+        .full-height-section__inner {
+            display: block;
+            vertical-align: top;
+        }
+    }
+}
+
+
+
+
+
+// ==========================================================================
+// # BASE BORDER
+// ==========================================================================
+
+@mixin base-border($direction: false, $width: 2px, $color: grey) {
+    $prop: "border";
+
+    @if($direction != false) {
+        $prop: "#{$prop}-#{$direction}";
+    }
+
+    #{$prop}: solid $width get-color($color);
+}
+
+
+
+
+
+// ==========================================================================
+// # CSS LOADING SPINNER
+// ==========================================================================
+
+@mixin loading-spinner($time: 1.5s, $selector: "&:before") {
+    @keyframes spinner {
+        0% {
+            transform: translate3d(-50%, -50%, 0) rotate(0deg);
+        }
+
+        100% {
+            transform: translate3d(-50%, -50%, 0) rotate(360deg);
+        }
+    }
+
+    #{$selector} {
+        animation: 1.5s linear infinite spinner;
+        border: solid 3px get-color(off-white);
+        border-bottom-color: get-color(primary);
+        border-radius: 50%;
+        content: "";
+        height: $spacing-unit;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: $spacing-unit;
+        z-index: $z-lvl-2;
+    }
+}
+
+
+
+
+// ==========================================================================
+// # FOCUS/HOVER
+// ==========================================================================
+
+// # HOVER
+// ==============
+// Checking if device input "can hover"
+//
+// @return  {content}  Your CSS rules
+
+@mixin hover($selector: false) {
+
+  @media (hover: hover) {
+    @if($selector == false) {
+      &:hover { @content; }
+    } @else {
+      #{$selector}:hover { @content; }
+    }
+  }
+
+}
+
+
+// # HOVER FOCUS
+// ==============
+// Checking if device input "can hover"
+//
+// @return  {content}  Your CSS rules
+
+@mixin hover-focus($selector: false, $no-outline: false) {
+  @if($selector == false) {
+    &:focus {
+      @if($no-outline == true) { outline: 0; }
+
+      @content;
+    }
+
+    @include hover { @content; }
+  } @else {
+    #{$selector}:focus {
+      @if($no-outline == true) { outline: 0; }
+
+      @content;
+    }
+
+    @include hover($selector) { @content; }
+  }
+}

@@ -1,0 +1,36 @@
+// ==========================================================================
+//
+// CONTENTS LIST
+//
+// Description: Contents for anchor links
+//
+// ==========================================================================
+
+
+// ==========================================================================
+//    BASE
+// ==========================================================================
+
+.contents-list {
+    @include inline-list;
+    // list-style: initial;
+
+    li {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    & > li:last-of-type {
+        a { margin-bottom: 0; }
+    }
+
+    ul {
+        @include inline-list;
+        padding-left: $half-spacing-unit;
+    }
+
+    a {
+        @include cta;
+        margin-bottom: dimension(gutter)/4;
+    }
+}

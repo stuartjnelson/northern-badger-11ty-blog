@@ -1,0 +1,175 @@
+// ==========================================================================
+//
+// BADGER ACCORDION DEMO STYLES
+//
+// Description: Styles for the accordion demo
+//
+// ==========================================================================
+
+// ==========================================================================
+//    BASE
+// ==========================================================================
+
+// ==========================================================================
+// # VARIABLES
+// ==========================================================================
+
+// COLORS
+$white: #fff;
+$off-white: #fafafa;
+$black: #323232;
+$grey: #6C7A89;
+$grey-light: #95A5A6;
+$blue: #2574A9;
+$dark-blue: #34495e;
+$green: #16a085;
+
+// UNITS
+$spacing-unit: 40px;
+$half-spacing-unit: $spacing-unit / 2;
+
+// BORDER
+$accordion-border: solid 2px $grey-light;
+
+// ANIMATION
+$transition-time: 0.2s;
+@mixin base-trans {
+    transition: all ease-in-out $transition-time;
+}
+
+// LINKS
+@mixin link-underline($color: currentColor, $size: -2px) {
+    box-shadow: inset 0 $size $color;
+}
+
+@mixin active-link() {
+    color: $blue;
+
+    .icon-link__text { @include link-underline($blue, -3px); }
+
+    svg { fill: $blue; }
+}
+
+
+
+.badger-accordion {
+    box-shadow: 0 1px 10px rgba(0,0,0,.1), 0 1px 4px rgba(0,0,0,.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.badger-accordion__header {
+    &:not(:last-of-type) {
+        border-bottom: 1px solid #EFF1F0;
+    }
+}
+
+.badger-accordion__trigger {
+    align-content: space-between;
+    align-items: center;
+    background-color: $white;
+    border: 0;
+    border-radius: 0px;
+    color: $dark-blue;
+    display: flex;
+    font-family: 'Josefin Sans', Arial;
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: $half-spacing-unit;
+    text-align: left;
+    transition: all ease-in-out $transition-time;
+    width: 100%;
+
+    &[aria-expanded=true] {
+        .badger-accordion__trigger-icon {
+            &:before {
+                transform: rotate(45deg) translate3d(13px, 14px, 0);
+            }
+
+            &:after {
+                transform: rotate(-45deg) translate3d(-13px, 14px, 0);
+            }
+        }
+    }
+
+    &:focus,
+    &:hover {
+        background-color: $green;
+        cursor: pointer;
+        outline: none;
+
+        .badger-accordion__trigger-title { color: $white; }
+
+        .badger-accordion__trigger-icon {
+            &:after,
+            &:before {
+                background-color: $white;
+            }
+        }
+    }
+}
+
+
+.badger-accordion__trigger-title {
+    font-size: 1.2rem;
+    transition: ease-in-out 0.3s;
+}
+
+.badger-accordion__trigger-icon {
+    display: block;
+    height: $spacing-unit;
+    margin-left: auto;
+    position: relative;
+    transition: all ease-in-out $transition-time;
+    width: $spacing-unit;
+
+    &:after,
+    &:before {
+        background-color: #333;
+        content: "";
+        height: 3px;
+        position: absolute;
+        top: 10px;
+        transition: all ease-in-out (($transition-time / 3) * 2);
+        width: 30px;
+    }
+
+    &:before {
+        left: 1px;
+        transform: rotate(45deg) translate3d(8px, 22px, 0);
+        transform-origin: 100%;
+    }
+
+    &:after {
+        transform: rotate(-45deg) translate3d(-8px, 22px, 0);
+        right: 1px;
+        transform-origin: 0;
+    }
+}
+
+.badger-accordion__panel {
+    background-color: $off-white;
+    position: relative;
+
+    &:after {
+        background-color: #EFF1F0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.badger-accordion__panel-inner {
+    padding: $half-spacing-unit $half-spacing-unit $spacing-unit;
+}
+
+
+@media screen and (max-width: 767px) {
+    .badger-accordion__trigger-icon {
+        display: none;
+        padding: $half-spacing-unit;
+    }
+}

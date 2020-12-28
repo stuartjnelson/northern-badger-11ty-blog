@@ -1,0 +1,324 @@
+// ==========================================================================
+// # VARIABLES FILE.
+//
+// This should contain all variables used in the project. If there’re any
+// colours, random numbers, etc elsewhere, you’re probably doin’ it wrong =)
+// ==========================================================================
+$px-in-rem: 16;
+
+// ==========================================================================
+// # COLOURS
+//
+// These can be accessed using the get-color() function
+// ==========================================================================
+$brand-colors: (
+    primary:   (
+        default: #EB5959,
+    ),
+    white:        (
+        default: #FFFFFF
+    ),
+    black:        (
+        default: #242424,
+        dark:    #000000
+    ),
+    grey:      (
+        light:   #D4D9DA,
+        default: #99A5AB,
+        dark:    #4F595F
+    ),
+    off-white:  (
+        default: #EFF1F0
+    )
+);
+
+
+// ==========================================================================
+// # TYPE
+// ==========================================================================
+
+$base-font-size:          		18px;
+$base-font-family:        		'arial sans-serif'; // or write your own custom font-stack
+$base-line-height:        		1.5;
+$base-font-color:               #262626;
+$em-base: 				        $base-font-size;
+$slick-font-family:             $base-font-family;
+
+
+
+
+
+// Web Fonts
+// ==========================================================================
+
+// scss-lint:disable DuplicateProperty
+@mixin wf-primary { // Lato reg
+    font-family: 'Josefin Sans', $base-font-family;
+    font-style: normal;
+    font-weight: normal;
+
+    // .wf-active-1 & {
+    //     font-family: LatoRegular, $base-font-family;
+    //     -moz-osx-font-smoothing: grayscale;
+    //     -webkit-font-smoothing: antialiased;
+    //     font-smoothing: antialiased;
+    //     font-weight: 400;
+    // }
+}
+
+
+// scss-lint:disable DuplicateProperty
+@mixin wf-secondary { // Lato bold
+    font-family: 'Josefin Slab', 'Times New Roman', Serif;
+    font-style: normal;
+    font-weight: normal;
+
+
+    // This is here incase `wf-active-2` isnt around
+    // to fake the bold font weight
+    // .wf-active-1 & {
+    //     font-family: LatoRegular, $base-font-family;
+    // }
+    //
+    // .wf-active-2 & {
+    //     font-family: LatoBold, $base-font-family;
+    //     -moz-osx-font-smoothing: grayscale;
+    //     -webkit-font-smoothing: antialiased;
+    //     font-smoothing: antialiased;
+    //     font-weight: 700;
+    // }
+}
+
+
+
+
+
+// # FONT SIZES: for use with the fsz() mixin
+// ==========================================================================
+
+$alt-body-typeset: (
+    tiny: (
+        font-size: 0.67rem,
+        line-height: 1.16
+    ),
+    small: (
+        font-size: 0.835rem,
+        line-height: 1.25
+    ),
+    large: (
+        font-size: 1.15rem,
+        line-height: 1.625
+    )
+);
+
+
+// Heading Levels
+// ==========================================================================
+
+$headings-typeset: (
+    alpha: (
+        default: (
+            font-size: 60px,
+            line-height: 1.25
+        ),
+        medium: (
+            font-size: 40px,
+            line-height: 1.2
+        )
+    ),
+    bravo: (
+        default: (
+            font-size: 46px,
+            line-height: 1.40
+        ),
+        medium: (
+            font-size: 32px,
+            line-height: 1.35
+        ),
+    ),
+    charlie: (
+        default: (
+            font-size: 30px,
+            line-height: 1.45
+        ),
+        medium: (
+            font-size: 30px,
+            line-height: 1.35
+        ),
+    ),
+    delta: (
+        default: (
+            font-size: 23px,
+            line-height: 1.36
+        ),
+        medium: (
+            font-size: 23px,
+            line-height: 1.36
+        ),
+    ),
+    echo: (
+        default: (
+            font-size: 20px,
+            line-height: 1.33
+        ),
+        medium: (
+            font-size: 20px,
+            line-height: 1.33
+        ),
+    )
+);
+
+
+
+
+
+// # WEIGHTS: for use with fwt() mixin
+// ==========================================================================
+$font-weights: (
+    normal: normal,
+    bold:   bold
+);
+
+
+// ==========================================================================
+// # DIMENSIONS
+//
+// These are scalar ‘magic’ numbers used throughout the site
+// ==========================================================================
+
+// $container-width: 64em; // 1160px-ish
+$container-width: 78em;
+
+$container-width-reduced: 38em; // 684px or 83-ish characters
+// $container-width-expanded: 90em; // 1600px
+
+
+
+
+
+
+// ==========================================================================
+// # GRID
+// ==========================================================================
+
+// Include a set of standard grid breakpoints?
+$use-standard-breakpoints: 		true;
+
+// Grid configuration
+$grids: 						2 3 4 5;	// number of columns required
+
+// Gutters
+$gutter: 						3em;	 // gutter between each column in em's
+$double-gutter-width: 			($gutter*2);
+$half-gutter-width: 			($gutter/2);
+$quarter-gutter-width: 			($gutter/4);
+
+
+// Determines whether the site is fixed width. Defaults to "false" unless served is an oldie browser
+// $is-fixed:						if($is-oldie, true, false);
+
+// Width of primary ".container" elements - determined by $is-fixed var
+// $container-width:				if($is-fixed, 960px, 90%);
+
+
+// RESPONSIVE
+// https://github.com/sass-mq/sass-mq
+// ==========================================================================
+
+// Determines whether to fix media queries
+// https://github.com/sass-mq/sass-mq#responsive-mode-off
+// $mq-responsive: if($is-oldie, false, true);
+
+
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+$mq-breakpoints: (
+    tiny: 	320px,
+    small: 	600px,
+    medium: 768px,
+    large: 	992px,
+    xlarge: 1382px,
+    xxlarge: 1641px,
+    nav-break-1: 915px,
+    nav-break-2: 1090px,
+);
+
+// Define the breakpoint from the $mq-breakpoints list that should
+// be used as the target width when outputting a static stylesheet
+// (i.e. when $mq-responsive is set to 'false').
+$mq-static-breakpoint: large;
+
+
+// ==========================================================================
+// # BREAKPOINTS
+//
+// Breakpoints are defined using sass-mq. Note: these must be defined in px
+// ==========================================================================
+$mq-breakpoints: (
+    nav-break-1: 540px,
+    small:       640px,
+    medium:      768px,
+    large:       960px,
+    xlarge:      1280px,
+    xxlarge:     1680px
+);
+
+
+
+
+// ==========================================================================
+// # ANIMATIONS
+// ==========================================================================
+
+$default-transition:			linear;
+$transition-length:              0.15s;
+$half-transition-length:         $transition-length / 2;
+
+
+
+
+
+// ==========================================================================
+// # SPACING
+// ==========================================================================
+
+$spacing-unit: 					40px;
+$half-spacing-unit: 			$spacing-unit/2;
+$quarter-spacing-unit: 			$spacing-unit/4;
+$double-spacing-unit: 			$spacing-unit*2;
+
+// This is used with _band.scss by default
+$spacing-map: (
+    default: $spacing-unit,
+    quarter: $quarter-spacing-unit,
+    half   : $half-spacing-unit,
+    double : $double-spacing-unit
+);
+
+
+
+
+
+// ==========================================================================
+// # Z-INDEX
+//
+// Way of managing `z-index`
+// ==========================================================================
+
+$z-lvl-1: 1000;
+$z-lvl-2: 2000;
+$z-lvl-3: 3000;
+$z-lvl-4: 4000;
+$z-lvl-5: 5000;
+
+
+
+
+
+// Normally would import EVERYTHING in `main.scss`
+// but by importing my mixins & functions here they
+// become available globally.
+// @import "../vendor/mq";
+// @import "_mixins";
+// @import "_functions";

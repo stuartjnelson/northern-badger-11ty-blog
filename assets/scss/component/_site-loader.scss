@@ -1,0 +1,29 @@
+// ==========================================================================
+//
+// SITE LOADER
+//
+// Description: Loader for before everthing is loaded
+//
+// ==========================================================================
+
+// ==========================================================================
+//    BASE
+// ==========================================================================
+
+.site-loader {
+    @include full-height-section();
+    // @include loading-spinner(1.5s, ":before");
+    background-color: get-color(grey);
+    position: relative;
+
+    &.-loaded {
+        background-color: transparent;
+
+        .site-loader__content { opacity: 1; }
+    }
+}
+
+.site-loader__content {
+    opacity: 0;
+    transition: opacity linear 0.2s;
+}

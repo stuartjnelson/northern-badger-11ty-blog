@@ -1,0 +1,69 @@
+// ==========================================================================
+// TYPOGRAPHY
+//
+// Description: base typography styles to apply globally
+// ==========================================================================
+
+
+// ==========================================================================
+// BASE
+// ==========================================================================
+
+
+.long-form-copy {
+    @include container($container-width-reduced);
+
+    // @TODO - review this ... Style all elements that are created in CMS..
+    *:last-child { margin-bottom: 0; }
+
+    p,
+    li, {
+        @include fsz(large);
+    }
+
+    // general element margin-bottom
+    p,
+    ul,
+    ol,
+    img { margin-bottom: $half-spacing-unit; }
+
+
+    // Single element styles
+    p { margin-top: 0; }
+
+    ul,
+    ol { margin: 0 0 $spacing-unit; }
+
+    ul { list-style: disc;}
+
+    ol { list-style: decimal; }
+
+    li {
+        margin-bottom: $half-spacing-unit;
+        margin-left: $spacing-unit;
+    }
+
+    a { @include base-link; }
+
+    pre,
+    code { background-color: rgba(0, 0, 0, 0.05); }
+
+    pre { padding: $half-spacing-unit; }
+
+    code {
+        font-size: 1rem;
+        padding: $quarter-spacing-unit / 2;
+    }
+
+    // Headings
+    // @for $i from 2 through 5 {
+    //     $map_key: $i + 4;
+    //     $key: nth(map-keys($font-sizes), $map_key);
+    //
+    //     h#{$i} {
+    //         @include fsz($key);
+    //
+    //         margin-bottom: 0.5rem;
+    //     }
+    // }
+}

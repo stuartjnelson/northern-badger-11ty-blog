@@ -1,0 +1,61 @@
+// ==========================================================================
+// # BANDS
+//
+// These are horizontal sections of the page, sometimes with colour, and
+// usually containing .container that force space above/below their content
+// ==========================================================================
+
+// ==========================================================================
+//    MIXINS - in `config/mixins.scss`
+// ==========================================================================
+
+
+
+
+
+// ==========================================================================
+//    BASE
+// ==========================================================================
+
+.band {
+    @include band;
+
+    // VARIANTS
+    &.-double { @include band($spacing-unit); }
+    &.-double-top { @include band($spacing-unit, "top"); }
+    &.-double-bottom { @include band($spacing-unit, "bottom"); }
+
+    // No band
+    &.-no-top { padding-top: 0; }
+    &.-no-bottom { padding-bottom: 0; }
+
+
+    // Coloured backgrounds
+    &.-grey { background-color: get-color(grey); }
+    &.-off-white { background-color: get-color(off-white); }
+
+
+    // Image - Needs image to be inlined
+    &.-image { @include base-background; }
+
+
+    // Seperator
+    &.-seperator {
+        @include band( $spacing-unit );
+        position: relative;
+
+        &:after {
+            background-color: get-color(grey);
+            bottom: -1px;
+            content: "";
+            height: 2px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+
+            // @include mq(medium) {
+            //     bottom: (dimension(gutter)/4 - 1px);
+            // }
+        }
+    }
+}
