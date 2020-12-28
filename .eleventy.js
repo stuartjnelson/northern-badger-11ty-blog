@@ -7,6 +7,18 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addHandlebarsHelper("eq", (a, b) => (a === b))
 	eleventyConfig.addHandlebarsHelper("not", exp => !exp)
 
+	eleventyConfig.addTransform("insert google", (content, outputPath) => {
+		let returnContent = content;
+
+		if (outputPath.endsWith(".html") && content.includes('</head>')) {
+			const googleFont = '<link rel="preconnect" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400%7CJosefin+Slab:600" crossorigin></head>';
+
+			returnContent = returnContent.replace('</head>', googleFont);
+		}
+
+		return returnContent;
+	})
+
 	eleventyConfig.addPassthroughCopy('assets')
 
 	// @NOTE: Doesn't work anymore... Seems like

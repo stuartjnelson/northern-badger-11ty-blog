@@ -8,7 +8,9 @@
 .container {
     @include container;
 
-    &.-half { max-width: $container-width/2; }
+    &.-content { max-width: 73ch; }
+
+    // &.-half { max-width: $container-width/2; }
 
     &.-reduced { max-width: $container-width-reduced; }
 }

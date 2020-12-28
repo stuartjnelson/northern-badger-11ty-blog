@@ -1,0 +1,50 @@
+// ==========================================================================
+//
+// ARTICLE
+//
+// Description: Article
+//
+// ==========================================================================
+
+
+// ==========================================================================
+//    BASE
+// ==========================================================================
+
+.article {
+    margin: 0 auto;
+    max-width: $container-width-reduced;
+}
+
+.article__link {
+    display: block;
+    text-decoration: none;
+
+    @include hover-focus {
+        .article__heading {
+            @include base-trans;
+            @include link-underline;
+        }
+    }
+}
+
+.article__heading {
+    // @include link-external(-0.3rem, -($quarter-spacing-unit), 1rem);
+    // @include heading(charlie);
+    @include landmark($quarter-spacing-unit, false);
+    display: inline;
+    // position: static;
+
+    // @include mq(medium) {
+    //     &:after { right: -($half-spacing-unit); }
+    // }
+}
+
+.article__date {
+    @include fsz(small);
+    color: get-color(grey, dark);
+    display: block;
+    margin: $half-spacing-unit 0;
+}
+
+.article__copy { margin-bottom: 0; }

@@ -152,7 +152,7 @@
 }
 
 .banner__heading {
-    @include heading(alpha);
+    // @include heading(alpha);
     color: color-get(primary);
     margin-bottom: 0;
     text-align: center;

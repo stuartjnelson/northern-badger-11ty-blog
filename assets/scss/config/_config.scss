@@ -55,7 +55,7 @@ $slick-font-family:             $base-font-family;
 @mixin wf-primary { // Lato reg
     font-family: 'Josefin Sans', $base-font-family;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
 
     // .wf-active-1 & {
     //     font-family: LatoRegular, $base-font-family;
@@ -71,7 +71,7 @@ $slick-font-family:             $base-font-family;
 @mixin wf-secondary { // Lato bold
     font-family: 'Josefin Slab', 'Times New Roman', Serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
 
 
     // This is here incase `wf-active-2` isnt around
@@ -118,17 +118,17 @@ $alt-body-typeset: (
 $headings-typeset: (
     alpha: (
         default: (
-            font-size: 60px,
+            font-size: 64px,
             line-height: 1.25
         ),
         medium: (
-            font-size: 40px,
+            font-size: 48px,
             line-height: 1.2
         )
     ),
     bravo: (
         default: (
-            font-size: 46px,
+            font-size: 38px,
             line-height: 1.40
         ),
         medium: (
@@ -138,11 +138,11 @@ $headings-typeset: (
     ),
     charlie: (
         default: (
-            font-size: 30px,
+            font-size: 28px,
             line-height: 1.45
         ),
         medium: (
-            font-size: 30px,
+            font-size: 28px,
             line-height: 1.35
         ),
     ),
