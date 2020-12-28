@@ -8,20 +8,15 @@
 	{{> header test=true}}
 
 	<main>
-		{{#each collections.posts}}
-		<li>
-			<a href="{{ this.url }}">
-				{{ this.data.title }}
-			</a>
-
-			<ul>
-				<li>{{ this.data.excerpt }}</li>
-				<li>{{ this.date }}</li>
-				<li>{{ this.data.pubdate }}</li>
-				{{!-- <li>{{ this.data.tags }}</li> --}}
+		<section class="band -double container">
+			<ul class="articles-list">
+				{{#each collections.posts}}
+				<li class="articles-list__item">
+					{{> article articleData=this }}
+				</li>
+				{{/each}}
 			</ul>
-		</li>
-		{{/each}}
+		</section>
 	</main>
 </body>
 </html>

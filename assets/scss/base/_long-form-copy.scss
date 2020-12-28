@@ -11,7 +11,7 @@
 
 
 .long-form-copy {
-    @include container($container-width-reduced);
+    &.-container { @include container($container-width-reduced); }
 
     // @TODO - review this ... Style all elements that are created in CMS..
     *:last-child { margin-bottom: 0; }
