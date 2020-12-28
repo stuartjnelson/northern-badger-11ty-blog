@@ -54,6 +54,8 @@
     }
 
     pre {
+        @include landmark($half-spacing-unit);
+        margin-top: -($half-spacing-unit);
         overflow-x: auto;
         padding: $half-spacing-unit;
         white-space: pre;
