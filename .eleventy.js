@@ -36,6 +36,7 @@ module.exports = (eleventyConfig) => {
 			const postContent = articleContent.split(/<\/article>/);
 
 			// 2.1 This is all content after the article
+			let mainContent = postContent[0];
 			const postArticleContent = postContent[1];
 
 			// 3. Getting all headings inside article
@@ -45,7 +46,14 @@ module.exports = (eleventyConfig) => {
 			if (contentArray.length > 3) {
 				const sectionModifierClass = 'landmark -double'
 
-				const mainContent = contentArray
+				// 4.1 For first section we need to wrap a `<section>` element around it
+				const preFirstH2 = `
+					<section class="${sectionModifierClass}">
+						${contentArray[0]}
+					</section>
+				`;
+
+				mainContent = contentArray
 					// 4.1 We want to remove first item from the array
 					.filter((item, index) => index > 0)
 					// 4.2 Reducing over the array to create other sections
@@ -73,17 +81,17 @@ module.exports = (eleventyConfig) => {
 						}
 
 						return `${acc}${processedHtml}`;
-					}, '');
-
-				// 5. Recomposing the HTML for the page
-				returnContent = `
-					${preArticleContent}
-					${openingArticleTag}
-						${mainContent}
-					</article>
-					${postArticleContent}
-				`;
+					}, preFirstH2);
 			}
+
+			// 5. Recomposing the HTML for the page
+			returnContent = `
+				${preArticleContent}
+				${openingArticleTag}
+					${mainContent}
+				</article>
+				${postArticleContent}
+			`;
 		}
 
 		return returnContent;
