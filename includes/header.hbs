@@ -31,15 +31,11 @@
 				<span class="vh">Home</span>
 			</a>
 			<nav aria-label="Primary" class="navigation -primary">
-				<ul class="navigation__list">
-					<li class="navigation__item"><a href="https://www.northernbadger.co.uk/work" class="navigation__link">Work</a></li>
-					<li class="navigation__item nuxt-link-exact-active nuxt-link-active"><a href="https://www.northernbadger.co.uk/articles" class="navigation__link">Articles</a></li>
-					<li class="navigation__item"><a href="https://www.northernbadger.co.uk/contact" class="navigation__link">Contact</a></li>
-				</ul>
+				{{> nav-list }}
 			</nav>
 		</div>
 		<div class="banner__content">
-			<h1 class="banner__heading banner__heading--left heading--alpha">
+			<h1 class="banner__heading heading--alpha {{# headingModifier }}{{ . }}{{/ headingModifier }}{{^ headingModifier }}banner__heading--left{{/ headingModifier }}">
 				{{ title }}
 			</h1>
 

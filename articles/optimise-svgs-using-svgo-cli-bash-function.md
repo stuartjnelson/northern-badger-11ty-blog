@@ -9,8 +9,7 @@ pubdate: '19/9/2017'
 tags: posts
 ---
 
-![The SVG used in this image was made by [Linector](https://www.flaticon.com/authors/linector) from [www.flaticon.com](http://www.flaticon.com)](img/1____CLWEESCbHJw6s0avPHGPg.png)
-The SVG used in this image was made by [Linector](https://www.flaticon.com/authors/linector) from [www.flaticon.com](http://www.flaticon.com)
+![Screenshot of optimised SVG](/assets/img/1____CLWEESCbHJw6s0avPHGPg.png)
 
 I wanted to be able to optimise a directory of `SVG` with SVGO. Currently I would optimise them either one at a time using Jake Archibald’s awesome [online GUI for SVGO](https://jakearchibald.github.io/svgomg) (if I felt I needed a lot of control) or using a Gulp task. As I’m trying to write more blogs and make Codepen’s I wanted a way to bulk optimise a multiple of SVG without using Gulp. I looked at [SVGO Docs](https://github.com/svg/svgo) to find out more about the Command Line Interface tool.
 
