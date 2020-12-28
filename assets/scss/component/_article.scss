@@ -18,14 +18,14 @@
 
 .article__link {
     display: block;
-    text-decoration: none;
+    // text-decoration: none;
 
-    @include hover-focus {
-        .article__heading {
-            @include base-trans;
-            @include link-underline;
-        }
-    }
+    // @include hover-focus {
+    //     .article__heading {
+    //         @include base-trans;
+    //         @include link-underline;
+    //     }
+    // }
 }
 
 .article__heading {
