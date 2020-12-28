@@ -1,0 +1,19 @@
+<article class="article">
+    <header class="article__header">
+        <div class="article__header-inner">
+            <h1 class="banner__heading banner__heading--left">{{ articleData.tilte }}</h1>
+
+            <time class="banner__date heading--delta heading--sans" datetime="{{ articleData.pubdate }}">{{{ articleData.pubdate }}}</time>
+
+            {{!-- <ul v-if="articleData.tags" class="banner__meta-list" aria-label="Tags">
+                <li v-for="(tag, index) in articleData.tags" :key="index" class="tag">
+                    {{ tag }}
+                </li>
+            </ul> --}}
+        </div>
+    </header>
+
+    <section class="article__content long-form-copy band -double">
+        {{{ articleData.content }}}
+    </section>
+</article>

@@ -5,10 +5,10 @@
 		<link rel="stylesheet" href="/assets/style.css">
 	</head>
 <body>
-	<div>
+	<main>
 		{{> header}}
 
-		{{{content}}}
-	</div>
+		{{> article articleData=this }}
+	</main>
 </body>
 </html>
