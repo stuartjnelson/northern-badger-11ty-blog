@@ -21,13 +21,13 @@
     }
 }
 
-h1 { @include heading(bravo); }
+h1 { @include heading(alpha); }
 
-h2 { @include heading(charlie); }
+h2 { @include heading(bravo); }
 
-h3 { @include heading(delta); }
+h3 { @include heading(charlie); }
 
-h4 { @include heading(echo); }
+h4 { @include heading(delta); }
 
 
 

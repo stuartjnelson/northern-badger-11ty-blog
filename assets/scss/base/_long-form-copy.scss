@@ -22,14 +22,16 @@
     }
 
     // general element margin-bottom
-    p,
     ul,
     ol,
     img { margin-bottom: $half-spacing-unit; }
 
 
     // Single element styles
-    p { margin-top: 0; }
+    p {
+        margin-bottom: $spacing-unit;
+        margin-top: 0;
+    }
 
     ul,
     ol { margin: 0 0 $spacing-unit; }

@@ -7,7 +7,9 @@
                 </h2>
             </a>
 
-            <time class="banner__date heading--echo" datetime="{{ articleData.data.pubdate }}">{{{ articleData.data.pubdate }}}</time>
+            <time class="banner__date heading--echo" datetime="{{ articleData.data.pubdate }}">
+                {{{ articleData.data.pubdate }}}
+            </time>
 
             {{!-- <ul v-if="articleData.tags" class="banner__meta-list" aria-label="Tags">
                 <li v-for="(tag, index) in articleData.tags" :key="index" class="tag">

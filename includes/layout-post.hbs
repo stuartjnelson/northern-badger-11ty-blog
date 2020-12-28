@@ -7,8 +7,10 @@
 <body>
 	{{> header}}
 
-	<main id="main-content">
-		{{> article articleData=this }}
+	<main id="main-content" class="container -content">
+		<article id="article-content" class="long-form-copy band -double">
+			{{{ content }}}
+		</article>
 	</main>
 </body>
 </html>

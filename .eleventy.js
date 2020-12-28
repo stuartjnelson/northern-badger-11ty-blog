@@ -7,13 +7,83 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addHandlebarsHelper("eq", (a, b) => (a === b))
 	eleventyConfig.addHandlebarsHelper("not", exp => !exp)
 
-	eleventyConfig.addTransform("insert google", (content, outputPath) => {
+	eleventyConfig.addTransform("insert-google-fonts-into-head", (content, outputPath) => {
 		let returnContent = content;
 
-		if (outputPath.endsWith(".html") && content.includes('</head>')) {
+		if (outputPath.endsWith('.html') && returnContent.includes('</head>')) {
 			const googleFont = '<link rel="preconnect" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400%7CJosefin+Slab:600" crossorigin></head>';
 
 			returnContent = returnContent.replace('</head>', googleFont);
+		}
+
+		return returnContent;
+	})
+
+	eleventyConfig.addTransform('create-article-sections', (content, outputPath) => {
+		let returnContent = content;
+
+		if (outputPath.endsWith('.html') && returnContent.includes('id="article-content"')) {
+			// 0. Get opening article element
+			const openingArticleTag = returnContent.match(/<article.*?>/)[0];
+
+			// 1. Get the start of the article
+			const articleContentArray = returnContent.split(/<article.*?>/);
+			// 1.1 Get all HTML before the article
+			const preArticleContent = articleContentArray[0];
+
+			// 2. Need to get only the article content
+			let articleContent = articleContentArray[1];
+			const postContent = articleContent.split(/<\/article>/);
+
+			// 2.1 This is all content after the article
+			const postArticleContent = postContent[1];
+
+			// 3. Getting all headings inside article
+			const contentArray = postContent[0].split(/<h2.*>(.*)<\/h2>/);
+
+			// 4. If there is more than a single "section" there is more to do
+			if (contentArray.length > 3) {
+				const sectionModifierClass = 'landmark -double'
+
+				const mainContent = contentArray
+					// 4.1 We want to remove first item from the array
+					.filter((item, index) => index > 0)
+					// 4.2 Reducing over the array to create other sections
+					.reduce((acc, curr, index) => {
+						let processedHtml = '';
+
+						// 4.3 Is it an even item and not the only "section"
+						if (index % 2 === 0) {
+							// 4.3.1 Getting text for the heading
+							const headingText = curr;
+
+							// 4.3.2 Getting HTML for the section
+							const sectionContent = contentArray[index + 2];
+
+							// 4.3.3 If it's not last section then we want somem extra classes
+							const modifierClass = index !== contentArray.length - 3 ? sectionModifierClass : '';
+
+							// 4.3.4  Creating the HTML for the section
+							processedHtml = `
+								<section ${modifierClass !== '' ? `class="${modifierClass}"` : ''}>
+									<h2>${headingText}</h2>
+									${sectionContent}
+								</section>
+							`;
+						}
+
+						return `${acc}${processedHtml}`;
+					}, '');
+
+				// 5. Recomposing the HTML for the page
+				returnContent = `
+					${preArticleContent}
+					${openingArticleTag}
+						${mainContent}
+					</article>
+					${postArticleContent}
+				`;
+			}
 		}
 
 		return returnContent;
