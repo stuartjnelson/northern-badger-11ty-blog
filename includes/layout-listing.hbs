@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{{title}} - MyPage</title>
+		<link rel="stylesheet" href="/assets/style.css">
+	</head>
+<body>
+	<div>
+		{{> header test=true}}
+
+		{{#each collections.posts}}
+		<li>
+			<a href="{{ this.url }}">
+				{{ this.data.title }}
+			</a>
+
+			<ul>
+				<li>{{ this.data.excerpt }}</li>
+				<li>{{ this.date }}</li>
+				<li>{{ this.data.pubdate }}</li>
+				{{!-- <li>{{ this.data.tags }}</li> --}}
+			</ul>
+		</li>
+		{{/each}}
+	</div>
+</body>
+</html>

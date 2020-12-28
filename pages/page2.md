@@ -1,6 +1,9 @@
 ---
+layout: layout-post.hbs
 title: Page2
-tags: pages
+excerpt: I am a post summary very long indeed
+pubdate: 2/1/2021
+tags: posts
 ---
 ### Page 2
 
