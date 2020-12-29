@@ -30,6 +30,14 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addHandlebarsHelper("eq", (a, b) => (a === b))
 	eleventyConfig.addHandlebarsHelper("not", exp => !exp)
 
+	// Making the date valid for `datetime` attirbute
+	eleventyConfig.addHandlebarsHelper("convertPubdateForDatetimeAttr", str => {
+		return str.split('/')
+			.map(item => item.length === 1 ? `0${item}` : item)
+			.reverse()
+			.join('-')
+	})
+
 
 
 
