@@ -15,7 +15,7 @@ keywords: []
 
 I remember when I first came across Chris Coyer’s article; [Quick Reminder that Details/Summary is the Easiest Way Ever to Make an Accordion](https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/).
 
-![](/assets/img/0____GOAkZC1CyCvWxJL.gif)
+![](/assets/img/0____GOAkZC1CyCvWxJL.gif){.img--center}
 
 Total madness. When I built my accessible JavaScipt accordion, [Badger accordion](https://github.com/stuartjnelson/badger-accordion) back in 2017 it took ages. Now in 30 seconds, you can build an accessible accordion using just HTML. At the time of writing the s[upport for an HTML accordion](https://caniuse.com/#feat=details) according (see what I did there) to caniuse.com is 92.26% globally which is awesome. What about the 7.74% of users? Sure it’s a small percentage of users but it can look pretty funky when not supported… How do you create proper progressive enhancement for an HTML accordion? With very little effort you can create a really nice base experience.
 
