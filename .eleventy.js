@@ -2,6 +2,26 @@ const handlebars = require('handlebars')
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
 
+const { PurgeCSS } = require('purgecss')
+const { JSDOM } = require('jsdom')
+const CleanCSS = require("clean-css");
+
+const htmlmin = require("html-minifier");
+
+//function to insert css into the DOM
+const insertCss = (html, css) => {
+	const dom = new JSDOM(html)
+	const { document } = dom.window
+
+	let head = document.getElementsByTagName('head')[0];
+	let style = document.createElement("style");
+	style.type = 'text/css';
+	style.innerHTML = css;
+	head.appendChild(style);
+
+	return dom.serialize()
+}
+
 module.exports = (eleventyConfig) => {
 	// ============================================
 	// 11TY GENERAL OPTIONS
@@ -46,6 +66,24 @@ module.exports = (eleventyConfig) => {
 	// ============================================
 	// HTML transforms
 	// ============================================
+	eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+		// Eleventy 1.0+: use this.inputPath and this.outputPath instead
+		if (outputPath.endsWith(".html")) {
+			let minified = htmlmin.minify(content, {
+				useShortDoctype: true,
+				removeComments: true,
+				collapseWhitespace: true
+			});
+			return minified;
+		}
+
+		return content;
+	});
+
+
+
+
+
 	/**
 	 * INSERT GOOGLE FONTS INTO HEAD
 	 *
@@ -141,6 +179,43 @@ module.exports = (eleventyConfig) => {
 		return returnContent;
 	})
 
+
+
+
+
+	eleventyConfig.addTransform("purgeCSS", async function (content, outputPath) {
+		if (outputPath.endsWith(".html")) {
+			//array of css files to combine
+			const cssFiles = ['./_site/assets/style.css']
+
+			// cleanCSSOptions for minification and inlining css, will fix duplicate media queries
+			const cleanCSSOptions = {
+				level: {
+					2: {
+						all: true,
+						removeDuplicateRules: true
+					}
+				}
+			}
+
+			const purgecssResult = await new PurgeCSS().purge({
+				content: [outputPath],
+				css: cssFiles
+			});
+
+			let cssMerge = '';
+
+			if (purgecssResult.length > 0) {
+				for (let i = 0; i < purgecssResult.length; i++) {
+					cssMerge = cssMerge.concat(purgecssResult[i].css)
+				}
+				const cssMin = new CleanCSS(cleanCSSOptions).minify(cssMerge).styles
+
+				return insertCss(content, cssMin)
+			}
+		}
+		return content
+	})
 
 
 

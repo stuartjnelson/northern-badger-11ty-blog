@@ -7,7 +7,7 @@
     "build": "npm run sass && eleventy",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
-    "start": "npm-run-all sass --parallel watch:*",
+    "start": "npm run sass && npm run dev",
     "dev": "eleventy --serve --watch",
     "sass": "sass --style=compressed assets/scss/main.scss assets/style.css"
   },
@@ -22,6 +22,10 @@
   },
   "dependencies": {
     "@11ty/eleventy-cache-assets": "^2.0.3",
+    "clean-css": "^4.2.3",
+    "html-minifier": "^4.0.0",
+    "jsdom": "^16.4.0",
+    "purgecss": "^3.1.0",
     "sass": "^1.30.0"
   }
 }
