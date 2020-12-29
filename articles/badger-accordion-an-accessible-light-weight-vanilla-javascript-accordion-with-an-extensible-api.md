@@ -48,42 +48,46 @@ There is no fixed structure required for your markup, in my examples I have used
 ## Adding essential CSS
 
 For then plugin to work you will need the following CSS.
-
-.badger-accordion\_\_panel {
+```
+.badger-accordion__panel {
     max-height: 75vh;
     overflow: hidden;
 }
 
-.badger-accordion\_\_panel.-ba-is-hidden {
+.badger-accordion__panel.-ba-is-hidden {
     max-height: 0 !important;
 }
 
-.badger-accordion--initalised .badger-accordion\_\_panel {
+.badger-accordion--initalised .badger-accordion__panel {
     transition: max-height ease-in-out 0.2s;
 }
+```
 
 ## Creating a new instance of the plugin
 
 I’m going to assume here that you will be using some form of bundler with your project. The easiest way to use the accordion is to download it using [npm](http://npmjs.com/package/badger-accordion)/yarn.
 
-npm `i badger-accordion`
+`npm i badger-accordion`
 
-yarn add `badger-accordion`
+`yarn add badger-accordion`
 
 Please note that currently the [array-from-polyfill](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Polyfill) is being included as standard (but wrapped in a conditional check). If this is an issue for you or you have an awesome idea of how to include it please get in touch!
 
 Import the package. Select your DOM node and pass it to a new instance of Badger Accordion.
 
+```
 import pollyfill from 'your/path/to/array-from-pollyfill';
 import BadgerAccordion from 'badger-accordion';
 
 const accordionDomNode = document.querySelector('.js-badger-accordion');
 const accordion = new BadgerAccordion(accordionDomNode);
+```
 
 If you wanted to have multiple instances of the accordion you could go about it like this.
 
 ```
 const accordions = document.querySelectorAll('.js-badger-accordion');
+
 accordions.forEach(accordion => {
     const ba = new BadgerAccordion(accordion);
 });
@@ -93,10 +97,12 @@ accordions.forEach(accordion => {
 
 The plugin currently has 11 different options. From changing the JS selector for your accordion’s panels to being able to have multiple panels open at the same time.
 
+```
 const accordion = new BadgerAccordion(accordionDomNode, {
     panelClass: 'my-custom-panel-class’
     openMultiplePanels: true,
 });
+```
 
 Take a look at [the docs](https://github.com/stuartjnelson/badger-accordion#options) for a full list of options.
 
