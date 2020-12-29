@@ -1,0 +1,100 @@
+// ==========================================================================
+// TYPOGRAPHY
+//
+// Description: base typography styles to apply globally
+// ==========================================================================
+
+
+// ==========================================================================
+// BASE
+// ==========================================================================
+
+
+.long-form-copy {
+    &.-container { @include container($container-width-reduced); }
+
+    p,
+    li, {
+        @include fsz(large);
+    }
+
+    // general element margin-bottom
+    ul,
+    ol,
+    img { margin-bottom: $half-spacing-unit; }
+
+
+    img { display: block; }
+
+    .img--center { margin: 0 auto; }
+
+    .img--border { @include base-border; }
+
+
+    // Single element styles
+    p {
+        margin-bottom: $spacing-unit;
+        margin-top: 0;
+    }
+
+    ul,
+    ol { margin: 0 0 $spacing-unit; }
+
+    ul { list-style: disc;}
+
+    ol { list-style: decimal; }
+
+    li {
+        margin-bottom: $half-spacing-unit;
+        margin-left: $spacing-unit;
+    }
+
+    a { @include base-link; }
+
+    code,
+    pre {
+        background-color: rgba(0, 0, 0, 0.05);
+        font-family: Roboto Mono, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+    }
+
+    code {
+        font-size: 1rem;
+        padding: $quarter-spacing-unit / 2;
+    }
+
+    pre {
+        @include landmark($half-spacing-unit);
+        margin-top: -($half-spacing-unit);
+        overflow-x: auto;
+        padding: $half-spacing-unit;
+        white-space: pre;
+
+        > code {
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+
+    section {
+        &:not(:last-of-type) {
+            margin-bottom: calc(#{$spacing-unit} + 1rem);
+
+            @include mq(medium) { margin-bottom: $double-spacing-unit; }
+        }
+
+        // @TODO - review this ... Style all elements that are created in CMS..
+        > *:last-child { margin-bottom: 0; }
+    }
+
+    // Headings
+    // @for $i from 2 through 5 {
+    //     $map_key: $i + 4;
+    //     $key: nth(map-keys($font-sizes), $map_key);
+    //
+    //     h#{$i} {
+    //         @include fsz($key);
+    //
+    //         margin-bottom: 0.5rem;
+    //     }
+    // }
+}

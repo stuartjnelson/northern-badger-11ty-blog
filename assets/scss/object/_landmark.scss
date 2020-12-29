@@ -1,0 +1,32 @@
+// ==========================================================================
+// LANDMARK
+//
+// Description: used to provide consistent margins between major components
+// on a page/template.
+// ==========================================================================
+
+// ==========================================================================
+// MIXIN
+// ==========================================================================
+
+// Added to `mixins.scss` so it can be used by `grid.scs`
+
+
+
+
+
+// ==========================================================================
+// BASE
+// ==========================================================================
+
+.landmark {
+    @include landmark($half-spacing-unit);
+
+    &.-quarter { @include landmark( $quarter-gutter-width/2 ); }
+
+    &.-half { @include landmark( $quarter-gutter-width ); }
+
+    &.-double { @include landmark( $spacing-unit ); }
+
+    &.-no-desktop { @include landmark($spacing-unit, false); }
+}

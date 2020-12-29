@@ -1,0 +1,174 @@
+// ==========================================================================
+//
+// BUTTONS
+//
+// Description: Buttons
+//
+// ==========================================================================
+
+
+// ==========================================================================
+// # BASE
+// ==========================================================================
+
+@mixin btn {
+    @include base-trans;
+    background-color: color-get(primary);
+    border: 3px solid color-get(primary);
+    // border-radius: 32px;
+    color: color-get(black, dark);
+    font-size: 100%;
+    line-height: 1;
+    padding: 0.85rem 1.25rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+
+    @include hover-focus(false, true) { background-color: transparent; }
+}
+
+.btn { @include btn; }
+
+
+
+
+
+// MODIFIER: DISABLED
+// ==========================================================================
+
+@mixin btn-disabled {
+    // scss-lint:disable ImportantRule
+    background-image: none !important;
+    // scss-lint:disable ImportantRule
+    cursor: default !important;
+    opacity: 0.65;
+
+    &:active {
+        box-shadow: none;
+    }
+}
+
+.btn[disabled],
+.btn-disabled,
+.btn--disabled {
+    @include btn-disabled;
+}
+
+
+
+
+
+// MODIFIER: POSITION
+// ==========================================================================
+
+.btn--center {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.btn--auto-bottom { margin-top: auto; }
+
+.btn--auto-right { margin-left: auto; }
+
+.btn--auto-left { margin-right: auto; }
+
+
+
+
+
+// ==========================================================================
+// # MODIFIER: BUTTON COLOR
+// ==========================================================================
+
+// @mixin btn-color($color: false, $color-shade: default, $color-two: false, $color-two-shade: default) {
+//     // Checking for color to exist
+//     @if($color != false) {
+//
+//         // Checking for $color-two. If it doesn't exist then setting a default.
+//         // $color-two is used for `color` property only.
+//         @if( $color-two == false ) {
+//             $color-two: color-get(black);
+//         }
+//
+//         background-color: color-get($color, $color-shade);
+//         border-color: color-get($color, $color-shade);
+//         color: color-get($color-two, $color-two-shade);
+//
+//         &:hover,
+//         &:focus {
+//             background-color: transparent;
+//             color: color-get($color, $color-shade);
+//         }
+//     }
+// }
+
+
+
+
+
+// ==========================================================================
+//  # MODIFIER: BTN MODIFIER GENERATOR
+// ==========================================================================
+
+// This `@mixin` is to generate `btn--{modifier}` classes. It calls
+// `@mixin btn-color` and generates a class depending on the first color & shade.
+// @mixin btn-modifier-generator($color: false, $color-shade: default, $color-two: false, $color-two-shade: default) {
+//     @if($color != false) {
+//
+//         // If there is no shade then the default is an empty string
+//         $color-shade-modifier: "";
+//
+//         // Sorting shade modifier class for $color. If `$color` has a different shade
+//         // then a string is generated using the `$color` shade.
+//         @if( $color-shade != default ) {
+//             $color-shade-modifier: $color-shade + "-";
+//         }
+//
+//         .btn--#{$color-shade-modifier}#{$color} {
+//             @include btn-color($color, $color-shade, $color-two, $color-two-shade);
+//         }
+//     }
+// }
+//
+// // Manually creating color modifiers as we dont need loads
+// @include btn-modifier-generator(black, default, white);
+// @include btn-modifier-generator(green, default, white);
+
+
+
+
+
+// @mixin btn-color($color: false, $color-shade: default) {
+//     @if($color != false) {
+//         $color-shade-modifier: "";
+//
+//         @if( $color-shade != default ) {
+//             $color-shade-modifier: $color-shade + "-";
+//         }
+//
+//         .btn--#{$color-shade-modifier}#{$color} {
+//             background-color: color-get($color, $color-shade);
+//
+//             &:hover,
+//             &:focus {
+//                 background-color: #fff;
+//                 color: color-get($color, $color-shade);
+//             }
+//         }
+//     }
+// }
+
+
+// @each $color, $default-shade in $brand-colors {
+//     @include btn-color($color);
+//
+//     @if( map-has-nested-keys($brand-colors, $color, light) == true) {
+//         @include btn-color($color, light);
+//     }
+//
+//     @if( map-has-nested-keys($brand-colors, $color, dark) == true) {
+//         @include btn-color($color, dark);
+//     }
+// }

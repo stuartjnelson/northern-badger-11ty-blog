@@ -1,0 +1,41 @@
+// ==========================================================================
+//
+// ARTICLES LIST
+//
+// Description: List of articles for a listing component
+//
+// ==========================================================================
+
+
+// ==========================================================================
+//    BASE
+// ==========================================================================
+
+
+.articles-list {
+    @include inline-list($double-spacing-unit, center);
+
+    @include mq(medium) {
+        & > li:not(:last-of-type) { margin-bottom: $double-spacing-unit*2; }
+    }
+}
+
+.articles-list__item {
+    position: relative;
+
+    &:not(:last-of-type) {
+        &:after {
+            background-color: color-get(grey, light);
+            bottom: -($spacing-unit + 1px);
+            content: "";
+            height: 2px;
+            left: 0;
+            position: absolute;
+            right: 0;
+            width: 100%;
+
+            @include mq(medium) { bottom: -($double-spacing-unit + 1px); }
+        }
+    }
+
+}

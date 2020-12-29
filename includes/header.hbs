@@ -1,18 +1,45 @@
-<h1>
-	{{title}}
-</h1>
+<header class="banner band -off-white">
+	<a href="#main-content" class="skip-link">Skip to content</a>
 
-<ul>
-	<li>
-		<a href="/">
-			Home
-		</a>
-	</li>
-	{{#each collections.pages}}
-		<li>
-			<a href="{{ this.url }}">
-				{{ this.data.title }}
+	<!-- <div class="banner__bg-img blur-up"
+        style="background-image: url(&quot;https://www.northernbadger.co.uk/images/nb-homepage-hero-480.jpg&quot;);"
+        data-bgset=" /images/nb-homepage-hero-480.jpg 480w, /images/nb-homepage-hero-960.jpg 960w, /images/nb-homepage-hero-1440.jpg 1440w, /images/nb-homepage-hero-1920.jpg 1920w">
+        <picture style="display: none;">
+            <source sizes=" undefined, undefined, undefined, undefined"
+                data-srcset=" /images/nb-homepage-hero-480.jpg 480w, /images/nb-homepage-hero-960.jpg 960w, /images/nb-homepage-hero-1440.jpg 1440w, /images/nb-homepage-hero-1920.jpg 1920w"
+                srcset=" /images/nb-homepage-hero-480.jpg 480w, /images/nb-homepage-hero-960.jpg 960w, /images/nb-homepage-hero-1440.jpg 1440w, /images/nb-homepage-hero-1920.jpg 1920w">
+            <img alt="" class="" data-sizes=" undefined, undefined, undefined, undefined"
+                sizes=" undefined, undefined, undefined, undefined">
+        </picture>
+    </div> -->
+	<div class="banner__inner">
+		<div class="banner__navigation">
+			<a href="https://www.northernbadger.co.uk" class="site-logo nuxt-link-exact-active nuxt-link-active">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.7 253.17" aria-hidden="true" role="img"
+					class="-northern-badger-logo site-logo__icon svg-icon">
+					<circle cx="187" cy="97.32" r="94.68" fill="none" class="badger-logo__face-bg"></circle>
+					<path
+						d="M187.35 0a97.32 97.32 0 1097.31 97.33A97.42 97.42 0 00187.35 0zm42.7 120.61a5.43 5.43 0 11-5.43 5.44 5.43 5.43 0 015.43-5.44zm-85.39 0a5.43 5.43 0 11-5.43 5.44 5.43 5.43 0 015.43-5.44zm-19 44.85A91.85 91.85 0 01105.17 56c13.83 17 31.44 51.3 20.45 109.46zm61.73 23.85a91.45 91.45 0 01-49.7-14.61c9.82-13.89 45.44-73 12.93-161.7a91.89 91.89 0 0173.55 0c-32.51 88.69 3.1 147.81 12.92 161.7a91.41 91.41 0 01-49.74 14.61zm61.73-23.85C238.09 107.3 255.67 73 269.54 56a91.85 91.85 0 01-20.46 109.45z"
+						class="badger-logo__face -nose"></path>
+					<path
+						d="M210.48 171.93l-1.67-13.45a4 4 0 00-3-3.42l-17.43-4.69a4.43 4.43 0 00-2.11 0l-17.43 4.69a4.06 4.06 0 00-3 3.42l-1.66 13.45a4.08 4.08 0 00.4 2.33c.69 1.35 5 8 22.72 8.09s22-6.74 22.72-8.09a3.93 3.93 0 00.46-2.33z"
+						class="badger-logo__face"></path>
+					<path
+						d="M5.63 226.56l12 18.6v-18.6h4.88v26.27h-5.63l-12-18.64v18.64H0v-26.27zm49.99 13.14a13.58 13.58 0 11-13.68-13.48h.11a13.49 13.49 0 0113.57 13.43zm-22.24 0a8.69 8.69 0 108.68-8.7 8.64 8.64 0 00-8.67 8.61zm38-13.17c5.54 0 8.2 3.38 8.2 8 0 3.84-1.89 6.82-5.76 7.69l7 10.63h-5.76l-6.74-10.34h-1.86v10.34h-4.84v-26.3zm-.21 11.22c2.39 0 3.53-1.46 3.53-3.24a3.34 3.34 0 00-3.43-3.25H66.5v6.49zm31.36-11.19v4.52h-6.74v21.75h-4.88v-21.71h-6.77v-4.56zm21.39-.03h4.88v26.3h-4.88v-11.24H113v11.24h-4.88v-26.27H113v10.29h10.89zm27.78.03v4.52h-10.49v6.09h10.13v4.52h-10.13v6.62h10.85v4.52h-15.73v-26.27zm16.54-.03c5.53 0 8.19 3.38 8.19 8 0 3.84-1.89 6.82-5.76 7.69l7 10.63H172l-6.73-10.34h-1.86v10.34h-4.85v-26.3zm-.24 11.22c2.4 0 3.53-1.46 3.53-3.24a3.34 3.34 0 00-3.43-3.25h-4.77v6.49zm20.53-11.19l12 18.6v-18.6h4.88v26.27h-5.64l-12-18.64v18.64h-4.87v-26.27zm47.11 0a7.23 7.23 0 017.27 7.19 7 7 0 01-2.31 5.29 7.37 7.37 0 013.37 6.25 7.52 7.52 0 01-7.52 7.52h-12v-26.25zm-1.32 10.52c1.93 0 3.46-1.06 3.46-2.91s-1.54-2.91-3.46-2.91h-4.82v5.82zm1 11c2 0 3.53-1.21 3.53-3.13a3.26 3.26 0 00-3.36-3.16h-6v6.28zm27.13-21.52l10.28 26.27h-5.14l-2.37-6.05h-10.71l-2.38 6.05H247l10.28-26.27zm-2.57 6l-3.45 9.35h6.87zm27.63-6a13.14 13.14 0 11.72 26.27h-10.61v-26.27zm0 21.5a8.37 8.37 0 00.58-16.73 5.61 5.61 0 00-.58 0h-5v16.73zm39.39 2.15a13.51 13.51 0 11-8.44-24 13.16 13.16 0 018.41 3l-3.36 3.36a8.85 8.85 0 00-5.05-1.55 8.7 8.7 0 000 17.4 8.41 8.41 0 003.56-.76v-7.36h4.88zm21.92-23.65v4.52h-10.49v6.09h10.13v4.52h-10.13v6.62h10.85v4.52h-15.72v-26.27zm16.5-.03c5.53 0 8.2 3.38 8.2 8 0 3.84-1.9 6.82-5.77 7.69l6.95 10.63H369l-6.73-10.34h-1.87v10.34h-4.85v-26.3zm-.21 11.22c2.39 0 3.53-1.46 3.53-3.24a3.35 3.35 0 00-3.45-3.25h-4.76v6.49z"
+						class="badger-logo__text"></path>
+				</svg>
+				<span class="vh">Home</span>
 			</a>
-		</li>
-	{{/each}}
-</ul>
+			<nav aria-label="Primary" class="navigation -primary">
+				{{> nav-list }}
+			</nav>
+		</div>
+		<div class="banner__content">
+			<h1 class="banner__heading heading--alpha {{# headingModifier }}{{ . }}{{/ headingModifier }}{{^ headingModifier }}banner__heading--left{{/ headingModifier }}">
+				{{ title }}
+			</h1>
+
+			{{!-- <p class="banner__copy"></p> --}}
+		</div>
+	</div>
+</header>

@@ -1,0 +1,97 @@
+// ==========================================================================
+//
+// PRIMARY NAVIGATION
+//
+// Description: Primary nav
+//
+// ==========================================================================
+
+
+// ==========================================================================
+//    MIXIN
+// ==========================================================================
+
+@mixin nav-interactive-link-styles($color) {
+    .navigation__link {
+        &:focus {
+            @include link-underline($color, -4px);
+            outline: solid 2px get-color($color);
+        }
+
+        @media (hover: hover) {
+            &:hover { @include link-underline($color, -4px); }
+        }
+    }
+}
+
+
+
+
+
+// ==========================================================================
+//    BASE
+// ==========================================================================
+
+// .navigation {}
+
+.navigation__list {
+    .-primary & {
+        @include inline-list--ib($spacing-unit, space-between, center);
+        flex-wrap: wrap;
+
+        @include mq(nav-break-1) { justify-content: flex-start; }
+
+        // Nested here for specificity
+        .navigation__item {
+            &:not(:last-of-type) {
+                @include mq($until: nav-break-1) {
+                    margin-right: 0;
+                    width: 33.33%;
+                }
+            }
+        }
+
+        @include nav-interactive-link-styles(primary);
+    }
+
+    .-secondary & {
+        @include inline-list--ib($half-spacing-unit);
+        flex-wrap: wrap;
+
+        @include nav-interactive-link-styles(white);
+    }
+
+    .-tertiary & {
+        @include mq($until: 400px) { @include inline-list(($quarter-spacing-unit/2), center, center); }
+
+        @include mq($from: 400px) { @include inline-list--ib($half-spacing-unit, center, center); }
+
+        @include nav-interactive-link-styles(primary);
+    }
+}
+
+.navigation__link {
+    // @NOTE: Sass was being awks so I hardcoded `box-shadow` & `transition`
+    // @include link-underline(transparent, 0)
+    box-shadow: inset 0 0 transparent;
+    text-decoration: none;
+    transition: box-shadow linear $transition-length;
+
+    // .nuxt-link-exact-active & { @include link-underline(black); }
+
+    //  @include hover-focus(false, true) {
+    //     @include base-trans;
+    //     @include link-underline;
+    // }
+
+    // .-secondary & {
+    //     @include hover-focus(false, true) { @include link-underline(white); }
+    // }
+
+    .nuxt-link-exact-active & {
+        @include link-underline(currentColor, -2px);
+        outline: none;
+    }
+
+    .-shadow & { @include text-shadow }
+}

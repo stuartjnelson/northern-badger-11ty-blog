@@ -1,0 +1,121 @@
+// ==========================================================================
+//
+// TABLE
+//
+// Description: Base table styles
+//
+// ==========================================================================
+
+// ==========================================================================
+// # MIXIN
+// ==========================================================================
+
+@mixin table-cell-padding {
+    padding: $quarter-gutter-width/2 dimension(gutter)/4;
+
+    @include mq(medium) {
+        padding: dimension(gutter)/4 $half-spacing-unit;
+    }
+}
+
+
+
+
+// ==========================================================================
+// # BASE
+// ==========================================================================
+
+.table-container {
+    display: block;
+    overflow-x: scroll;
+
+    &.-responsive {
+        @include mq($until: 320px) {
+            /* Force table to not be like tables anymore */
+        	table, thead, tbody, th, td, tr {
+        		display: block;
+        	}
+
+        	thead tr { @include vh; }
+
+        	tr {
+                @include base-border(left);
+                @include base-border(right);
+
+                &:nth-of-type(odd) {
+                    td { @include base-border("bottom", 1px, "off-white"); }
+                }
+
+                &:nth-of-type(even) {
+                    td { @include base-border("bottom", 1px, "wh"); }
+                }
+            }
+
+        	td {
+        		/* Behave  like a "row" */
+        		border: none;
+        		position: relative;
+        	}
+
+        	td:before {
+        		/* Now like a table header */
+        		position: absolute;
+        		/* Top/left values mimic padding */
+        		top: 6px;
+        		left: 6px;
+        		width: 45%;
+        		padding-right: 10px;
+        		white-space: nowrap;
+        	}
+        }
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+    &.-overflow { overflow-x: scroll; }
+}
+
+th {
+    @include table-cell-padding;
+    font-weight: bold;
+    text-align: left;
+
+    &:not(:last-of-type) { @include base-border(right); }
+}
+
+thead { @include base-border(bottom); }
+
+tr {
+    &:not(:last-of-type) { @include base-border(bottom, 1px); }
+
+    tbody & {
+        &:nth-of-type(even) { background-color: get-color(light-grey); }
+    }
+}
+
+td {
+    @include table-cell-padding;
+
+    &:not(:last-of-type) { @include base-border(right); }
+}
+
+
+
+
+
+// ==========================================================================
+// # CELL ALIGNMENT
+// ==========================================================================
+
+[colspan] { text-align: center; }
+
+[colspan="1"] { text-align: left; }
+
+[rowspan] { vertical-align: middle; }
+
+[rowspan="1"] { vertical-align: top; }
+
+.numerical { text-align: right; }

@@ -1,0 +1,58 @@
+@charset 'utf-8';
+
+// ==========================================================================
+// # MAIN CSS FILE. Include ALL THE THINGS
+// ==========================================================================
+// 0. Master config file
+@import "config/config";
+
+
+// 1. Vendor packages
+@import "vendor/mq";
+
+
+// 2. Util functions & mixins
+@import "config/functions";
+@import "config/mixins";
+
+
+// 3. Base styles
+@import "base/base";
+@import "base/normalize";
+@import "base/type";
+@import "base/utils";
+@import "base/headings";
+@import "base/long-form-copy";
+
+
+// 4. Layouts
+@import "layout/containers";
+@import "layout/bands";
+
+
+// 5. Global Components
+@import "component/article";
+@import "component/articles-list";
+@import "component/banner";
+@import "component/buttons";
+@import "component/footer";
+@import "component/full-height-section";
+@import "component/primary-navigation";
+@import "component/skip-link";
+
+
+// 6. Global Objets
+@import "object/inline-list";
+@import "object/images";
+@import "object/landmark";
+@import "object/plain-link";
+@import "object/svg-icon";
+@import "object/tag";
+
+
+// 7. Pages - should be in single vue components
+// @import "pages/holding-page";
+
+
+// 8. Vendor extensions
+@import "vendor-extensions/lazysizes"

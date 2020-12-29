@@ -1,0 +1,29 @@
+// ==========================================================================
+//
+// CODE SNIPPET
+//
+// Description: Styles for code snippets
+//
+// ==========================================================================
+
+
+// ==========================================================================
+//    BASE
+// ==========================================================================
+
+code {
+    background-color: get-color(bk);
+    color: get-color(wh);
+    display: inline-block;
+    padding: 0 $quarter-gutter-width/2;
+}
+
+pre {
+    @include landmark;
+    background-color: get-color(bk);
+    color: get-color(wh);
+    overflow-x: scroll;
+    padding: $half-spacing-unit;
+
+    code { padding: 0; }
+}

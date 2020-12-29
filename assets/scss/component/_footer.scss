@@ -1,0 +1,56 @@
+// ==========================================================================
+//
+// FOOTER
+//
+// Description: Site footer
+//
+// ==========================================================================
+
+
+// ==========================================================================
+//    BASE
+// ==========================================================================
+
+// .footer {}
+
+.footer__inner {
+    @include mq($until: nav-break-1) { position: relative; }
+
+    @include mq(nav-break-1) {
+        align-items: center;
+        display: flex;
+        margin-bottom: $half-spacing-unit;
+    }
+}
+
+.footer__logo {
+    margin-bottom: $quarter-spacing-unit;
+
+    @include mq(nav-break-1) {
+        margin-bottom: 0;
+        margin-right: $half-spacing-unit;
+    }
+}
+
+.footer__primary-nav {
+    margin-bottom: $half-spacing-unit;
+
+    @include mq($from: 320px, $until: nav-break-1) {
+        left: 60px;
+        position: absolute;
+        top: 10px;
+    }
+
+    @include mq(nav-break-1) { margin-bottom: 0; }
+}
+
+.footer__social-nav {
+    margin-bottom: $half-spacing-unit;
+
+    @include mq(nav-break-1) {
+        margin-bottom: 0;
+        margin-left: auto;
+    }
+}
+
+// .footer__small-print {}

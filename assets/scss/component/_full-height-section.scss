@@ -1,0 +1,38 @@
+// ==========================================================================
+//
+// FULL HEIGHT SECTION
+//
+// Description: The first secion on a page
+//
+// ==========================================================================
+
+
+// ==========================================================================
+//    BASE
+// ==========================================================================
+
+.full-height-section {
+    @include full-height-section();
+
+    &.-half {
+        .full-height-section__inner { @include container($container-width/2); }
+    }
+
+    &.-reduced {
+        .full-height-section__inner { @include container($container-width/1.5); }
+    }
+
+    &.-left { align-items: flex-start; }
+
+    &.-holding-page {
+        @include mq(large) { width: 50vw; }
+
+        @include mq(xxlarge) {
+            &:first-of-type { width: 40vw; }
+
+            &:last-of-type { width: 60vw; }
+        }
+    }
+}
+
+.full-height-section__inner { @include container; }

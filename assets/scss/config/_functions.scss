@@ -1,0 +1,250 @@
+// ==========================================================================
+// FUNCTIONS
+//
+// Description: global application wide functions
+//
+// ==========================================================================
+
+// scss-lint:disable ElsePlacement
+
+// ==========================================================================
+// # FLIP
+// # flips a value depending on value of $direction. Useful for managing
+// # multi lingual sites
+// # http://bit.ly/1LRLRgZ
+// ==========================================================================
+
+@function flip($value-ltr, $value-rtl) {
+    @if $direction == right {
+        @return $value-rtl;
+    } @else {
+        @return $value-ltr;
+    }
+}
+
+
+// ==========================================================================
+// UTILITIES
+// ==========================================================================
+
+// PARSEINT
+// parses an integer from an input
+// ==========================================================================
+@function parse-int($n) {
+    @return $n / ($n * 0 + 1);
+}
+
+
+
+
+
+// GCF
+// Find the greatest common factor of two integers
+// borrowed from https://raw.github.com/necolas/griddle/master/_griddle-build.scss
+// ==========================================================================
+@function gcf($a, $b) {
+    @if $b == 0 {
+        @return $a;
+    } @else {
+        @return gcf($b, $a % $b);
+    }
+}
+
+
+
+
+
+// CONTAINS
+// Check if a list contains a given value
+// borrowed from https://raw.github.com/necolas/griddle/master/_griddle-build.scss
+// ==========================================================================
+@function contains($list, $value) {
+    @if length($list) != 1 { @return index($list, $value); }
+    @else { @return $list == $value; }
+}
+
+
+
+
+
+// MAP DEEP GET
+// ==========================================================================
+/// Map deep get
+/// @author Hugo Giraudel
+/// @access public
+/// @param {Map} $map - Map
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+
+
+
+
+// MAP DEPTH
+// ==========================================================================
+/// Compute the maximum depth of a map
+/// @param {Map} $map
+/// @return {Number} max depth of `$map`
+@function map-depth($map) {
+    $level: 1;
+    @each $key, $value in $map {
+        @if type-of($value) == "map" {
+            $level: max(map-depth($value) + 1, $level);
+        }
+    }
+    @return $level;
+}
+
+
+
+
+
+//    MAP HAS KEYS
+// ==========================================================================
+/// Test if map got all `$keys` at first level
+/// @author Hugo Giraudel
+/// @param {Map} $map - Map
+/// @param {Arglist} $keys - Keys to test
+/// @return {Bool}
+@function map-has-keys($map, $keys...) {
+    @each $key in $keys {
+        @if not map-has-key($map, $key) {
+            @return false;
+        }
+    }
+    @return true;
+}
+
+
+
+
+
+//    MAP HAS NESTED KEYS
+// ==========================================================================
+/// Test if map got all `$keys` nested with each others
+/// @author Hugo Giraudel
+/// @param {Map} $map - Map
+/// @param {Arglist} $keys - Keys to test
+/// @return {Bool}
+@function map-has-nested-keys($map, $keys...) {
+    @each $key in $keys {
+        @if not map-has-key($map, $key) {
+            @return false;
+        }
+        $map: map-get($map, $key);
+    }
+    @return true;
+}
+
+
+
+
+
+// Replace `$search` with `$replace` in `$string`
+// @author Hugo Giraudel
+// @param {String} $string - Initial string
+// @param {String} $search - Substring to replace
+// @param {String} $replace ('') - New value
+// @return {String} - Updated string
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+
+
+
+
+// COLOR GET
+// ==========================================================================
+// Color get
+// @author Northern Badger
+// @param {String} $key - Key for nested map
+// @param {Arglist} $type - Key for color keys inside nested map.
+// @return {string} - Desired HEX code
+@function color-get($key, $type: default) {
+    @return map-deep-get($brand-colors, $key, $type);
+}
+
+
+
+
+// CAPITALIZE
+// ==========================================================================
+// Capitalises a string
+// @param {String}  $string - String to be capitalized
+// @return {string}         - Capitalized string
+@function capitalize($string) {
+    @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2);
+}
+
+
+
+
+
+// REM
+// ==========================================================================
+// Borrow from Bourbon (which as deprecating it!)
+// Convert pixels to rems
+// eg. for a relational value of 12px write rem(12)
+// Assumes $em-base is the font-size of <html>
+
+@function rem($pxval) {
+    @if not unitless($pxval) {
+          $pxval: strip-units($pxval);
+    }
+
+    $base: $em-base;
+    @if not unitless($base) {
+        $base: strip-units($base);
+    }
+
+    @return ($pxval / $base) * 1rem;
+}
+
+
+
+
+
+// ARROW COLOR MODIFIER
+// ==========================================================================
+@function arrow-color-modifier($arrow-color: false, $arrow-color-shade: default) {
+    @if($arrow-color != false) {
+        // Getting a Hex value for `$arrow-color` so we can manipulate it later
+        $arrow-color: color-get($arrow-color, $arrow-color-shade);
+
+        // Getting HEX color for arrow
+        // ====
+        $arrow-color-str: quote(#{$arrow-color});    // Adding quotes around Hex value so its actually a string
+        $arrow-color: str-replace($arrow-color-str, "#", "");    // Removing the `#` from the string
+
+        @return "data:image/svg+xml,%3Csvg class='svg-arrow' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 55 55' fill='%23#{$arrow-color}'%3E%3Cpath d='M27.5 55A27.5 27.5 0 1 1 55 27.5 27.53 27.53 0 0 1 27.5 55zm0-52A24.5 24.5 0 1 0 52 27.5 24.53 24.53 0 0 0 27.5 3z'/%3E%3Cpath d='M31.79 43.25L15.33 27.6l16.45-15.85 2.08 2.16-14.19 13.68 14.18 13.49-2.06 2.17'/%3E%3C/svg%3E%0A";
+    }
+}
+
+
+
+
+
+// GET COLOR
+// @param $color - The color key from color map
+// @param $color-shade - The shade modifier (light, default, dark)
+// @param $color-map - The map of colors
+// @return {*} - Hex color
+// ==========================================================================
+@function get-color($color: false, $color-shade: default, $color-map: $brand-colors) {
+    @if($color != false) {
+        @return map-deep-get($color-map, $color, $color-shade);
+    }
+}

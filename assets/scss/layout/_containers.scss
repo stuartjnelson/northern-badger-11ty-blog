@@ -1,0 +1,16 @@
+// ==========================================================================
+// # CONTAINERS
+//
+// These are sections of the page that are constrained by their width
+// ==========================================================================
+
+// base container classes
+.container {
+    @include container;
+
+    &.-content { max-width: $container-width-content; }
+
+    // &.-half { max-width: $container-width/2; }
+
+    &.-reduced { max-width: $container-width-reduced; }
+}

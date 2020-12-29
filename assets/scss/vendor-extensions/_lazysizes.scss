@@ -1,0 +1,55 @@
+// ==========================================================================
+//
+// LAZYSIZES
+//
+// Description: Adding lazysizes styles
+//
+// ==========================================================================
+
+// ==========================================================================
+// # BASE
+// ==========================================================================
+
+.lazyload { background-color: color-get(off-white); }
+
+
+
+
+
+// ==========================================================================
+// # MODIFIER: BLUR-UP
+// ==========================================================================
+
+.blur-up {
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+	transition: filter $transition-length, -webkit-filter $transition-length;
+}
+
+.blur-up.lazyloaded {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+
+
+
+
+// ==========================================================================
+// # NO-JS
+// ==========================================================================
+
+// scss-lint:disable MergeableSelector
+// Seperated for clarify and to be near `img` no-js styles
+.lazyload {
+    .no-js & {
+        background-color: color-get(white);
+        color: color-get(black);
+    }
+}
+
+img.lazyload {
+    .no-js & {
+        display: none;
+    }
+}

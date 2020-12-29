@@ -1,0 +1,101 @@
+// ==========================================================================
+//
+// TITLES
+//
+// Description: standard styles for headings
+//
+// ==========================================================================
+
+
+// ==========================================================================
+//    CMS HEADINGS
+// ==========================================================================
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        @include wf-secondary;
+        color: get-color(black);
+        font-size: 1.5rem;
+        line-height: 1.1;
+        margin: 0 0 0.5em;
+    }
+}
+
+h1 { @include heading(alpha); }
+
+h2 { @include heading(bravo); }
+
+h3 { @include heading(charlie); }
+
+h4 { @include heading(delta); }
+
+
+
+
+
+// ==========================================================================
+// # PAGE HEADING TYPESETTING
+// ==========================================================================
+
+// Loops over each heading in our tites-typeset map
+@each $heading in $headings-typeset {
+    $key: nth($heading, 1);
+    $value: nth($heading, 2);
+
+    .heading--#{$key} {
+        @include heading($key);
+    }
+}
+
+
+
+
+
+// ==========================================================================
+// # MODIFIER: POSITION
+// ==========================================================================
+
+.heading--center { text-align: center; }
+
+
+
+
+
+// ==========================================================================
+// # MODIFIER: WEIGHTS
+// ==========================================================================
+
+// .heading--regular { @include wf-secondary; }
+
+
+
+
+
+// ==========================================================================
+// # MODIFIER: FONT FAMILY
+// ==========================================================================
+
+.heading--sans { @include wf-primary; }
+
+
+
+
+
+// ==========================================================================
+// # MODIFIER: TITLE COLORS
+// ==========================================================================
+
+@mixin heading-color($color: false) {
+    @if($color != false) {
+        .heading--#{$color} {
+            color: get-color($color);
+        }
+    }
+}
+
+
+// @each $color, $default-shade in $get-color {
+//     @include heading-color($color);
+// }
+
+// @include heading-color(primary);

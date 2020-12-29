@@ -1,0 +1,63 @@
+// ==========================================================================
+// INLINE LIST
+//
+// Description: create horizontally laid-out lists with
+// optional spacing and dividers
+// ==========================================================================
+
+
+// ==========================================================================
+// # MIXINS
+// ==========================================================================
+
+
+
+
+
+// ==========================================================================
+// # BASE
+// ==========================================================================
+
+.inline-list { @include inline-list; }
+
+
+
+
+
+// ==========================================================================
+// # MODIFIER: INLINE BLOCK
+// ==========================================================================
+
+.inline-list--ib { @include inline-list--ib }
+
+
+// Could do this with mixin... @include inline-list--ib($spacing-unit, flex-end)
+.inline-list--ib-reverse { justify-content: flex-end; }
+
+
+// .inline-list--ib-medium {
+//     @include mq(medium) {
+//         flex-direction: row;
+//
+//         .inline-list__item,
+//         > li {
+//             &:not(:last-of-type) { margin-right: $half-spacing-unit; }
+//
+//             @supports not (display: flex) {
+//                 float: none;
+//                 letter-spacing: normal;
+//                 vertical-align: middle;
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+// ==========================================================================
+// # MODIFIER: SEPERATED
+// ==========================================================================
+
+.inline-list--seperated { @include inline-list--seperated; }
