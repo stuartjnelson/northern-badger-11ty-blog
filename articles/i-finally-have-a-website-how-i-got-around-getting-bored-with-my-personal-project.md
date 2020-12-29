@@ -13,13 +13,13 @@ categories: []
 keywords: []
 ---
 
-![](/assets/img/1__dppO6YEptqKiEQBa4r5Rxg.jpeg)
+![Screenshot of northernbadger.co.uk homepage](/assets/img/1__dppO6YEptqKiEQBa4r5Rxg.jpeg)
 
 It’s a funny that a lot of web developers don’t have an up to date website. My guess is like myself, it’s hard to find time/enthusiasm to create your own site when you could be getting paid to make someone else. The [Northern Badger](http://northernbadger.co.uk/) website has been an inline SVG and two lines of text since I bought the domain 4 years ago. I‘ve started 3 versions of the website only to get loose interest/decided it was not good enough half way through and scrap the build.
 
 In December 2017 I made a promise to myself this cycle of doom HAD TO END! I decided to treat building my own website as I would a client project. Heres how I approached it.
 
-#### **Creating a brief**
+## Creating a brief
 
 As part of all my client projects we will work together to create a brief that accompanies my contract. This collaborative process is a way to drill down to find out what the client _needs_ rather than what they want. As a massive bonus this also ensures both parties are clear on exactly what is being created for them are and what restrains the project has. Wether the restraints are budget, time or a technical requirement; it’s vital to get it agreed at the very start. For my website time was my constrain, I wanted to site live with the magical phase 2 complete by 26th March 2018. In January I wrote my brief that included;
 
@@ -32,7 +32,7 @@ The final point I felt was really important for the project. To ensure I didn’
 ![A screenshot of the first page of Northern Badger 2018 website brief](/assets/img/1__HgyAH4nAC__Fd22lGpo8sRA.png)
 A screenshot of the first page of Northern Badger 2018 website brief
 
-#### **Creating wireframes**
+## Creating wireframes
 
 I love wireframes. If this is something new to you checkout this great [article by InVision](https://www.invisionapp.com/blog/how-to-wireframe/) about creating wireframes. I have three stages to creating my wireframes;
 
@@ -43,11 +43,11 @@ I love wireframes. If this is something new to you checkout this great [article 
 ![My homepage desktop Sketch wireframe](/assets/img/1__7YpF__SPbXtmA5__Pq__KjjNQ.png)
 My homepage desktop Sketch wireframe
 
-#### **Full designs**
+## Full designs
 
 While for this project I didn’t create full colour designs I did create some style guides to work from. These are effectively a designed version of my websites SCSS config with all the type setting, colours, spacing considerations among other useful global variables. I wanted to get the site built quickly and since the layout is very simple I just followed my style guide as well as brand guidelines. Since time was a constraint on the project this is one way I saved time.
 
-#### **Learning new technologies**
+## Learning new technologies
 
 A new project is a fantastic opportunity to learn! Over the last few months I have been learning Vue.js (it’s seriously awesome by the way) so I wanted to build the site using the framework. As well as using Vue.js I wanted to use;
 
@@ -56,14 +56,14 @@ A new project is a fantastic opportunity to learn! Over the last few months I ha
 *   [Netlify](https://www.netlify.com/) for deployment. What doesn’t Netlify do for free? If you have a personal project that you want to deploy, secure and delivery performantly you’d be mental not to use it. I’ll write an article about it in April.
 *   Create a new simple Scss styles boilerplate that I can port over to new projects
 
-#### **Writing copy & getting artwork**
+## Writing copy & getting artwork
 
 Before developing the site I wanted to get my content together. Too many times in the past have I worked on projects that has an amazing design only for the client to write too much/too little copy and it ruins the design. I luckily didn’t have much copy to write for my site so it didn’t take me too long to create it. I was keen to create some some interesting slightly odd/cheeky photos for the website’s hero section. I had the idea to “dress up” as a badger. I printed off a copy of my logo on some card, borrowed a black onesie, some black shoes and my housemate helped me out taking pictures (shout out to Clare!). ideally I’d like to like to take new Badger photos each time I move so the picture has relevance to where I am currently living.
 
 ![One of the images from the “Canadian badger” photoshoot](/assets/img/1__Koq8Bqa05oMMYtCdIC6GcA.jpeg)
 One of the images from the “Canadian badger” photoshoot
 
-#### **Building the site**
+## Building the site
 
 Before coding anything I created a Trello board. I have a card for each major config task & component. I use colour labels to help me organise the cards and a series of lists based roughly on the [scrum methodology](https://magistrateinc.com/how-scrum-trello-doubled-our-marketing-agencys-productivity/).
 
@@ -77,15 +77,15 @@ Nuxt does so many of the boring jobs I’d have had to have done manually. Perso
 ![Showing source code for my static site and the extra wrapping div’s required for Nuxt to work](/assets/img/1__vIOFdNaPmXEvQ7sYZSDwMw.png)
 Showing source code for my static site and the extra wrapping div’s required for Nuxt to work
 
-#### **Testing**
+## Testing
 
 I wanted my site to work on IE11 and all latest major browsers. I borrowed my housemates phones to have a wider variety of real device to remote debug on, nothing can really replace testing on a real device. I’ll admit some change I made just before deployment broke the site on IE11… This is my first job to fix as its not ideal that it’s a white-screen-of-death. Even though I think its unlikely anyone will use IE11 to view my site, if I get it to work on IE11 I feel it will work on emerging browsers as well as being more accessible. I use waves browser extension for accessibility testing and Atom’s HTML validator package.
 
-#### **Deployment**
+## Deployment
 
 This is where Netlify comes in. As long as everything is good with your static site build Netlify is so **so** _so_ amazing. You just connect up your repo (integration with Github and Bitbucket among others), pick your deploy branch and enter your build command (`npm run generate`) and your site is deployed to a Netlify subdomain. BOOM! I wanted automatic continuous deployments so whenever I push an updated to my master branch my site is deployed! I also connected up my custom domain, used their GUI for adding environment variables, free SSL certificate from lets Encrypt with 2 buttons clicks, server side pre-rendering, asset optimisation & added email notifications for all deployments. There is a lot more you can do even on the free plan. If you want some more info on using Nuxt.js & Netlify [checkout Jordon Simmons tutorial](https://codeburst.io/create-a-static-site-in-15-minutes-or-less-using-vue-js-e4e2a9945ee6).
 
-#### **3, 2, 1… It’s live!**
+## 3, 2, 1… It’s live!
 
 Big thanks to everyone who viewed an early link and gave me feedback. I couldn’t recommend enough just asking people to take a look and let you know what they think. Even if it’s subjective feedback you don’t listen too, asking people you respect for their help aside from anything else is a great confidence booster.
 
@@ -94,7 +94,3 @@ A few times I reached out on Twitter, Netlify support & on Next.js community cha
 I don’t want to sound like an arse but I am super happy with my site! I don’t think its anything special in it’s design or the tech behind it. I’m pumped I managed to finally, on attempt 4, finish building a site for myself! I feel it’s pretty accessible, performant and gives a good overview of what I do/have done. The hard part is being the designer, developer, copy writer and client all at the same time. Treating it like a client project was the reason I managed to get it finished this time as well as ensuring I gave myself the time to do it.
 
 Any questions/comments/bugs/feedback please get in touch! Thanks for reading.
-
-[![](https://cdn-images-1.medium.com/max/1200/1*i3hPOj27LTt0ZPn5TQuhZg.png)](http://bit.ly/codeburst)
-
-> ✉️ _Subscribe to_ CodeBurst’s _once-weekly_ [**_Email Blast_**](http://bit.ly/codeburst-email)**_,_** 🐦 _Follow_ CodeBurst _on_ [**_Twitter_**](http://bit.ly/codeburst-twitter)_, view_ 🗺️ [**_The 2018 Web Developer Roadmap_**](http://bit.ly/2018-web-dev-roadmap)_, and_ 🕸️ [**_Learn Full Stack Web Development_**](http://bit.ly/learn-web-dev-codeburst)_._

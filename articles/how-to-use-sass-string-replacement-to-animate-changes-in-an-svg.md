@@ -17,14 +17,14 @@ Sometimes I want to have an SVG as a URL-encoded `background-image: url(path/to/
 
 Codepen example of Sass string replacement on an SVG — [https://codepen.io/stuartjnelson/full/xYOXRZ/](https://codepen.io/stuartjnelson/full/xYOXRZ/)
 
-#### What we are going to do
+## What we are going to do
 
 1.  Export & optimise the [SVG](https://hackernoon.com/tagged/svg) so it’s as small as possible
 2.  Use [SVG URL-encoder](http://yoksel.github.io/url-encoder/) to encode the SVG so it can be used in your `.scss` file
 3.  Use [Hugo Giraude’s](https://hugogiraudel.com/2014/01/13/sass-string-replacement-function/) string replace function to change the SVG
 4.  Create a mixin to call the string replacement function and output the [CSS](https://hackernoon.com/tagged/css)
 
-### 1\. Exporting and optimising your SVG
+## 1. Exporting and optimising your SVG
 
 SVGs exported from your favourite graphics editor always have a bunch of information that we won’t be needing. I personally find Adobe Illustrators SVG export the cleanest but feel free to use any editor of your choice.
 
@@ -42,11 +42,11 @@ After exporting your SVG open it in your text editor and you should see code tha
 
 My SVG exported straight from Adobe Illustrator — [https://gist.github.com/stuartjnelson/dec1d06046e82fc0dc9492706c18311d](https://gist.github.com/stuartjnelson/dec1d06046e82fc0dc9492706c18311d)
 
-#### Optimising the exported SVG
+### Optimising the exported SVG
 
 This SVG isn’t as optimised as I’d like. We have a few options for optimising the SVG that are listed below.
 
-1.  Use SVGO CLI to optimise from the command line. Check out my walkthrough on [how to setup a bash alias for SVGO CLI](https://medium.com/@stuartjnelson/optimise-a-directory-of-svgs-using-svgo-cli-bash-function-its-really-easy-don-t-worry-515233968b50)
+1.  Use SVGO CLI to optimise from the command line. Check out my walkthrough on [how to setup a bash alias for SVGO CLI](https://northernbadger.co.uk/articles/optimise-svgs-using-svgo-cli-bash-function)
 2.  Use Jake Archibald’s awesome in browser [SVGO GUI](https://jakearchibald.github.io/svgomg/)
 3.  Manually edit the SVG using a text editor.
 
@@ -56,18 +56,18 @@ For a simple SVG like the one we’re using as an example I would run it SVGO GU
 SVGO GUI option to keep the viewBox attribute but to remove width & heightSVGO GUI optimised SVG
 SVGO GUI optimised SVG that I then manually removed \`data-name\` from
 
-### 2\. Data encode the SVG so it can be used in SCSS
+## 2. Data encode the SVG so it can be used in SCSS
 
 I don’t [base 64 encode the SVG because as Taylor Hunt points out there is no need](https://codepen.io/tigt/post/optimizing-svgs-in-data-uris) (it actually makes the SVG larger). I use Yoksel’s in browser [SVGO URL-encode](http://yoksel.github.io/url-encoder/) tool to URL-encode my SVGs. Just paste in your SVG and BOOM you get it back encoded. For step 4 you’ll just need everything inside the `url()` from the _Ready for CSS_ text.
 
 ![[Yoksel’s](http://css.yoksel.ru/) SVG URI-encode tool is free, fast and awesome](/assets/img/1__2v6vSwwNN0pchsOiD3Ss3w.png)
 [Yoksel’s](http://css.yoksel.ru/) SVG URI-encode tool is free, fast and awesome
 
-### 3\. String replace function
+## 3. String replace function
 
 [Hugo Giraude’s published a great article on creating a string replace function using Sass](https://hugogiraudel.com/2014/01/13/sass-string-replacement-function/). I use a simple version of his function. Please note that the string passed to the function _must_ be a string wrapped in quotation marks.
 
-### 4\. Create a function and a mixin to call the string replacement function and output CSS
+## 4. Create a function and a mixin to call the string replacement function and output CSS
 
 I copied the encoded SVG from the encoder and put it inside a function that is responsible for replacing the fill of our SVG by calling the string replacement function. This function, `svg-color-string-modifier()` does 4 things;
 

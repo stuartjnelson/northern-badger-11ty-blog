@@ -26,6 +26,8 @@
 
     img { display: block; }
 
+    .img--center { margin: 0 auto; }
+
     .img--border { @include base-border; }
 
 
@@ -49,10 +51,15 @@
 
     a { @include base-link; }
 
-    pre,
-    code {
+    code,
+    pre {
         background-color: rgba(0, 0, 0, 0.05);
         font-family: Roboto Mono, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+    }
+
+    code {
+        font-size: 1rem;
+        padding: $quarter-spacing-unit / 2;
     }
 
     pre {
@@ -62,12 +69,10 @@
         padding: $half-spacing-unit;
         white-space: pre;
 
-        > code { background-color: transparent; }
-    }
-
-    code {
-        font-size: 1rem;
-        padding: $quarter-spacing-unit / 2;
+        > code {
+            background-color: transparent;
+            padding: 0;
+        }
     }
 
     section {
