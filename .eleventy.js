@@ -1,12 +1,47 @@
+const handlebars = require('handlebars')
+const markdownIt = require("markdown-it");
+const markdownItAttrs = require('markdown-it-attrs');
+
 module.exports = (eleventyConfig) => {
-	const handlebars = require('handlebars')
+	// ============================================
+	// 11TY GENERAL OPTIONS
+	// ============================================
+	// Copies assets into output dir
+	eleventyConfig.addPassthroughCopy('assets')
+
+	// @NOTE: Doesn't work anymore... Seems like
+	// 11ty does rebuild sass when HTML changes...
+	// https://www.belter.io/eleventy-sass-workflow/
+	eleventyConfig.setUseGitIgnore(false)
+
+
+
+
+
+	// ============================================
+	// HANDLEBARS
+	// ============================================
 	eleventyConfig.setLibrary('hbs', handlebars)
 
+
+	// Handlebar helpers
 	eleventyConfig.addHandlebarsHelper("jsonPrint", obj => JSON.stringify(obj, null, 2))
 	eleventyConfig.addHandlebarsHelper("addOne", num => (num + 1))
 	eleventyConfig.addHandlebarsHelper("eq", (a, b) => (a === b))
 	eleventyConfig.addHandlebarsHelper("not", exp => !exp)
 
+
+
+
+
+	// ============================================
+	// HTML transforms
+	// ============================================
+	/**
+	 * INSERT GOOGLE FONTS INTO HEAD
+	 *
+	 * Insertins Google Font script into the head
+	 */
 	eleventyConfig.addTransform("insert-google-fonts-into-head", (content, outputPath) => {
 		let returnContent = content;
 
@@ -19,6 +54,11 @@ module.exports = (eleventyConfig) => {
 		return returnContent;
 	})
 
+	/**
+	 * CREATE ARTICLE SECTIONS
+	 *
+	 * Inserts `<section>` into articles using `h2` to signify a new section
+	 */
 	eleventyConfig.addTransform('create-article-sections', (content, outputPath) => {
 		let returnContent = content;
 
@@ -92,27 +132,24 @@ module.exports = (eleventyConfig) => {
 		return returnContent;
 	})
 
-	eleventyConfig.addPassthroughCopy('assets')
-
-	// @NOTE: Doesn't work anymore... Seems like
-	// 11ty does rebuild sass when HTML changes...
-	// https://www.belter.io/eleventy-sass-workflow/
-	eleventyConfig.setUseGitIgnore(false)
 
 
 
-	// **************** Markdown Plugins ********************
-	let markdownIt = require("markdown-it");
-	var markdownItAttrs = require('markdown-it-attrs');
-	let options = {
-		html: true,
-		breaks: true,
-		linkify: true
+	// ============================================
+	//  MARKDOWN OPTIONS
+	// ============================================
+	// Allowing use of MardownIt
+	const mardownItOptions = {
+		html: true,       // Enable HTML tags in source
+		breaks: true,     // Convert '\n' in paragraphs into <br>
+		linkify: true     // Autoconvert URL-like text to links
 	};
 
-	let markdownLib = markdownIt(options).use(markdownItAttrs);
-
+	const markdownLib = markdownIt(mardownItOptions).use(markdownItAttrs);
 	eleventyConfig.setLibrary("md", markdownLib);
+
+
+
 
 
 	return {
