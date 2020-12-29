@@ -57,10 +57,10 @@ I did find that my NPM page rendered my Readme.md a little differently to GitHub
 
 Here are the tools/articles that helped me create my documentation.
 
-*   [**http://tableofcontent.eu/**](http://tableofcontent.eu/) — useful tool creating table of contents. Thanks to r[aychenon](https://github.com/raychenon) for sharing this tool
-*   [**Markdown cheatsheet**](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) — I haven’t written much markdown other than titles and lists so found Adam Pritchard’s cheatsheet super useful
-*   [**Atom Markdown Preview**](https://atom.io/packages/markdown-preview) — a package that shows you what your Markdown looks like because who doesn’t love to see what they are actually writing.
-*   [**Issue template** ](https://embeddedartistry.com/blog/2017/8/18/a-github-issue-template-for-your-projects)— After receiving my first issue ticket I decided I need to find out how to create a template for issues that I’d seen on other repos. I found Embedded Artistry’s issue template article really helpful and showing me this is super easy to do.
+*   <b>[http://tableofcontent.eu/](http://tableofcontent.eu/)</b> — useful tool creating table of contents. Thanks to r[aychenon](https://github.com/raychenon) for sharing this tool
+*   <b>[Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)</b> — I haven’t written much markdown other than titles and lists so found Adam Pritchard’s cheatsheet super useful
+*   <b>[Atom Markdown Preview](https://atom.io/packages/markdown-preview)</b> — a package that shows you what your Markdown looks like because who doesn’t love to see what they are actually writing.
+*   <b>[Issue template](https://embeddedartistry.com/blog/2017/8/18/a-github-issue-template-for-your-projects)</b> — After receiving my first issue ticket I decided I need to find out how to create a template for issues that I’d seen on other repos. I found Embedded Artistry’s issue template article really helpful and showing me this is super easy to do.
 
 **Conclusion.** Docs take time and that’s okay. I will create myself a template for the [future](https://hackernoon.com/tagged/future) to speed this process up (article coming in 2018). I really don’t think they can be rushed, if developers don’t know all the cool things your tool does, what’s the point in releasing it?
 
