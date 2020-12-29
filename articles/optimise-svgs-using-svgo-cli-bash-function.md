@@ -34,6 +34,7 @@ I wanted to be able to optimise a directory of SVGs by removing;
 
 I created my own `config.yml` file that uses a series of SVGO’s plugins. This file can be called whatever you want, I have called mine `svgo-config.yml`.
 
+```
 plugins:
  — removeStyleElement: true
  — removeTitle: true
@@ -48,6 +49,7 @@ plugins:
  — removeEmptyAttrs: true
  — cleanupAttrs: true
  — removeAttrs: { attrs: ‘(class|id|data-name)’ }
+```
 
 If I wanted to optimise a directory of SVGs I would run; `svgo -f /path/to/svgs/dir svgo-config.yml` from the same directory as the custom config file.
 
@@ -57,7 +59,7 @@ While I worked at [Mr B & Friends](https://www.mrbandfriends.co.uk) my awesome c
 
 ```
 function svgoFunction() {
-  svgo -f $1 — config=/Users/user-name/.bash-scripts/config-   files/svgo-config.yml
+  svgo -f $1 — config=/Users/user-name/.bash-scripts/config-files/svgo-config.yml
 }
 alias svgo-config=’svgoFunction $1'
 ```
