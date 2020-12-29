@@ -99,6 +99,22 @@ module.exports = (eleventyConfig) => {
 	// https://www.belter.io/eleventy-sass-workflow/
 	eleventyConfig.setUseGitIgnore(false)
 
+
+
+	// **************** Markdown Plugins ********************
+	let markdownIt = require("markdown-it");
+	var markdownItAttrs = require('markdown-it-attrs');
+	let options = {
+		html: true,
+		breaks: true,
+		linkify: true
+	};
+
+	let markdownLib = markdownIt(options).use(markdownItAttrs);
+
+	eleventyConfig.setLibrary("md", markdownLib);
+
+
 	return {
 		dir: {
 			input: './',
