@@ -151,6 +151,8 @@
     @include mq($until: nav-break-1) {
         border-top: solid 2px color-get(grey, dark);
     }
+
+    @include mq($from: 850px) { padding: $spacing-unit $half-spacing-unit $half-spacing-unit; }
 }
 
 .banner__heading {
