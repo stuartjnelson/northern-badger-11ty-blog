@@ -10,7 +10,7 @@
 	<main id="main-content" class="container -content">
 		<section class="band -double">
 			<ul class="articles-list">
-				{{#each collections.posts}}
+				{{#each (reverse collections.posts) }}
 				<li class="articles-list__item">
 					{{> article articleData=this }}
 				</li>
