@@ -65,7 +65,7 @@ module.exports = (eleventyConfig) => {
 			}
 		},
 		watch: ['assets/scss/main.scss', '!node_modules/**'],
-		outputDir: './assets/'
+		outputDir: './_site/assets/'
 	});
 
 
@@ -202,11 +202,16 @@ module.exports = (eleventyConfig) => {
 
 		const purgeCSSResults = await new PurgeCSS().purge({
 			content: [{ raw: content }],
-			css: ['./assets/main.css'],
+			// css: ['./assets/main.css'],
+			css: ['./_site/assets/main.css'],
 			keyframes: true,
 		});
 
-		return content.replace('<link rel="stylesheet" href="/assets/style.css">', '<style>' + purgeCSSResults[0].css + '</style>');
+		if (purgeCSSResults.length) {
+			return content.replace('<link rel="stylesheet" href="/assets/style.css">', '<style>' + purgeCSSResults[0].css + '</style>');
+		} else {
+			return content;
+		}
 	});
 
 
