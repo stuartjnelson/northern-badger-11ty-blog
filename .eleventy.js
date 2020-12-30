@@ -2,25 +2,12 @@ const handlebars = require('handlebars')
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
 
+const pluginSass = require("eleventy-plugin-sass");
+
 const { PurgeCSS } = require('purgecss')
-const { JSDOM } = require('jsdom')
-const CleanCSS = require("clean-css");
 
 const htmlmin = require("html-minifier");
 
-//function to insert css into the DOM
-const insertCss = (html, css) => {
-	const dom = new JSDOM(html)
-	const { document } = dom.window
-
-	let head = document.getElementsByTagName('head')[0];
-	let style = document.createElement("style");
-	style.type = 'text/css';
-	style.innerHTML = css;
-	head.appendChild(style);
-
-	return dom.serialize()
-}
 
 module.exports = (eleventyConfig) => {
 	// ============================================
@@ -50,6 +37,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addHandlebarsHelper("eq", (a, b) => (a === b))
 	eleventyConfig.addHandlebarsHelper("not", exp => !exp)
 	eleventyConfig.addHandlebarsHelper("reverse", array => array.reverse())
+	eleventyConfig.addHandlebarsHelper("getYear", () => new Date().getFullYear())
 
 	// Making the date valid for `datetime` attirbute
 	eleventyConfig.addHandlebarsHelper("convertPubdateForDatetimeAttr", str => {
@@ -58,6 +46,27 @@ module.exports = (eleventyConfig) => {
 			.reverse()
 			.join('-')
 	})
+
+
+
+
+
+	// ============================================
+	// SASS
+	// ============================================
+	eleventyConfig.addPlugin(pluginSass, {
+		cleanCSS: true,
+		cleanCSSOptions: {
+			level: {
+				2: {
+					all: true,
+					removeDuplicateRules: true
+				}
+			}
+		},
+		watch: ['assets/scss/main.scss', '!node_modules/**'],
+		outputDir: './assets/'
+	});
 
 
 
@@ -81,9 +90,6 @@ module.exports = (eleventyConfig) => {
 	});
 
 
-
-
-
 	/**
 	 * INSERT GOOGLE FONTS INTO HEAD
 	 *
@@ -100,6 +106,7 @@ module.exports = (eleventyConfig) => {
 
 		return returnContent;
 	})
+
 
 	/**
 	 * CREATE ARTICLE SECTIONS
@@ -180,42 +187,28 @@ module.exports = (eleventyConfig) => {
 	})
 
 
+	/**
+	 * Remove any CSS not used on the page and inline the remaining CSS in the
+	 * <head>.
+	 *
+	 * @see {@link https://github.com/FullHuman/purgecss}
+	 */
+	eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
+		// console.log(`ELEVENTY_ENV: ${process.env.ELEVENTY_ENV}`);
 
+		// if (process.env.ELEVENTY_ENV !== 'production' || !outputPath.endsWith('.html')) {
+		// 	return content;
+		// }
 
+		const purgeCSSResults = await new PurgeCSS().purge({
+			content: [{ raw: content }],
+			css: ['./assets/main.css'],
+			keyframes: true,
+		});
 
-	eleventyConfig.addTransform("purgeCSS", async function (content, outputPath) {
-		if (outputPath.endsWith(".html")) {
-			//array of css files to combine
-			const cssFiles = ['./_site/assets/style.css']
+		return content.replace('<link rel="stylesheet" href="/assets/style.css">', '<style>' + purgeCSSResults[0].css + '</style>');
+	});
 
-			// cleanCSSOptions for minification and inlining css, will fix duplicate media queries
-			const cleanCSSOptions = {
-				level: {
-					2: {
-						all: true,
-						removeDuplicateRules: true
-					}
-				}
-			}
-
-			const purgecssResult = await new PurgeCSS().purge({
-				content: [outputPath],
-				css: cssFiles
-			});
-
-			let cssMerge = '';
-
-			if (purgecssResult.length > 0) {
-				for (let i = 0; i < purgecssResult.length; i++) {
-					cssMerge = cssMerge.concat(purgecssResult[i].css)
-				}
-				const cssMin = new CleanCSS(cleanCSSOptions).minify(cssMerge).styles
-
-				return insertCss(content, cssMin)
-			}
-		}
-		return content
-	})
 
 
 
