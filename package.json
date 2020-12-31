@@ -4,27 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run sass && eleventy",
+    "build": "eleventy",
     "watch:eleventy": "eleventy --serve",
-    "watch:sass": "npm run sass -- --watch",
-    "start": "npm run sass && npm run dev",
+    "start": "npm run dev",
     "dev": "eleventy --serve --watch",
-    "sass": "sass --style=compressed assets/scss/main.scss assets/style.css"
+    "debug": "DEBUG=Eleventy* eleventy"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "debug": "^4.3.1",
     "handlebars": "^4.7.6",
     "markdown-it": "^12.0.4",
-    "markdown-it-attrs": "^3.0.3",
-    "npm-run-all": "^4.1.5"
+    "markdown-it-attrs": "^3.0.3"
   },
   "dependencies": {
     "@11ty/eleventy-cache-assets": "^2.0.3",
-    "clean-css": "^4.2.3",
+    "eleventy-plugin-sass": "^1.1.1",
     "html-minifier": "^4.0.0",
-    "jsdom": "^16.4.0",
     "purgecss": "^3.1.0",
     "sass": "^1.30.0"
   }
