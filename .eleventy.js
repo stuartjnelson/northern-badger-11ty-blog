@@ -4,6 +4,8 @@ const markdownItAttrs = require('markdown-it-attrs');
 
 const pluginSass = require("eleventy-plugin-sass");
 
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
 const { PurgeCSS } = require('purgecss')
 
 const htmlmin = require("html-minifier");
@@ -21,6 +23,13 @@ module.exports = (eleventyConfig) => {
 	// https://www.belter.io/eleventy-sass-workflow/
 	eleventyConfig.setUseGitIgnore(false)
 
+
+
+
+	// ============================================
+	// 11TY GENERAL PLUGINS
+	// ============================================
+	eleventyConfig.addPlugin(pluginRss);
 
 
 
