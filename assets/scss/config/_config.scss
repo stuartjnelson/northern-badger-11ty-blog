@@ -56,6 +56,7 @@ $slick-font-family:             $base-font-family;
 
 // scss-lint:disable DuplicateProperty
 @mixin wf-primary { // Lato reg
+    /* josefin-sans-regular - latin */
     font-family: 'Josefin Sans', $base-font-family;
     font-style: normal;
     font-weight: 400;
