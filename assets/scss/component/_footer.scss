@@ -24,12 +24,7 @@
 }
 
 .footer__logo {
-    margin-bottom: $quarter-spacing-unit;
-
-    @include mq(nav-break-1) {
-        margin-bottom: 0;
-        margin-right: $half-spacing-unit;
-    }
+    @include mq(nav-break-1) { margin-right: $half-spacing-unit; }
 }
 
 .footer__primary-nav {
@@ -38,7 +33,7 @@
     @include mq($from: 320px, $until: nav-break-1) {
         left: 60px;
         position: absolute;
-        top: 10px;
+        top: -3px;
     }
 
     @include mq(nav-break-1) { margin-bottom: 0; }
