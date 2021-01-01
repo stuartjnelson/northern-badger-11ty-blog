@@ -103,24 +103,6 @@ module.exports = (eleventyConfig) => {
 
 
 	/**
-	 * INSERT GOOGLE FONTS INTO HEAD
-	 *
-	 * Insertins Google Font script into the head
-	 */
-	eleventyConfig.addTransform("insert-google-fonts-into-head", (content, outputPath) => {
-		let returnContent = content;
-
-		if (outputPath.endsWith('.html') && returnContent.includes('</head>')) {
-			const googleFont = '<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400%7CJosefin+Slab:600"></head>';
-
-			returnContent = returnContent.replace('</head>', googleFont);
-		}
-
-		return returnContent;
-	})
-
-
-	/**
 	 * CREATE ARTICLE SECTIONS
 	 *
 	 * Inserts `<section>` into articles using `h2` to signify a new section

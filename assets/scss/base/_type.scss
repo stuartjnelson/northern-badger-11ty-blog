@@ -4,9 +4,36 @@
 // Description: base typography styles to apply globally
 // ==========================================================================
 
-// @include font-face('LatoRegular', '../fonts/lato/lato-regular', font-weigth(400), $file-formats: woff);
-// @include font-face('LatoBold', '../fonts/lato/lato-bold', font-weigth(700), $file-formats: woff);
-// @include font-face('Grueber', '../fonts/grueber/grueber-regular', $file-formats: woff);
+// @include font-face('LatoRegular', '../fonts/lato/lato-regular-latin/lato/lato-regular', font-weigth(400), $file-formats: woff);
+// @include font-face('LatoBold', '../fonts/lato/lato-bold-latin/lato/lato-bold', font-weigth(700), $file-formats: woff);
+// @include font-face('Grueber', '../fonts/grueber/grueber-regular-latin/grueber/grueber-regular', $file-formats: woff);
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/josefin-sans-v16-latin/josefin-sans-v16-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/assets/fonts/josefin-sans-v16-latin/josefin-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/josefin-sans-v16-latin/josefin-sans-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/josefin-sans-v16-latin/josefin-sans-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/josefin-sans-v16-latin/josefin-sans-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/josefin-sans-v16-latin/josefin-sans-v16-latin-regular.svg#JosefinSans') format('svg'); /* Legacy iOS */
+}
+
+/* josefin-slab-600 - latin */
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/assets/fonts/josefin-slab-v12-latin/josefin-slab-v12-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/assets/fonts/josefin-slab-v12-latin/josefin-slab-v12-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/josefin-slab-v12-latin/josefin-slab-v12-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/josefin-slab-v12-latin/josefin-slab-v12-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/josefin-slab-v12-latin/josefin-slab-v12-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/josefin-slab-v12-latin/josefin-slab-v12-latin-600.svg#JosefinSlab') format('svg'); /* Legacy iOS */
+}
+
 
 
 
