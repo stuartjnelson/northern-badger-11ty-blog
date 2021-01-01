@@ -18,6 +18,9 @@ module.exports = (eleventyConfig) => {
 	// Copies assets into output dir
 	eleventyConfig.addPassthroughCopy('assets')
 
+	// Copying favicon from assets into root output dir
+	eleventyConfig.addPassthroughCopy({ 'assets/favicon.ico': 'favicon.ico' });
+
 	// @NOTE: Doesn't work anymore... Seems like
 	// 11ty does rebuild sass when HTML changes...
 	// https://www.belter.io/eleventy-sass-workflow/
