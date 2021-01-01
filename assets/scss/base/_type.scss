@@ -4,9 +4,6 @@
 // Description: base typography styles to apply globally
 // ==========================================================================
 
-// @include font-face('LatoRegular', '../fonts/lato/lato-regular-latin/lato/lato-regular', font-weigth(400), $file-formats: woff);
-// @include font-face('LatoBold', '../fonts/lato/lato-bold-latin/lato/lato-bold', font-weigth(700), $file-formats: woff);
-// @include font-face('Grueber', '../fonts/grueber/grueber-regular-latin/grueber/grueber-regular', $file-formats: woff);
 @font-face {
   font-family: 'Josefin Sans';
   font-style: normal;
@@ -19,6 +16,7 @@
        url('/assets/fonts/josefin-sans-v16-latin/josefin-sans-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/assets/fonts/josefin-sans-v16-latin/josefin-sans-v16-latin-regular.svg#JosefinSans') format('svg'); /* Legacy iOS */
 }
+
 
 /* josefin-slab-600 - latin */
 @font-face {
@@ -33,6 +31,7 @@
        url('/assets/fonts/josefin-slab-v12-latin/josefin-slab-v12-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/assets/fonts/josefin-slab-v12-latin/josefin-slab-v12-latin-600.svg#JosefinSlab') format('svg'); /* Legacy iOS */
 }
+
 
 
 
