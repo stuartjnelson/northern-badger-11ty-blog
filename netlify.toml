@@ -13,3 +13,10 @@
 
   [plugins.inputs]
   path = './_site/*.html'
+
+
+[[redirects]]
+  from = "blog.northernbadger.co.uk"
+  to = "wwww.blog.northernbadger.co.uk"
+  status = 302
+  force = false
