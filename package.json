@@ -7,13 +7,13 @@
     "build": "eleventy",
     "watch:eleventy": "eleventy --serve",
     "start": "npm run dev",
-    "dev": "eleventy --serve --watch",
+    "dev": "eleventy --serve",
     "debug": "DEBUG=Eleventy* eleventy"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "debug": "^4.3.1",
     "handlebars": "^4.7.6",
     "markdown-it": "^14.0.0",
