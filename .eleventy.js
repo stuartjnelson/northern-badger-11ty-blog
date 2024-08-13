@@ -2,7 +2,7 @@ const handlebars = require('handlebars')
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
 
-const pluginSass = require("eleventy-plugin-sass");
+const pluginSass = require("@jgarber/eleventy-plugin-sass");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
@@ -187,26 +187,28 @@ module.exports = (eleventyConfig) => {
 	 *
 	 * @see {@link https://github.com/FullHuman/purgecss}
 	 */
-	eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
-		// console.log(`ELEVENTY_ENV: ${process.env.ELEVENTY_ENV}`);
+	// For now disbaling as causing issues running `npm run start`
 
-		// if (process.env.ELEVENTY_ENV !== 'production' || !outputPath.endsWith('.html')) {
-		// 	return content;
-		// }
+	// eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
+	// 	// console.log(`ELEVENTY_ENV: ${process.env.ELEVENTY_ENV}`);
 
-		const purgeCSSResults = await new PurgeCSS().purge({
-			content: [{ raw: content }],
-			// css: ['./assets/main.css'],
-			css: ['./_site/assets/main.css'],
-			keyframes: true,
-		});
+	// 	// if (process.env.ELEVENTY_ENV !== 'production' || !outputPath.endsWith('.html')) {
+	// 	// 	return content;
+	// 	// }
 
-		if (purgeCSSResults.length) {
-			return content.replace('<link rel="stylesheet" href="/assets/style.css">', '<style>' + purgeCSSResults[0].css + '</style>');
-		} else {
-			return content;
-		}
-	});
+	// 	const purgeCSSResults = await new PurgeCSS().purge({
+	// 		content: [{ raw: content }],
+	// 		// css: ['./assets/main.css'],
+	// 		css: ['./_site/assets/main.css'],
+	// 		keyframes: true,
+	// 	});
+
+	// 	if (purgeCSSResults.length) {
+	// 		return content.replace('<link rel="stylesheet" href="/assets/style.css">', '<style>' + purgeCSSResults[0].css + '</style>');
+	// 	} else {
+	// 		return content;
+	// 	}
+	// });
 
 
 
@@ -231,7 +233,7 @@ module.exports = (eleventyConfig) => {
 
 	return {
 		dir: {
-			input: './',
+			input: '.',
 			includes: 'includes'
 		},
 		passthroughFileCopy: true
