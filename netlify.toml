@@ -1,11 +1,11 @@
 [build.environment]
   DEBUG = "Eleventy*"
 
-[[plugins]]
-  package = "netlify-plugin-html-validate"
+# [[plugins]]
+#  package = "netlify-plugin-html-validate"
 
-  [plugins.inputs]
-  path = './_site/*.html'
+#  [plugins.inputs]
+#  path = './_site/*.html'
 
 
 [[redirects]]
