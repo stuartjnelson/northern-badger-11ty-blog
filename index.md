@@ -1,4 +1,4 @@
 ---
+layout: layout-post.hbs
 title: Articles
-# layout: layout-listing.hbs
 ---
