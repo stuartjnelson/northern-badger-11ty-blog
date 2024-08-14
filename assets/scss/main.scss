@@ -23,6 +23,7 @@
 @import "base/utils";
 @import "base/headings";
 @import "base/long-form-copy";
+@import "base/elements";
 
 
 // 4. Layouts
@@ -55,4 +56,7 @@
 
 
 // 8. Vendor extensions
-@import "vendor-extensions/lazysizes"
+@import "vendor/11ty-youtube-embed";
+
+// 9. Vendor extensions
+@import "vendor-extensions/lazysizes";

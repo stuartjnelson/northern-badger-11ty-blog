@@ -1,12 +1,17 @@
-const handlebars = require('handlebars')
+const handlebars = require('handlebars');
+const fs = require("fs");
+const path = require("path");
+
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
 
-const pluginSass = require("eleventy-plugin-sass");
+const embedYouTube = require("eleventy-plugin-youtube-embed");
+
+const pluginSass = require("@jgarber/eleventy-plugin-sass");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
-const { PurgeCSS } = require('purgecss')
+// const { PurgeCSS } = require('purgecss')
 
 const htmlmin = require("html-minifier");
 
@@ -33,6 +38,9 @@ module.exports = (eleventyConfig) => {
 	// 11TY GENERAL PLUGINS
 	// ============================================
 	eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(embedYouTube, {
+		embedClass: 'vendor-11ty-youtube-embed'
+	});
 
 
 
@@ -41,6 +49,25 @@ module.exports = (eleventyConfig) => {
 	// HANDLEBARS
 	// ============================================
 	eleventyConfig.setLibrary('hbs', handlebars)
+
+
+	// ======
+	// Had to manually register handlebars partials. Without this inital startung if the app meant
+	// that `index.md` could not find any partials. 
+	// @TODO: Replace handlebars with something else
+	// Define the partials directory
+	const partialsDir = path.join(__dirname, "includes");
+
+	// Register each partial in the partials directory with Handlebars
+	fs.readdirSync(partialsDir).forEach(file => {
+	  const matches = /^([^.]+).hbs$/.exec(file);
+	  if (!matches) {
+		return;
+	  }
+	  const name = matches[1];
+	  const template = fs.readFileSync(path.join(partialsDir, file), "utf8");
+	  handlebars.registerPartial(name, template);
+	});
 
 
 	// Handlebar helpers
@@ -59,6 +86,12 @@ module.exports = (eleventyConfig) => {
 			.join('-')
 	})
 
+	// @NOTE: Leaving in here in case need this in the future
+	// Add a custom logger to debug partial paths
+	// eleventyConfig.on('eleventy.before', async ({dir, runModa, outputMode}) => {
+	// 	console.log("🚨🚨🚨 dir 🚨🚨🚨", dir);
+	// 	console.log("Registered Handlebars partials:", handlebars);
+	// });
 
 
 
@@ -187,26 +220,28 @@ module.exports = (eleventyConfig) => {
 	 *
 	 * @see {@link https://github.com/FullHuman/purgecss}
 	 */
-	eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
-		// console.log(`ELEVENTY_ENV: ${process.env.ELEVENTY_ENV}`);
+	// For now disbaling as causing issues running `npm run start`
 
-		// if (process.env.ELEVENTY_ENV !== 'production' || !outputPath.endsWith('.html')) {
-		// 	return content;
-		// }
+	// eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
+	// 	// console.log(`ELEVENTY_ENV: ${process.env.ELEVENTY_ENV}`);
 
-		const purgeCSSResults = await new PurgeCSS().purge({
-			content: [{ raw: content }],
-			// css: ['./assets/main.css'],
-			css: ['./_site/assets/main.css'],
-			keyframes: true,
-		});
+	// 	// if (process.env.ELEVENTY_ENV !== 'production' || !outputPath.endsWith('.html')) {
+	// 	// 	return content;
+	// 	// }
 
-		if (purgeCSSResults.length) {
-			return content.replace('<link rel="stylesheet" href="/assets/style.css">', '<style>' + purgeCSSResults[0].css + '</style>');
-		} else {
-			return content;
-		}
-	});
+	// 	const purgeCSSResults = await new PurgeCSS().purge({
+	// 		content: [{ raw: content }],
+	// 		// css: ['./assets/main.css'],
+	// 		css: ['./_site/assets/main.css'],
+	// 		keyframes: true,
+	// 	});
+
+	// 	if (purgeCSSResults.length) {
+	// 		return content.replace('<link rel="stylesheet" href="/assets/style.css">', '<style>' + purgeCSSResults[0].css + '</style>');
+	// 	} else {
+	// 		return content;
+	// 	}
+	// });
 
 
 
@@ -226,12 +261,20 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.setLibrary("md", markdownLib);
 
 
+	// Filter to exclude drafts unless in development
+	eleventyConfig.addCollection("posts", function(collectionApi) {
+		return collectionApi.getFilteredByGlob("./articles/*.md").filter(post => {
+			// @NOTE: Leaving here but for now I feel makes sense to always exclude drafts for a consistent experience
+			// return process.env.NODE_ENV === "production" ? !post.data.draft : true
 
+			return !post.data.draft;
+		});
+	});
 
 
 	return {
 		dir: {
-			input: './',
+			input: '.',
 			includes: 'includes'
 		},
 		passthroughFileCopy: true

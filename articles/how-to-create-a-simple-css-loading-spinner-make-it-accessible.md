@@ -1,7 +1,7 @@
 ---
 layout: layout-post.hbs
 title: How to create a simple CSS loading spinner & make it accessible
-description: >-
+excerpt: >-
   A step-by-step tutorial for how to create an animated single element CSS
   loading spinner that is accessible!
 date: '2018-04-24T19:31:01.112Z'

@@ -7,26 +7,27 @@
     "build": "eleventy",
     "watch:eleventy": "eleventy --serve",
     "start": "npm run dev",
-    "dev": "eleventy --serve --watch",
+    "dev": "eleventy --serve",
     "debug": "DEBUG=Eleventy* eleventy"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
     "debug": "^4.3.1",
-    "handlebars": "^4.7.6",
-    "markdown-it": "^12.0.4",
-    "markdown-it-attrs": "^3.0.3"
+    "handlebars": "^4.7.6"
   },
   "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-cache-assets": "^2.0.3",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
-    "eleventy-plugin-sass": "^1.1.1",
+    "@jgarber/eleventy-plugin-sass": "^1.0.0",
+    "eleventy-plugin-youtube-embed": "^1.10.2",
     "html-minifier": "^4.0.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-attrs": "^4.2.0",
     "netlify-plugin-a11y": "0.0.12",
     "netlify-plugin-html-validate": "^0.2.0",
-    "purgecss": "^3.1.0",
+    "purgecss": "^6.0.0",
     "sass": "^1.30.0"
   }
 }
