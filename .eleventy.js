@@ -5,11 +5,13 @@ const path = require("path");
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
 
+const embedYouTube = require("eleventy-plugin-youtube-embed");
+
 const pluginSass = require("@jgarber/eleventy-plugin-sass");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
-const { PurgeCSS } = require('purgecss')
+// const { PurgeCSS } = require('purgecss')
 
 const htmlmin = require("html-minifier");
 
@@ -36,6 +38,9 @@ module.exports = (eleventyConfig) => {
 	// 11TY GENERAL PLUGINS
 	// ============================================
 	eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(embedYouTube, {
+		embedClass: 'vendor-11ty-youtube-embed'
+	});
 
 
 
