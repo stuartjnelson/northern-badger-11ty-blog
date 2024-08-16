@@ -41,10 +41,11 @@
 }
 
 .article__date {
-    @include fsz(small);
+    // @include fsz(small);
+    display: block;
     color: get-color(grey, dark);
     display: block;
     margin: $half-spacing-unit 0;
 }
 
-.article__copy { margin-bottom: 0; }
+.article__content { margin-top: $half-spacing-unit; }
