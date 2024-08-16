@@ -87,7 +87,8 @@
     //     > *:last-child { margin-bottom: 0; }
     // }
 
-    h2 {
+    h2,
+    h3 {
         margin-top: calc(#{$spacing-unit} + 1rem);
 
         @include mq(medium) { margin-top: $double-spacing-unit; }
