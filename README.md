@@ -17,3 +17,4 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [ ] create a way to filter blog posts by tag
 - [ ] write blog post on upgrading blog
 - [ ] get inline CSS working again
+- [ ] Share a counter on the readme and inital manager article about how im getting on with my 10 blog posts
