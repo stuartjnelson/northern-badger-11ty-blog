@@ -31,10 +31,9 @@
     .img--border { @include base-border; }
 
 
-    // Single element styles
-    p {
-        margin-bottom: $spacing-unit;
-        margin-top: 0;
+    p + p {
+        // margin-bottom: 0;
+        margin-top: $spacing-unit;
     }
 
     ul,

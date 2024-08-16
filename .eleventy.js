@@ -77,6 +77,18 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addHandlebarsHelper("not", exp => !exp)
 	eleventyConfig.addHandlebarsHelper("reverse", array => array.reverse())
 	eleventyConfig.addHandlebarsHelper("getYear", () => new Date().getFullYear())
+	eleventyConfig.addHandlebarsHelper('ternary', function(condition, valueIfTrue, valueIfFalse) {
+		return condition ? valueIfTrue : valueIfFalse;
+	});
+	eleventyConfig.addHandlebarsHelper('concat', function() {
+		var outStr = '';
+		for(var arg in arguments){
+			if(typeof arguments[arg]!='object'){
+				outStr += arguments[arg];
+			}
+		}
+		return outStr;
+	});
 
 	// Making the date valid for `datetime` attirbute
 	eleventyConfig.addHandlebarsHelper("convertPubdateForDatetimeAttr", str => {

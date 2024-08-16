@@ -1,28 +1,19 @@
-# Eleventy/11ty Example
+# Northern Badger 11ty Blog
 
-Minimal eleventy configuration with handlebars template engine
-
-Showcasing:
-
-- custom handlebars helpers
-- layout
-- partials
-- paginated data based pages (faq)
-
-
-## Run
-
-Run `npm run start` for serve command, `build` for gnerating htmls in public folder, `dev` for watching 11ty server.
+My blog powered by 11ty. Its a work in progress since I've not really updated it for 4 years.
 
 ## Todos
- - [ ] publish blog post on new blog series
- - [ ] make repo public
- - [ ] add google analytics
- - [ ] prep LinkedIn post to share it
- - [ ] move todos to Github issues
- - [ ] write blog post on advise monster
- - [ ] write blog post on my journey as a line manager
- - [ ] link blog posts with a next and previous at the bottom
- - [ ] create a way to filter blog posts by tag
- - [ ] write blog post on upgrading blog
- - [ ] get inline CSS working again 
+
+- [x] publish blog post on new blog series
+- [x] make repo public
+- [x] add ~~google~~ [simple analytics](https://www.simpleanalytics.com/)
+- [x] sort out post meta & OG data
+- [ ] improve a11y for `article.hbs` for date. Right now it'll be read out weird for ATs
+- [ ] prep LinkedIn post to share it
+- [ ] move todos to Github issues
+- [ ] write blog post on advise monster
+- [ ] write blog post on my journey as a line manager
+- [ ] link blog posts with a next and previous at the bottom
+- [ ] create a way to filter blog posts by tag
+- [ ] write blog post on upgrading blog
+- [ ] get inline CSS working again

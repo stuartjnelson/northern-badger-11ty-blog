@@ -39,7 +39,11 @@
 				{{ title }}
 			</h1>
 
-			{{!-- <p class="banner__copy"></p> --}}
+			{{#if date}}
+				{{#if pubdate}}
+					<p class="banner__date"><time datetime="{{ date }}">{{ pubdate }}</time></p>
+				{{/if}}
+			{{/if}}
 		</div>
 	</div>
 </header>

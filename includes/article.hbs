@@ -7,7 +7,7 @@
                 </h2>
             </a>
 
-            <time class="banner__date heading--echo" datetime="{{ convertPubdateForDatetimeAttr articleData.data.pubdate }}">
+            <time class="article__date" datetime="{{ convertPubdateForDatetimeAttr articleData.data.pubdate }}">
                 {{ articleData.data.pubdate }}
             </time>
 
@@ -19,7 +19,7 @@
         </div>
     </header>
 
-    <section class="article__content long-form-copy band">
+    <section class="article__content long-form-copy">
         <p>
             {{{ articleData.data.excerpt }}}
         </p>

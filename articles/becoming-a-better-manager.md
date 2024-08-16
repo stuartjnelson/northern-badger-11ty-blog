@@ -4,16 +4,19 @@ title: >-
   Becoming a better manager - My new blog series
 excerpt: >-
   I want to resume regular blogging in the second half of 2024, focusing on my growth as a software engineering manager
-date: '2024-08-14T21:15:00.994Z'
-pubdate: '14/08/2024'
-tags: 
- - posts
- - Becoming a better manager 
+date: "2024-08-14T21:15:00.994Z"
+pubdate: "14/08/2024"
+meta:
+  description: I want to resume regular blogging in the second half of 2024, focusing on my growth as a software engineering manager
+featuredImg: /assets/img/becoming-a-better-manager.webp
+tags:
+  - posts
+  - Becoming a better manager
 categories: []
 keywords: []
 ---
 
-![](/assets/img/becoming-a-better-manager.webp)
+![]({{featuredImg}})
 
 I want to resume regular blogging in the second half of 2024, focusing on my growth as a software engineering manager
 
