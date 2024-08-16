@@ -2,7 +2,7 @@
 
 My blog powered by 11ty. Its a work in progress since I've not really updated it for 4 years.
 
-## Todos
+## Roadmap
 
 - [x] publish blog post on new blog series
 - [x] make repo public
@@ -18,3 +18,8 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [ ] write blog post on upgrading blog
 - [ ] get inline CSS working again
 - [ ] Share a counter on the readme and inital manager article about how im getting on with my 10 blog posts
+- [ ] Create roadmap page that is powered by GitHub issues
+- [ ] Write blog post on adding [Utterances](https://utteranc.es/) to the blog
+- [ ] Write blog post on draft posts in 11ty
+- [ ] Write blog post on my handrolled meta/OG data
+- [ ] Write blog post on ditching GA for Simple Analytics
