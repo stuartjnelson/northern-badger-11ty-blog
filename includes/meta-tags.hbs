@@ -1,3 +1,6 @@
+<meta name="description" content="{{ ternary meta.description meta.description (ternary excerpt excerpt globalMetaData.description) }}">
+<link rel="canonical" href="{{ globalMetaData.baseUrl }}{{ page.url }}" />
+
 <!-- Open Graph meta tags -->
 <meta property="og:title" content="{{ title }}" />
 <meta property="og:description" content="{{ ternary meta.description meta.description (ternary excerpt excerpt globalMetaData.description) }}" />

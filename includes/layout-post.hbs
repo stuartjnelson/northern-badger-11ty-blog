@@ -2,11 +2,22 @@
 	{{> header}}
 
 	<main id="main-content" class="container -content">
-		<article id="article-content" class="long-form-copy band -double">
+		<article id="article-content" class="long-form-copy band -double -seperator">
 			{{{ content }}}
 		</article>
-	</main>
 
+		<div class="band -utterance">
+			<script src="https://utteranc.es/client.js"
+				repo="stuartjnelson/northern-badger-11ty-blog"
+				issue-term="pathname"
+				label="comment"
+				theme="github-light"
+				crossorigin="anonymous"
+				async>
+			</script>
+		</div>
+	</main>
+	
 	{{> footer }}
 </body>
 </html>
