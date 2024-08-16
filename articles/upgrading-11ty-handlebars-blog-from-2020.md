@@ -59,9 +59,15 @@ I decided this blog should be a public repo. Nothing here is sensitive and as mu
 For the "re-launch" I did want to sort a few things out;
 
 * Add dates to the listing and blog posts ✅
-* Add comments to blog posts. This was VERY easy using [Utterances](https://utteranc.es/) (I'll write about this in the future) ✅
-* Have the ability to make posts drafts that would not be visible but where I could work on them (I'll write about this in the future) ✅
-* Add meta & OG data so when I share articles they render nice little previews (I'll write about this in the future) ✅
+* Add comments to blog posts. This was VERY easy using [Utterances](https://utteranc.es/). Authentic with GitHub and add a JS script (I'll write about this in the future) ✅
+* Have the ability to make posts drafts using 11ty so that would not be visible publicly (I'll write about this in the future) ✅
+* Add meta & OG data so when I share articles and they render nice little previews (I'll write about this in the future) ✅
 * Add some analytics to the site. I ditched Google Analytics for [Simple Analytics](https://www.simpleanalytics.com/). I HIGHLY recommend it after 2 days (I'll write about this in the future) ✅
 
 I was able to do all of the above which I was pretty chuffed with. 
+
+
+## Conclusion
+I'm really happy with the stack for my blog. It's loosely coupled, easy to maintain and scale. Despite it being four years our of day it only took about four hours to get it updated and running smoothly. It's now a blog I can very easily add content to as well as continuing to evolve the site. 11ty is still my favourite tool for spinning up a simple website.
+
+Any questions/comments/bugs/feedback please get in touch! Thanks for reading. Let me know what tech stack you'd use for creating a blog.
