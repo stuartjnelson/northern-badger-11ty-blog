@@ -8,6 +8,7 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [x] make repo public
 - [x] add ~~google~~ [simple analytics](https://www.simpleanalytics.com/)
 - [ ] sort out post meta & OG data
+- [ ] improve a11y for `article.hbs` for date. Right now it'l;l be read out weird for ATs
 - [ ] prep LinkedIn post to share it
 - [ ] move todos to Github issues
 - [ ] write blog post on advise monster
