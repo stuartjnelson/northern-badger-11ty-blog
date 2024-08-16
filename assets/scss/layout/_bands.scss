@@ -45,7 +45,7 @@
         position: relative;
 
         &:after {
-            background-color: get-color(grey);
+            background-color: get-color(grey, light);
             bottom: -1px;
             content: "";
             height: 2px;
