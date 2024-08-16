@@ -8,6 +8,7 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [x] make repo public
 - [x] add ~~google~~ [simple analytics](https://www.simpleanalytics.com/)
 - [x] sort out post meta & OG data
+- [ ] Updating links to be light blue rather than red for underline as looks like spelling mistake - see stash `update links to be blue rather than red`
 - [ ] improve a11y for `article.hbs` for date. Right now it'll be read out weird for ATs
 - [x] prep LinkedIn post to share it
 - [ ] move todos to Github issues
