@@ -58,4 +58,10 @@
             // }
         }
     }
+
+
+    // Styling for the band around Utterance's iframe 
+    &.-utterance {
+        @include band(calc($spacing-unit - 8px));
+    }
 }
