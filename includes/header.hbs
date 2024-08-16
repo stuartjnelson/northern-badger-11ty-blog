@@ -39,6 +39,12 @@
 				{{ title }}
 			</h1>
 
+			{{#if date}}
+				{{#if pubdate}}
+					<p class="banner__pubdate"><time datetime="{{ date }}">{{ pubdate }}</time></p>
+				{{/if}}
+			{{/if}}
+
 			{{!-- <p class="banner__copy"></p> --}}
 		</div>
 	</div>
