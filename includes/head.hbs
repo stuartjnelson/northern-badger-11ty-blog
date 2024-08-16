@@ -6,6 +6,19 @@
         <meta name="description" content="{{ ternary meta.description meta.description globalMetaData.description }}">
         <link rel="canonical" href="{{ globalMetaData.baseUrl }}{{ page.url }}" />
         <meta name="robots" content="index, follow" />
+
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content="{{ title }}" />
+        <meta property="og:description" content="{{ ternary meta.description meta.description globalMetaData.description }}" />
+        <meta property="og:image" content="{{ globalMetaData.baseUrl }}{{ featuredImg }}" />
+        <meta property="og:url" content="{{ globalMetaData.baseUrl }}{{ page.url }}" />
+        <meta property="og:type" content="article" />
+        
+        <!-- Twitter Cards -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ title }}">
+        <meta name="twitter:description" content="{{ ternary meta.description meta.description globalMetaData.description }}">
+        <meta name="twitter:image" content="{{ globalMetaData.baseUrl }}{{ featuredImg }}">
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
