@@ -9,7 +9,7 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [x] add ~~google~~ [simple analytics](https://www.simpleanalytics.com/)
 - [x] sort out post meta & OG data
 - [ ] improve a11y for `article.hbs` for date. Right now it'll be read out weird for ATs
-- [ ] prep LinkedIn post to share it
+- [x] prep LinkedIn post to share it
 - [ ] move todos to Github issues
 - [ ] write blog post on advise monster
 - [ ] write blog post on my journey as a line manager
