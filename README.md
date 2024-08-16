@@ -15,9 +15,10 @@ Showcasing:
 Run `npm run start` for serve command, `build` for gnerating htmls in public folder, `dev` for watching 11ty server.
 
 ## Todos
- - [ ] publish blog post on new blog series
- - [ ] make repo public
- - [ ] add google analytics
+ - [x] publish blog post on new blog series
+ - [x] make repo public
+ - [x] add ~~google~~ [simple analytics](https://www.simpleanalytics.com/)
+ - [ ] sort out post meta & OG data
  - [ ] prep LinkedIn post to share it
  - [ ] move todos to Github issues
  - [ ] write blog post on advise monster
