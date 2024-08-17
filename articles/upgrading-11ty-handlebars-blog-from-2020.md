@@ -18,9 +18,10 @@ Updating outdated dependencies can be a daunting task. Join me on my journey as 
 
 ## The problem I wanted to solve
 
-I wanted to get back into blogging using my 11ty blog. The problem is it's not setup on my laptop. When its running it will be as simple as creating a new Markdown file, merging in the GitHub PR & Netlify takes care of the rest.
+1. I wanted to get back into blogging using my 11ty blog. The repo is not setup on my laptop. When it is setup, adding a blog post will be as simple as creating a new Markdown file, merging in the GitHub PR & Netlify takes care of the rest.
 
-I also wanted to build in the open. Taking the repo from being private to public as well as sharing my "roadmap" for what I wanted to complete.
+2. I also wanted to build in the open. Taking the repo from being private to public as well as sharing my "roadmap" for what I wanted to complete.
+
 
 ## My laptop won't run VsCode as its too old...
 
@@ -68,6 +69,6 @@ I was able to do all of the above which I was pretty chuffed with.
 
 
 ## Conclusion
-I'm really happy with the stack for my blog. It's loosely coupled, easy to maintain and scale. Despite it being four years our of day it only took about four hours to get it updated and running smoothly. It's now a blog I can very easily add content to as well as continuing to evolve the site. 11ty is still my favourite tool for spinning up a simple website.
+I'm really happy with the [stack for my blog](#). It's loosely coupled, easy to maintain and scale. Despite it being four years our of day it only took about four hours to get it updated and running smoothly. It's now a blog I can very easily add content to as well as continuing to evolve the site. 11ty is still my favourite tool for spinning up a simple website.
 
 Any questions/comments/bugs/feedback please get in touch! Thanks for reading. Let me know what tech stack you'd use for creating a blog.
