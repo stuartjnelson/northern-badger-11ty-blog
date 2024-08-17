@@ -16,16 +16,18 @@ keywords: []
 
 Updating outdated dependencies can be a daunting task. Join me on my journey as I revive my blog, powered by [11ty](https://www.11ty.dev/), [Handlebars](https://handlebarsjs.com/), [SCSS](https://sass-lang.com/), [Utterances](https://utteranc.es/), [Netlify](https://www.netlify.com/) & [GitHub Codespaces](https://github.com/features/codespaces).
 
-## The problem I wanted to solve
+## The problems I wanted to solve
 
-1. I wanted to get back into blogging using my 11ty blog. The repo is not setup on my laptop. When it is setup, adding a blog post will be as simple as creating a new Markdown file, merging in the GitHub PR & Netlify takes care of the rest.
+1. I wanted to get back into blogging using my 11ty blog. The repo is not setup on my laptop. When it is setup, I wanted adding a blog post to be as simple as creating a new Markdown file, merging in the GitHub PR & Netlify takes care of the rest.
 
-2. I also wanted to build in the open. Taking the repo from being private to public as well as sharing my "roadmap" for what I wanted to complete.
+2. I also wanted to build in the open. Taking the repo from being private to public as well as sharing my "roadmap".
+
+3. Making small improvements to the UI and codebase as I come across them.
 
 
 ## My laptop won't run VsCode as its too old...
 
-My personal laptop is a 15" 2017 MacBook Pro. Its still a great laptop but I've been lazy keeping the operating system updated. When I closed down the repo it turned out I could no longer run VSCode... I didn't really want to through upgrading it as that would mean backups/time/possible things going wrong. I was trying to do this as simply as possible.
+My personal laptop is a 15" 2017 MacBook Pro. It's still a great laptop but I've been lazy keeping the operating system updated. When I cloned down the repo it turned out I could no longer run VSCode... I didn't really want to go through updating it as that would mean backups/time/possible things going wrong. I was trying to do this as simply as possible.
 
 I noticed that there was a new feature (I mean it was [released in 2021](https://azure.microsoft.com/en-gb/updates/general-availability-github-codespaces/#:~:text=Published%20date%3A%20August%2011%2C%202021,Studio%20Code%2C%20or%20using%20SSH.) I just didn't know...) to run the repo in a [GitHub Codespace](https://github.com/features/codespaces). GitHub's virtual dev environment where you can work on and run a repo in the cloud. IT'S AMZAING. One of those times where a tool really is as easy as it claims.
 
