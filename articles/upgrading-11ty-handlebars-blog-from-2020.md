@@ -48,7 +48,7 @@ In the future, I will review what other templating options I could use. The app 
 
 Since I hadn't updated the site in four years, loads of dependencies had security vulnerabilities. Due to the nature of the site, I don't feel any of them posed risks to my users, but it was still something I should address. As well as securing the site, I would gain access to new features and performance improvements.
 
-I added a `.nvmrc` file to my project to [inform Netlify what version of Node I wanted to run](https://docs.netlify.com/configure-builds/manage-dependencies/#node-js-and-javascript). The project was using Node v12 when v20 is now the recommended version... I deleted the `package-lock.json` because things were so out of date I thought it was worth a try. As with other things in this project, I got lucky with just a simple `npm i` & `npm audit fix`, which addressed most issues. I also updated some dependencies to correctly be `devDependencies`/dependencies`.
+I added a `.nvmrc` file to my project to [inform Netlify what version of Node I wanted to run](https://docs.netlify.com/configure-builds/manage-dependencies/#node-js-and-javascript). The project was using Node v12 when v20 is now the recommended version... I deleted the `package-lock.json` because things were so out of date I thought it was worth a try. As with other things in this project, I got lucky with just a simple `npm i` & `npm audit fix`, which addressed most issues. I also updated some dependencies to correctly be `devDependencies`/`dependencies`.
 
 All in all, not very painful, until it broke my CSS...
 
