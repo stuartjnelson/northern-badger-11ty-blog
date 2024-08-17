@@ -16,7 +16,7 @@ keywords: []
 
 Updating an outdated website can be a daunting task. Join me on my journey as I revive my blog, powered by [11ty](https://www.11ty.dev/), [Handlebars](https://handlebarsjs.com/), [GitHub Codespaces](https://github.com/features/codespaces), and more.
 
-## The Problems I Wanted to Solve
+## The problems I wanted to solve
 
 1. I wanted to get back into blogging using my 11ty blog. The repository was not set up on my laptop. Once it was set up, I wanted adding a blog post to be as simple as creating a new Markdown file, merging the GitHub PR, and letting Netlify take care of the rest.
 
@@ -24,13 +24,13 @@ Updating an outdated website can be a daunting task. Join me on my journey as I 
 
 3. I aimed to make small improvements to the UI and codebase as I came across them.
 
-## My Laptop Won't Run VSCode Because It's Too Old...
+## Can't run the repo my laptop won't run VSCode because it's too old
 
 My personal laptop is a 15" 2017 MacBook Pro. It's still a great device, but I've been lazy about keeping the operating system updated. When I cloned down the repository, I found that I could no longer run VSCode. I didn't want to go through the hassle of updating the OS, as that would mean backups, time, and the potential for things to go wrong. I wanted to keep things as simple as possible.
 
 I noticed there was a new feature (well, it was [released in 2021](https://azure.microsoft.com/en-gb/updates/general-availability-github-codespaces/#:~:text=Published%20date%3A%20August%2011%2C%202021,Studio%20Code%2C%20or%20using%20SSH.), but I just wasn't aware of it...) that allowed me to run the repository in a [GitHub Codespace](https://github.com/features/codespaces). GitHub's virtual dev environment lets you work on and run a repository in the cloud. IT'S AMAZING. One of those times where a tool really is as easy as it claims.
 
-## Updating Dependencies That Are 4 Years Out of Date
+## Updating dependencies that are 4 years out of date
 
 I immediately ran into some annoying dependency issues... I was worried about how difficult it would be to update 11ty since I was over four years out of date. To my surprise, it was no effort at all. **Shout out to the 11ty community!** The main issues I had were:
 
@@ -38,13 +38,13 @@ I immediately ran into some annoying dependency issues... I was worried about ho
 2. My CSS being inlined was no longer working.
 3. I had over 90 security vulnerabilities.
 
-### Fixing Handlebars Issues
+### Fixing Handlebars issues
 
 I'm using [Handlebars](https://handlebarsjs.com/) on this blog because it was what I was using when I worked at [Studee](https://studee.com/) back in 2020. I still think it's a pretty good lightweight templating tool that's easy to extend. However, it is quite old and less powerful than, say, just using JavaScript for the templates. I considered starting over but felt it was worth spending a couple of hours trying to debug this issue. It became clear that the issue only occurred when the app first started up and was happening only on the blog's home page (`https://www.blog.northernbadger.co.uk/`). I thought it was some kind of issue with 11ty or Handlebars on startup being unable to run. Stack Overflow and ChatGPT gave me nothing :'( But I did come across this GitHub Gist - [Handlebars - Register all partials in a directory](https://gist.github.com/jaksah/70fc400ce70664eaa47fcb47c34b307c) which solved my problem. I added it to my 11ty config file, `.eleventy.js`, and problem solved! This could cause some performance issues, but I haven't noticed any. Since the blog is statically rendered, I knew it wouldn't affect the site in production, so it felt like a reasonable fix for now.
 
 In the future, I will review what other templating options I could use. The app was now running!
 
-### Addressing 90+ Security Vulnerabilities
+### Addressing 90 security vulnerabilities
 
 Since I hadn't updated the site in four years, loads of dependencies had security vulnerabilities. Due to the nature of the site, I don't feel any of them posed risks to my users, but it was still something I should address. As well as securing the site, I would gain access to new features and performance improvements.
 
@@ -52,11 +52,11 @@ I added a `.nvmrc` file to my project to [inform Netlify what version of Node I 
 
 All in all, not very painful, until it broke my CSS...
 
-### CSS Wasn't Working...
+### My CSS wasn't working
 
 When I initially made the blog, I'd followed a guide that helped me inline the CSS for each page. This is the most performant way to render CSS. It can cause issues, but since the UI is simple, it was a great solution to improve the rendering of the blog. With one of my updates, this all broke, so I was getting no CSS... I spent a little time messing around but in the end decided to just use a `.css` file and come back to inlining the CSS later down the line. The main drawback to this is the blog has poor font rendering performance (which I don't believe it used to have). While not ideal, it's not a deal-breaker for me. I really want to keep this project moving and focus on iterative improvements.
 
-## Building in the Open & New Features
+## Building in the open new features
 
 I decided this blog should be a public repository. Nothing here is sensitive, and as much as possible, I believe we should make code available on the internet. This sharing of knowledge is very much how I was able to self-learn web development, and I want to give more back. In the same vein, I felt it would be a good idea to make public the features I want to add to the site. I'll move this into GitHub issues and maybe have a nice roadmap page on the site in the future. For now, it's just a [roadmap checklist on the repository's Readme](https://github.com/stuartjnelson/northern-badger-11ty-blog?tab=readme-ov-file#roadmap).
 
