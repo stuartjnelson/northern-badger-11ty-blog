@@ -3,7 +3,13 @@
 My blog powered by 11ty. Its a work in progress since I've not really updated it for 4 years.
 
 ## Tech Stack
-* [Markdown It](https://github.com/markdown-it/markdown-it)
+- [11ty](https://www.11ty.dev/) - static site generator and the backbone behind the site
+- [Handlebars](https://handlebarsjs.com/) - templating language
+- [SCSS](https://sass-lang.com/) - styling
+- Markdown, [Markdown It](https://github.com/markdown-it/markdown-it) & [Front Matters](https://github.com/jxson/front-matters) - content
+- [Utterances](https://utteranc.es/) - comments on blog posts stored as GitHub issues
+- [Netlify](https://www.netlify.com/) - hosting
+- [GitHub Codespaces](https://github.com/features/codespaces) - virtual dev environment. I now only develop this site in the cloud
 
 ## Roadmap
 
