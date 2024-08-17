@@ -2,6 +2,9 @@
 
 My blog powered by 11ty. Its a work in progress since I've not really updated it for 4 years.
 
+## Tech Stack
+* [Markdown It](https://github.com/markdown-it/markdown-it)
+
 ## Roadmap
 
 - [x] publish blog post on new blog series
