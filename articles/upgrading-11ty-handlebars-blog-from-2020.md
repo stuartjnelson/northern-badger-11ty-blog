@@ -69,6 +69,6 @@ I was able to do all of the above which I was pretty chuffed with.
 
 
 ## Conclusion
-I'm really happy with the [stack for my blog](#). It's loosely coupled, easy to maintain and scale. Despite it being four years our of day it only took about four hours to get it updated and running smoothly. It's now a blog I can very easily add content to as well as continuing to evolve the site. 11ty is still my favourite tool for spinning up a simple website.
+I'm really happy with the [stack for my blog](https://github.com/stuartjnelson/northern-badger-11ty-blog?tab=readme-ov-file#tech-stack). It's loosely coupled, easy to maintain and scale. Despite it being four years our of day it only took about four hours to get it updated and running smoothly. It's now a blog I can very easily add content to as well as continuing to evolve the site. 11ty is still my favourite tool for spinning up a simple website.
 
 Any questions/comments/bugs/feedback please get in touch! Thanks for reading. Let me know what tech stack you'd use for creating a blog.
