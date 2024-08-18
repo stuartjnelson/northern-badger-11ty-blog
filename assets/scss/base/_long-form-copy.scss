@@ -74,15 +74,24 @@
         }
     }
 
-    section {
-        &:not(:last-of-type) {
-            margin-bottom: calc(#{$spacing-unit} + 1rem);
+    // @NOTE: Needed if we are using the transform `create-article-sections` from `.eleventy.js`. This was flakey
+    //        so the `js` has been commented out for now.
+    // section {
+    //     &:not(:last-of-type) {
+    //         margin-bottom: calc(#{$spacing-unit} + 1rem);
 
-            @include mq(medium) { margin-bottom: $double-spacing-unit; }
-        }
+    //         @include mq(medium) { margin-bottom: $double-spacing-unit; }
+    //     }
 
-        // @TODO - review this ... Style all elements that are created in CMS..
-        > *:last-child { margin-bottom: 0; }
+    //     // @TODO - review this ... Style all elements that are created in CMS..
+    //     > *:last-child { margin-bottom: 0; }
+    // }
+
+    h2,
+    h3 {
+        margin-top: calc(#{$spacing-unit} + 1rem);
+
+        @include mq(medium) { margin-top: $double-spacing-unit; }
     }
 
     blockquote {
