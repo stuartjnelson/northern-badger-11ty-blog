@@ -90,6 +90,20 @@ module.exports = (eleventyConfig) => {
 		return outStr;
 	});
 
+	// First look for `meta.ogImg`
+	// If cant find that try `featuredImg`
+	// Finally as the fallback use `globalMetaData.baseUrl "/assets/img/og-fallback-image.png"`
+	eleventyConfig.addHandlebarsHelper('getOgImage', function(meta, featuredImg, globalMetaData) {
+		 if (meta && meta.ogImg) {
+		   return globalMetaData.baseUrl + meta.ogImg;
+		 } else if (featuredImg) {
+		   return globalMetaData.baseUrl + featuredImg;
+		 } else {
+		   return globalMetaData.baseUrl + "/assets/img/og-fallback-image.png";
+		 }
+	});
+	  
+
 	// Making the date valid for `datetime` attirbute
 	eleventyConfig.addHandlebarsHelper("convertPubdateForDatetimeAttr", str => {
 		return str.split('/')
