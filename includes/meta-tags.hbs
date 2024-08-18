@@ -5,7 +5,7 @@
 <meta property="og:title" content="{{ title }}" />
 <meta property="og:description" content="{{ ternary meta.description meta.description (ternary excerpt excerpt globalMetaData.description) }}" />
 {{!-- @NOTE: Need to update this so works on non-prod envs --}}
-<meta property="og:image" content="{{ ternary featuredImg (concat globalMetaData.baseUrl featuredImg) (concat globalMetaData.baseUrl "/assets/img/og-fallback-image.png") }}" />
+<meta property="og:image" content="{{ getOgImage meta featuredImg globalMetaData }}" />
 <meta property="og:url" content="{{ globalMetaData.baseUrl }}{{ page.url }}" />
 <meta property="og:type" content="article" />
 
@@ -13,5 +13,5 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ title }}">
 <meta name="twitter:description" content="{{ ternary meta.description meta.description (ternary excerpt excerpt globalMetaData.description) }}">
-<meta name="twitter:image" content="{{ ternary featuredImg (concat globalMetaData.baseUrl featuredImg) (concat globalMetaData.baseUrl "/assets/img/og-fallback-image.png") }}">
+<meta name="twitter:image" content="{{ getOgImage meta featuredImg globalMetaData }}">
 {{!-- /assets/img/og-fallback-image.png --}}
