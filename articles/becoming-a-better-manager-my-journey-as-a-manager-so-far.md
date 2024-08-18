@@ -6,8 +6,10 @@ excerpt: >-
   <TBC>
 date: "2024-08-20T11:15:00.000Z"
 pubdate: "20/08/2024"
-featuredImg: /assets/img/becoming-a-better-manager.webp
-draft: true
+featuredImg: /assets/img/becoming-a-better-manager-my-journey-as-a-manager-so-far--featured-img.webp
+meta:
+  ogImg: /assets/img/becoming-a-better-manager-my-journey-as-a-manager-so-far--og-img.jpg
+# draft: true
 tags:
   - posts
   - Becoming a better manager
