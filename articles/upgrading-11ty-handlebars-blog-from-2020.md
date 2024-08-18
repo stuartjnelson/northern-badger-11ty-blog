@@ -37,18 +37,26 @@ I immediately encountered some frustrating dependency issues that prevented the 
 Given that my version was over four years out of date, I was concerned about the difficulty of the update. To my surprise, it was effortless. **Shout out to the 11ty community!** With 11ty now updated to the latest stable version, the remaining issues I faced were:
 
 1. Handlebars was throwing a weird and unhelpful error about being unable to find the `head.hbs` partial, but ONLY when the app first started up.
+
 2. My CSS inlining was no longer functioning properly so I had no styles on the blog
+
 3. I had over 90 security vulnerabilities.
 
-### Fixing Handlebars issues
+### Fixing Handlebars startup errors
 
 I'm using [Handlebars](https://handlebarsjs.com/) on this blog because it was the templating tool I used when I worked at [Studee](https://studee.com/) back in 2020. I still consider it a good, lightweight option that's easy to extend. However, it is somewhat outdated and less powerful than using JavaScript directly for templates. I considered starting with a fresh templating tool, but decided it was worth spending a few hours trying to debug the issue.
 
 The problem only occurred when the app first started up, and it was limited to the blog's home page (`https://www.blog.northernbadger.co.uk/`). Initially, I suspected it was an issue with 11ty or Handlebars struggling to initialise. Unfortunately, both Stack Overflow and ChatGPT provided no solutions :'(
 
-However, I eventually stumbled upon a helpful GitHub Gist - [Handlebars - Register all partials in a directory](https://gist.github.com/jaksah/70fc400ce70664eaa47fcb47c34b307c) - which solved the problem. I implemented the solution by adding the gist code to my 11ty config file, `.eleventy.js`, and the issue was resolved! Although this approach could potentially introduce performance issues, I haven't noticed any so far. Since the blog is statically rendered, I was confident it wouldn’t impact the site in production, making it a reasonable fix for now.
+However, I stumbled upon a helpful GitHub Gist - [Handlebars - Register all partials in a directory](https://gist.github.com/jaksah/70fc400ce70664eaa47fcb47c34b307c) - This approach resolved the issue by ensuring that 11ty recognized all Handlebars partials, allowing the app to locate them correctly at startup. I implemented the solution by adding the gist code to my 11ty config file, `.eleventy.js`, and the issue was resolved! Although this approach could potentially introduce performance issues, I haven't noticed any so far. Since the blog is statically rendered, I was confident it wouldn’t impact the site in production, making it a reasonable fix for now.
 
 In the future, I will review what other templating options I could use. The app was now running!
+
+### My inline CSS wasn't working
+
+When I initially made the blog, I'd followed a guide that helped me inline the CSS for each page and remove any styles not needed. This is the most performant way to render CSS. It can cause issues where styles are missing, but since the UI is simple, it was a great solution to improve the rendering performance of the blog.
+
+One of my updates caused my inline CSS to break, leaving me with no styles. I tinkered with it for a bit but ultimately decided to use a single CSS file for the blog and revisit inlining the CSS later. The main drawback is the blog now has poor font rendering performance, which I don't recall being an issue before. While it's not ideal, it's not a deal-breaker. My priority is to keep this project moving forward and focus on making iterative improvements.
 
 ### Addressing 90 security vulnerabilities ❓
 
@@ -58,9 +66,6 @@ I added a `.nvmrc` file to my project to [inform Netlify what version of Node I 
 
 All in all, not very painful, until it broke my CSS...
 
-### My CSS wasn't working ❓
-
-When I initially made the blog, I'd followed a guide that helped me inline the CSS for each page. This is the most performant way to render CSS. It can cause issues, but since the UI is simple, it was a great solution to improve the rendering of the blog. With one of my updates, this all broke, so I was getting no CSS... I spent a little time messing around but in the end decided to just use a `.css` file and come back to inlining the CSS later down the line. The main drawback to this is the blog has poor font rendering performance (which I don't believe it used to have). While not ideal, it's not a deal-breaker for me. I really want to keep this project moving and focus on iterative improvements.
 
 ## Building in the open new features ❓
 
