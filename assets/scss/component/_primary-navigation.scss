@@ -11,7 +11,7 @@
 //    MIXIN
 // ==========================================================================
 
-@mixin nav-interactive-link-styles($color) {
+@mixin nav-interactive-link-styles($color: interactive) {
     .navigation__link {
         &:focus {
             @include link-underline($color, -4px);
@@ -51,7 +51,7 @@
             }
         }
 
-        @include nav-interactive-link-styles(primary);
+        @include nav-interactive-link-styles;
     }
 
     .-secondary & {
@@ -66,7 +66,7 @@
 
         @include mq($from: 400px) { @include inline-list--ib($half-spacing-unit, center, center); }
 
-        @include nav-interactive-link-styles(primary);
+        @include nav-interactive-link-styles;
     }
 }
 

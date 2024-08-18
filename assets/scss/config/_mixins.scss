@@ -291,7 +291,7 @@
 //  LINKS STYLES
 // ==========================================================================
 
-@mixin link-underline($color: primary, $size: -2px) {
+@mixin link-underline($color: interactive, $size: -2px) {
     text-decoration: none;
     transition: box-shadow linear $transition-length;
 
@@ -336,17 +336,17 @@
 }
 
 @mixin base-link() {
-     @include link-underline(primary, -3px);
+     @include link-underline(interactive, -3px);
 
     &:focus {
-        @include link-underline(primary, 0);
-        outline: solid 3px get-color(primary);
+        @include link-underline(interactive, 0);
+        outline: solid 3px get-color(interactive);
         outline-offset: 1px;
         transition: none;
     }
 
     @include hover {
-        @include link-underline(primary, -5px);
+        @include link-underline(interactive, -5px);
         transition: box-shadow $default-transition $transition-length;
     }
 }
@@ -553,7 +553,7 @@
   }
 }
 
-@mixin inline-link($color: primary, $size: -2px, $active-size: -4px) {
+@mixin inline-link($color: interactive, $size: -2px, $active-size: -4px) {
     @include link-underline($color, $size);
 
     @include hover-focus {

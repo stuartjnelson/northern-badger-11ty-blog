@@ -11,11 +11,14 @@ $px-in-rem: 16;
 //
 // These can be accessed using the get-color() function
 // ==========================================================================
+$secondary-light: #6887C2;
+
 $brand-colors: (
     primary:   (
         default: #EB5959,
     ),
     secondary:   (
+        light: $secondary-light,
         default: #374B6D,
     ),
     white:        (
@@ -32,6 +35,10 @@ $brand-colors: (
     ),
     off-white:  (
         default: #EFF1F0
+    ),
+    interactive: (
+        // @TODO: Make this reference value for seondary light in a better way
+        default: $secondary-light
     )
 );
 
