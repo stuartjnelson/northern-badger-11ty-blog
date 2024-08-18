@@ -66,7 +66,6 @@ When I initially made the blog, I'd followed a guide that helped me inline the C
 
 One of my updates caused my inline CSS to break, leaving me with no styles. I tinkered with it for a bit but ultimately decided to use a single CSS file for the blog and revisit inlining the CSS later. The main drawback is the blog now has poor font rendering performance, which I don't recall being an issue before. While it's not ideal, it's not a deal-breaker. My priority is to keep this project moving forward and focus on making iterative improvements.
 
-
 ## Building in the open new features
 
 I decided this blog should be a public repository. Nothing here is sensitive, and as much as possible, I believe we should make code available on the internet. Sharing knowledge like this played a significant role in my self-taught journey in web development, and I’m eager to give back more to the community. In the same vein, I felt it would be a good idea to make public the features I want to add to the site. I'll move this into GitHub issues and maybe have a nice roadmap page on the site in the future. For now, it's just a [checklist on the repository's Readme](https://github.com/stuartjnelson/northern-badger-11ty-blog?tab=readme-ov-file#roadmap).
@@ -81,8 +80,10 @@ For the "re-launch," I did want to improve a few things:
 
 I managed to accomplish all of the above, which I was pretty chuffed with.
 
-## Conclusion ❓
+## Conclusion
 
 I'm really happy with the [stack for my blog](https://github.com/stuartjnelson/northern-badger-11ty-blog?tab=readme-ov-file#tech-stack). It's loosely coupled, easy to maintain and scalable. Despite it being four years out of date, it only took about three hours to get it updated and running smoothly. It's now a blog I can very easily add content to, as well as continue to evolve the site. 11ty is still my favorite tool for spinning up a simple website.
+
+While there are still a thousand things I'd like to improve on my blog, I'm glad I shipped it as is. In a role where I spend most of my time away from code, I often engage in discussions about 'iterative improvements.' It's satisfying to practice what I preach and dive back into coding a project that I’m personally responsible for.
 
 Any questions/comments/bugs/feedback, please get in touch! Thanks for reading. Let me know what tech stack you'd use for creating a blog.
