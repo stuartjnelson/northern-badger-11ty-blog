@@ -30,12 +30,14 @@ My personal laptop is a 15" 2017 MacBook Pro. It's still a great device, but I'v
 
 I noticed there was a new feature (well, it was [released in 2021](https://azure.microsoft.com/en-gb/updates/general-availability-github-codespaces/#:~:text=Published%20date%3A%20August%2011%2C%202021,Studio%20Code%2C%20or%20using%20SSH.), but I just wasn't aware of it...) that allows you to run repositories in a [GitHub Codespace](https://github.com/features/codespaces). This is GitHub's virtual development environment enables you to work on and run a repository directly in the cloud. IT'S AMAZING. One of those times where a tool really is as easy as it claims.
 
-## Updating dependencies that are 4 years out of date ❓
+## Updating dependencies that are 4 years out of date
 
-I immediately ran into some annoying dependency issues... I was worried about how difficult it would be to update 11ty since I was over four years out of date. To my surprise, it was no effort at all. **Shout out to the 11ty community!** The main issues I had were:
+I immediately encountered some frustrating dependency issues that prevented the app from running. Determined to resolve them, I started by updating 11ty itself.
+
+Given that my version was over four years out of date, I was concerned about the difficulty of the update. To my surprise, it was effortless. **Shout out to the 11ty community!** With 11ty now updated to the latest stable version, the remaining issues I faced were:
 
 1. Handlebars was throwing a weird and unhelpful error about being unable to find the `head.hbs` partial, but ONLY when the app first started up.
-2. My CSS being inlined was no longer working.
+2. My CSS inlining was no longer functioning properly so I had no styles on the blog
 3. I had over 90 security vulnerabilities.
 
 ### Fixing Handlebars issues
