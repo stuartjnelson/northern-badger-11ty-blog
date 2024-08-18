@@ -38,9 +38,9 @@ Given that my version was over four years out of date, I was concerned about the
 
 1. Handlebars was throwing a weird and unhelpful error about being unable to find the `head.hbs` partial, but ONLY when the app first started up.
 
-2. My CSS inlining was no longer functioning properly so I had no styles on the blog
+2. I had over 90 security vulnerabilities.
 
-3. I had over 90 security vulnerabilities.
+3. My CSS inlining was no longer functioning properly so I had no styles on the blog
 
 ### Fixing Handlebars startup errors
 
@@ -52,34 +52,34 @@ However, I stumbled upon a helpful GitHub Gist - [Handlebars - Register all part
 
 In the future, I will review what other templating options I could use. The app was now running!
 
+### Addressing 90 security vulnerabilities
+
+Since I hadn't updated the site in four years, loads of dependencies had security vulnerabilities. Due to the nature of the site, I don't feel any of them posed risks to my users, but it was still something I should address. As well as securing the site, I would gain access to new features and performance improvements.
+
+I added a `.nvmrc` file to my project to [inform Netlify what version of Node I wanted to run](https://docs.netlify.com/configure-builds/manage-dependencies/#node-js-and-javascript). The project was using Node v12 when v20 is now the recommended stable version. I deleted the `package-lock.json` because things were so out of date I thought it was worth a try. As with other things in this project, I got lucky with just a simple `npm install` & `npm audit fix`, which addressed most issues. I also updated some dependencies to correctly be `devDependencies`/`dependencies` as my build was failing in Netlify as a result.
+
+All in all, not very painful, until it broke my CSS...
+
 ### My inline CSS wasn't working
 
 When I initially made the blog, I'd followed a guide that helped me inline the CSS for each page and remove any styles not needed. This is the most performant way to render CSS. It can cause issues where styles are missing, but since the UI is simple, it was a great solution to improve the rendering performance of the blog.
 
 One of my updates caused my inline CSS to break, leaving me with no styles. I tinkered with it for a bit but ultimately decided to use a single CSS file for the blog and revisit inlining the CSS later. The main drawback is the blog now has poor font rendering performance, which I don't recall being an issue before. While it's not ideal, it's not a deal-breaker. My priority is to keep this project moving forward and focus on making iterative improvements.
 
-### Addressing 90 security vulnerabilities ❓
 
-Since I hadn't updated the site in four years, loads of dependencies had security vulnerabilities. Due to the nature of the site, I don't feel any of them posed risks to my users, but it was still something I should address. As well as securing the site, I would gain access to new features and performance improvements.
+## Building in the open new features
 
-I added a `.nvmrc` file to my project to [inform Netlify what version of Node I wanted to run](https://docs.netlify.com/configure-builds/manage-dependencies/#node-js-and-javascript). The project was using Node v12 when v20 is now the recommended version... I deleted the `package-lock.json` because things were so out of date I thought it was worth a try. As with other things in this project, I got lucky with just a simple `npm i` & `npm audit fix`, which addressed most issues. I also updated some dependencies to correctly be `devDependencies`/`dependencies`.
+I decided this blog should be a public repository. Nothing here is sensitive, and as much as possible, I believe we should make code available on the internet. Sharing knowledge like this played a significant role in my self-taught journey in web development, and I’m eager to give back more to the community. In the same vein, I felt it would be a good idea to make public the features I want to add to the site. I'll move this into GitHub issues and maybe have a nice roadmap page on the site in the future. For now, it's just a [checklist on the repository's Readme](https://github.com/stuartjnelson/northern-badger-11ty-blog?tab=readme-ov-file#roadmap).
 
-All in all, not very painful, until it broke my CSS...
+For the "re-launch," I did want to improve a few things:
 
-
-## Building in the open new features ❓
-
-I decided this blog should be a public repository. Nothing here is sensitive, and as much as possible, I believe we should make code available on the internet. This sharing of knowledge is very much how I was able to self-learn web development, and I want to give more back. In the same vein, I felt it would be a good idea to make public the features I want to add to the site. I'll move this into GitHub issues and maybe have a nice roadmap page on the site in the future. For now, it's just a [roadmap checklist on the repository's Readme](https://github.com/stuartjnelson/northern-badger-11ty-blog?tab=readme-ov-file#roadmap).
-
-For the "re-launch," I did want to sort a few things out:
-
-- Add dates to the listing and blog posts ✅
+- Include dates in the listing page excerpts and at the top of each blog post ✅
 - Add comments to blog posts. This was VERY easy using [Utterances](https://utteranc.es/). Authenticate with GitHub and add a JS script (I'll write about this in the future) ✅
-- Have the ability to make posts drafts using 11ty so that they would not be visible publicly (I'll write about this in the future) ✅
-- Add meta & OG data so when I share articles, they render nice little previews (I'll write about this in the future) ✅
+- Enable the ability to mark posts as drafts, ensuring they remain hidden from public view while I work on them (I'll write about this in the future) ✅
+- Integrate meta and OG data to generate engaging previews when sharing articles (I'll write about this in the future) ✅
 - Add some analytics to the site. I ditched Google Analytics for [Simple Analytics](https://www.simpleanalytics.com/). I HIGHLY recommend it after 2 days (I'll write about this in the future) ✅
 
-I was able to do all of the above, which I was pretty chuffed with.
+I managed to accomplish all of the above, which I was pretty chuffed with.
 
 ## Conclusion ❓
 
