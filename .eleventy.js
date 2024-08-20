@@ -4,6 +4,7 @@ const path = require("path");
 
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
+const markdownItAbbr = require('markdown-it-abbr');
 
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 
@@ -89,6 +90,20 @@ module.exports = (eleventyConfig) => {
 		}
 		return outStr;
 	});
+
+	// First look for `meta.ogImg`
+	// If cant find that try `featuredImg`
+	// Finally as the fallback use `globalMetaData.baseUrl "/assets/img/og-fallback-image.png"`
+	eleventyConfig.addHandlebarsHelper('getOgImage', function(meta, featuredImg, globalMetaData) {
+		 if (meta && meta.ogImg) {
+		   return globalMetaData.baseUrl + meta.ogImg;
+		 } else if (featuredImg) {
+		   return globalMetaData.baseUrl + featuredImg;
+		 } else {
+		   return globalMetaData.baseUrl + "/assets/img/og-fallback-image.png";
+		 }
+	});
+	  
 
 	// Making the date valid for `datetime` attirbute
 	eleventyConfig.addHandlebarsHelper("convertPubdateForDatetimeAttr", str => {
@@ -269,7 +284,9 @@ module.exports = (eleventyConfig) => {
 		linkify: true     // Autoconvert URL-like text to links
 	};
 
-	const markdownLib = markdownIt(mardownItOptions).use(markdownItAttrs);
+	const markdownLib = markdownIt(mardownItOptions)
+		.use(markdownItAttrs)
+		.use(markdownItAbbr);
 	eleventyConfig.setLibrary("md", markdownLib);
 
 
