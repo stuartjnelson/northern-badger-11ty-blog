@@ -82,21 +82,20 @@ I was approach about a job that was too good to turn down, so I moved onto my fi
 
 I'd learnt quite a lot during my previous role for now to join an existing team as a manager. We'd had a number of engineering leadership changes and consultancy companies come into assist with our progression. I felt the most successful individuals at this focused on listening and asking questions. Shout out to Matthew Cohan/Mario DeCristofano/Darren West who I feel really demonstrated this approach to me.
 
-* I spent the  first two weeks as much as possible listening, taking notes rather than making comment
-* Ran workshops about documenting state, visualising technical debt and regular 1:1 to understand engineers biggest pain points
-* What followed was a six month period of change. We as a team really defined our processes, coding standards and culture. We had a good product and we made it excellent. Lead the company in DORA metrics and the new CEO fed back "one of the most mature engineering teams in the company" despite us only being together for six months.
+Rather than dictating I spent the  first two weeks as much as possible listening, taking notes rather than making comment. I'm sure I made plenty of suggestions but I feel on the whole I tried to gather information first. I then shared it with the leadership group (product owner and delivery manager) as a high level plan. Then we started to put it into place. I ran a number of workshops from documenting state of a complexed component to visualising technical debt combined with regular 1:1 to understand engineers biggest pain points. 
 
+What followed was a six month period of real change. As a team really defined our processes, coding standards and culture. At times I might start the conversation, especially nearer the beginning but really changes came about because someone in the team suggests it. For example we were having quite a lot of discussions in PRs about how to best use the React util, [classnames](https://www.npmjs.com/package/classnames). To reduce this back and forth we updated ESLint to enforce out coding standard. From identifying the issue to planing and implementing the solution. My role was to facilitate the opportunity for everyone to have a voice, identify blockers that would prevent that and work with the team to help prioritise work as per our priorities. It was not to have all the answers and dictate every task we worked on. 
 
+We had a good product and we made it excellent. Everyone bought into being part of incrementally changing how we worked. This lead to some very positive outcomes. We lead the company in DORA metrics (albeit we weren't shipping direct to users and didn't have a BE to manage). The new CEO fed back after I gave a brief intro presentation about our team that we were "one of the most mature engineering teams in the company" despite us only being together for six months.
 
-## Biggest three mistakes I've made as a manager ❓
-1. Feeling responsible for my reports actions
-2. Trying to be fair to everyone
-3. Not making time to work on myself as a manager
-* Not admitting I didn't know something
+I've had some great mentors over last twelve months. I approached Darren West at the end of 2023 and he kindly has been helping me improve as an engineering manager. At work I've taken part in HL's mentoring program and the wonderful Kate Spalding has given up her time to listen to me and discuss life as a manager at HL away from my day job. I've always had the backing of my manager, Nick Laws and we've had some interesting challenges over the last twelve months with a number of changes we've been through.
 
-## Biggest three lessons I've made as a manager ❓
-1. Authority is given, not taken
-2. Early feedback is essential
-3. Focusing on creating an open, empahetic team culture is the foundation to success for everyone
 
 ## Conclusion
+This is my journey. I'm not saying it was the right way or the same as others. It is however, likely similar to many others. In engineering it's common place you "move up the ranks" as an individual contributing engineer. I've never heard of someone being a "junior manager". It's a role your meant to be able to do but how can you do unless you've had the chance to or the training?
+
+If I started again I'd do more volunteering and coaching outside of my work role. The work I did at [Codebar](https://codebar.io/) and mentoring bootcamp students really help give me the opportunity to learn away from the pressures of work. Having mentors has also been very helpful to my own development. I feel there is a difference having a mentor who isn't my line manager. It's given me the space to work with someone who isn't in the weeds of my day job. I think of this as self development time for me as a manager. 
+
+Finally I've been very fortunate to have my dad as my long suffering mentor. He's someone who's done huge management jobs, the likes of which I'll likely never take on. He always makes time to listen to my problems and give me ways I could approach them. More over he's very much lived by his own values and this, as with the best managers I've had is the most powerful way to empower someone.
+
+If you have any comments/feedback/questions on this article or the accordion please get in touch! I'd love to hear about your management journeys or if your looking to get into management what your approach will be.
