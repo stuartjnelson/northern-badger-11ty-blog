@@ -29,11 +29,11 @@ This is just my take, but I feel it's a fair summary. I've been fortunate to hav
 Back to the question at hand, it’s usually because you have the most years under your belt, either at that company or in engineering experience.
 
 
-## How I became an engineering manager ❓
-TL'DR; I was given the role partly due to my soft skills, partly due to my passion talking about engineering and in part because I feel I had "enough years under my belt". I've flip-flopped around doing management back to individual contributor and back to management. It took me about three years to start feeling comfortable and five to really back myself. 
+## How I became an engineering manager
+TL;DR: I believe I was given the role partly due to my soft skills, partly because of my passion for discussing engineering, and also because I had "enough years under my belt." I've alternated between management and individual contributor roles. It took about three years for me to start feeling comfortable in management and around five years to truly gain confidence in my abilities.
 
 
-### 2018 - First management opportunity
+### 2018 - First management opportunity ❓
 In 2018 I return back from a year in Canada to Bath, England. After looking around I took a job at a small creative agency (there we just 11 of us) in Bath called Ready. I very quickly had a very positive working relationship with the owners and they asked me to take on managing the two engineers we were going to hire. I'd mentored engineers in the past and felt I was ready to give management a crack. It probably helped we hired someone I'd worked with before as part of the team (shout out to Anthony).
 
 I feel I had and have people skills as well as the ability to break down technical concepts to non-technical people. I've always been interested in processes and coding standards which is something I talk passionately about. This was something the engineering team hadn't done a lot of in the past. I would guess these set me apart as someone with management potential. I really appreciated the opportunity!
@@ -41,7 +41,7 @@ I feel I had and have people skills as well as the ability to break down technic
 Long story short we had to let one of the engineers go. I found this a really difficult process both emotionally as well as being unsure if I was being a good manager. I feel we did the right thing, it wasn't the right role for the individual and we gave them ample opportunity to turn it around. I feel the owners supported me really well. What I did a poor job of was asking for support early enough, giving early direct feedback as well as protecting my own well being. It put me off being a manager going forward. So when the company ran in to challenges and made the staff redundant I wanted to take a new role as an individual contributor.  
 
 
-### 2019-2020 - Individual contributor and management take 2
+### 2019-2020 - Individual contributor and management take 2 ❓
 After being made redundant I felt I landed on my feet working at Studee, a education start-up. There were just four of us; BE engineer, QA engineer, lead engineer who also worked on the middleware and myself on the FE. Both the engineering team and the wider team were awesome and I was loving coding again "full time". 10 months in the engineering team was growing and the leadership team  (CEO/COO/Lead engineer) asked if I'd like to be the lead FE engineer. At first I refused very quickly. I was scared from my previous experience and was really loving coding. Lee, our lead engineer had created a fantastic environment. He had really helped me grow as a more well rounded engineer as well as given me space do deepen my [front-of-frontend](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/) skills. They gave me some time to reflect and after discussing it more with Lee I said I'd be happy to give management another shot. He believed I could do a good job and wanted to give me the opportunity. 
 
 Fast forward a few months, the first hire I'd made we had to let go. They were not pulling their weight and make contributions. This time it was quite drawn out and again really affected me personally. Throw in crazy COVID times, my wife being pregnant and it had all become too much. I had to take a week off after we'd had the dismissal call. Again, I  had excellent support from the company and feel we made the correct decisions for everyone. While I felt it was a little easier to have conversations about poor performance this time, I was a long way from feeling comfortable.
@@ -51,7 +51,7 @@ I did continue in the role and felt I'd made some progression. I got better at r
 Once again though when it came to looking for a new role I was keen to be an individual contributor again. In part because I wanted to code more as well as feeling draining from managing. 
 
 
-### 2021 - A break from management, a horror show experience of being managed and them back to it again
+### 2021 - A break from management, a horror show experience of being managed and them back to it again ❓
 By now I'm sure you're thinking; "why do you keep doing management if you don't enjoy it"? A fair question dear reader and the only answer I can give is that I am very competitive with myself. I take on challenges that I can't do because the feeling of accomplishing it drives me.
 
 I took a new role writing FE code with Vue.js 2, my favourite JS framework at the time. After about six weeks I left the role due to the Lead FE Engineer being a poor manager. I feel I've learnt as much from poor managers a I have from the good ones I've had. This person was a classic example of "first in the door gets promoted". I don't blame anyone, on paper it was a logical decision. They had more experience than me and wanted to manage. They were not a good communicator or colleague, After completing a task where my brief was given via Slack, "make a show/hide password input button", the feedback I got was "this component makes me want to poke my eyes out with glass". From this point on I tried to turn the situation around but ultimately working with them was having a negative impact on me. Combine this with having ruptured my achilles and having a five month old baby I'd had enough.
@@ -63,7 +63,7 @@ When I returned we brough on two FE contractors and over the course of four or f
 The story from this period of my career was learning from other managers how not to manage as well as how to manage. I learn best from others and this was a real period of professional development for me.
 
 
-### 2022 - Starting to get the hang of it. Having WAY better devs in my team
+### 2022 - Starting to get the hang of it. Having WAY better devs in my team ❓
 I got given the opportunity to lead the FE team. We were growing quite quickly using a company called [Intellias](https://intellias.com/) to help us scale. We were growing a remote team in Ukraine of four engineers. Then the war started in Ukraine. I will never forgot the tales the team told me of fleeing conflict and their resolve during unimaginable stress. Kosta, Yurii, Vadym and Oleh were not only great engineers but incredibly resilient individuals. I'd like to write more about working with them in the future. If you are looking to hire some engineers let me know and I'll do an intro.
 
 I had a new challenge managing a team that was remote in another country. This meant some cultural differences for me and having to establish relationships without meeting in person. The real learning curve for me was managing a team where the engineers had a deeper knowledge of our tech stack than I did. At first I didn't handle this very well. I tried to be too dictatorial in my approach. It took me about two weeks to figure out not only were the ideas the team suggestions better than some of mine but also I would have _hated_ to have been managed by someone who clearly lacked the deep technical knowledge but also wasn't listening to my ideas. 
@@ -77,7 +77,7 @@ I feel its all about empowering the team rather than dictating how the team shou
 ![Archie a Ukrainian dog and who is a small, sandy coloured Terrier](/assets/img/becoming-a-better-manager-reflecting-on-my-leadership-journey__archie.jpg)
 
 
-### 2023 - first time I felt comfortable. design system team. challenging HR processes. 
+### 2023 - first time I felt comfortable. design system team. challenging HR processes ❓
 I was approach about a job that was too good to turn down, so I moved onto my first role at a big company, [Hargreaves Lansdown](https://www.hl.co.uk/) to lead the design system team. This was the first time I took on a new role where I'd start as a manager which was a pretty big deal for me. Rather than desperately winging it I felt confident I could be a good manager and help the team. 
 
 I'd learnt quite a lot during my previous role for now to join an existing team as a manager. We'd had a number of engineering leadership changes and consultancy companies come into assist with our progression. I felt the most successful individuals at this focused on listening and asking questions. Shout out to Matthew Cohan/Mario DeCristofano/Darren West who I feel really demonstrated this approach to me.
@@ -91,7 +91,7 @@ We had a good product and we made it excellent. Everyone bought into being part 
 I've had some great mentors over last twelve months. I approached Darren West at the end of 2023 and he kindly has been helping me improve as an engineering manager. At work I've taken part in HL's mentoring program and the wonderful Kate Spalding has given up her time to listen to me and discuss life as a manager at HL away from my day job. I've always had the backing of my manager, Nick Laws and we've had some interesting challenges over the last twelve months with a number of changes we've been through.
 
 
-## Conclusion
+## Conclusion ❓
 This is my journey. I'm not saying it was the right way or the same as others. It is however, likely similar to many others. In engineering it's common place you "move up the ranks" as an individual contributing engineer. I've never heard of someone being a "junior manager". It's a role your meant to be able to do but how can you do unless you've had the chance to or the training?
 
 If I started again I'd do more volunteering and coaching outside of my work role. The work I did at [Codebar](https://codebar.io/) and mentoring bootcamp students really help give me the opportunity to learn away from the pressures of work. Having mentors has also been very helpful to my own development. I feel there is a difference having a mentor who isn't my line manager. It's given me the space to work with someone who isn't in the weeds of my day job. I think of this as self development time for me as a manager. 
