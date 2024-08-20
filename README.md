@@ -19,6 +19,7 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [x] add ~~google~~ [simple analytics](https://www.simpleanalytics.com/)
 - [x] sort out post meta & OG data
 - [x] Updating links to be light blue rather than red for underline as looks like spelling mistake - see stash `update links to be blue rather than red`
+- [ ] Add anchor links for blog post headings - `markdown-it-anchor` - https://11ty.rocks/eleventyjs/slugs-anchors/
 - [ ] improve a11y for `article.hbs` for date. Right now it'll be read out weird for ATs
 - [x] prep LinkedIn post to share it
 - [ ] write blog post on my journey as a line manager
@@ -28,6 +29,7 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [ ] create a way to filter blog posts by tag
 - [x] write blog post on upgrading blog
 - [ ] get inline CSS working again
+- [ ] Find a way to include expert & featured img in `layout-post` template
 - [ ] Share a counter on the readme and inital manager article about how im getting on with my 10 blog posts
 - [ ] Create roadmap page that is powered by GitHub issues
 - [ ] Write blog post on adding [Utterances](https://utteranc.es/) to the blog
