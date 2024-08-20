@@ -5,6 +5,7 @@ const path = require("path");
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItAbbr = require('markdown-it-abbr');
+const markdownItAnchor = require('markdown-it-anchor');
 
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 
@@ -284,9 +285,23 @@ module.exports = (eleventyConfig) => {
 		linkify: true     // Autoconvert URL-like text to links
 	};
 
+	const markdownItAnchorOptions = {
+		level: 2,
+		// permalink: true,
+		permalink: markdownItAnchor.permalink.linkInsideHeader({
+			class: "inline-link -interactive",
+			symbol: 
+			`
+				<span class="vh">Jump to heading</span>
+				<span aria-hidden="true">#</span>`,
+			placement: 'before'
+		})
+	}
+
 	const markdownLib = markdownIt(mardownItOptions)
 		.use(markdownItAttrs)
-		.use(markdownItAbbr);
+		.use(markdownItAbbr)
+		.use(markdownItAnchor, markdownItAnchorOptions);
 	eleventyConfig.setLibrary("md", markdownLib);
 
 

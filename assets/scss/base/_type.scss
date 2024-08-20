@@ -174,7 +174,11 @@ a {
 //     }
 // }
 
-.inline-link { @include inline-link; }
+.inline-link {
+    @include inline-link; 
+
+    &.-interactive { color: get-color(interactive) }
+}
 
 .base-link { @include base-link; }
 
