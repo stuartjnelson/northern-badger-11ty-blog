@@ -78,10 +78,13 @@ I feel its all about empowering the team rather than dictating how the team shou
 
 
 ### 2023 - first time I felt comfortable. design system team. challenging HR processes. 
-Took role as a manager for first time
-Spent first two weeks as much as possible listening, taking notes rather than making comments
-Ran workshops about documenting state, visualising technical debt and regular 1:1 to understand engineers biggest pain points
-What followed was a six month period of change. We as a team really defined our processes, coding standards and culture. We had a good product and we made it excellent. Lead the company in DORA metrics and the new CEO fed back "one of the most mature engineering teams in the company" despite us only being together for six months.
+I was approach about a job that was too good to turn down, so I moved onto my first role at a big company, [Hargreaves Lansdown](https://www.hl.co.uk/) to lead the design system team. This was the first time I took on a new role where I'd start as a manager which was a pretty big deal for me. Rather than desperately winging it I felt confident I could be a good manager and help the team. 
+
+I'd learnt quite a lot during my previous role for now to join an existing team as a manager. We'd had a number of engineering leadership changes and consultancy companies come into assist with our progression. I felt the most successful individuals at this focused on listening and asking questions. Shout out to Matthew Cohan/Mario DeCristofano/Darren West who I feel really demonstrated this approach to me.
+
+* I spent the  first two weeks as much as possible listening, taking notes rather than making comment
+* Ran workshops about documenting state, visualising technical debt and regular 1:1 to understand engineers biggest pain points
+* What followed was a six month period of change. We as a team really defined our processes, coding standards and culture. We had a good product and we made it excellent. Lead the company in DORA metrics and the new CEO fed back "one of the most mature engineering teams in the company" despite us only being together for six months.
 
 
 
