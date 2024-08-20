@@ -3,7 +3,7 @@ layout: layout-post.hbs
 title: >-
   Becoming a better manager - Reflecting on my leadership journey
 excerpt: >-
-  <TBC>
+  Reflecting on my journey to becoming an engineering manager, I share the challenges and lessons learned in balancing technical expertise with the essential people skills needed for effective leadership. This post explores how my experiences shaped my management style and approach to team-building.
 date: "2024-08-20T11:15:00.000Z"
 pubdate: "20/08/2024"
 featuredImg: /assets/img/becoming-a-better-manager-reflecting-on-my-leadership-journey--featured-img.webp
