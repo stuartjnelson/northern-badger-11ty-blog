@@ -4,6 +4,7 @@ const path = require("path");
 
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
+const markdownItAbbr = require('markdown-it-abbr');
 
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 
@@ -283,7 +284,9 @@ module.exports = (eleventyConfig) => {
 		linkify: true     // Autoconvert URL-like text to links
 	};
 
-	const markdownLib = markdownIt(mardownItOptions).use(markdownItAttrs);
+	const markdownLib = markdownIt(mardownItOptions)
+		.use(markdownItAttrs)
+		.use(markdownItAbbr);
 	eleventyConfig.setLibrary("md", markdownLib);
 
 

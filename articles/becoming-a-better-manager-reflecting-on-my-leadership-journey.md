@@ -17,6 +17,11 @@ categories: []
 keywords: []
 ---
 
+*[FE]: Front-End
+*[BE]: Back-end
+*[QA]: Quality assurance
+*[JS]: JavaScript
+
 ![]({{featuredImg}})
 
 {{excerpt}}
