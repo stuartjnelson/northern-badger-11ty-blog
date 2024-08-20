@@ -96,11 +96,11 @@ As a manager, I played a key role in this success by driving standards and facil
 
 
 
-## Conclusion ❓
-This is my journey. I'm not saying it was the right way or the same as others. It is however, likely similar to many others. In engineering it's common place you "move up the ranks" as an individual contributing engineer. I've never heard of someone being a "junior manager". It's a role your meant to be able to do but how can you do unless you've had the chance to or the training?
+## Conclusion
+This is my journey. I'm not claiming it was the right way or the same as others, but it’s likely similar to many others in engineering. It's common to "move up the ranks" as an individual contributing engineer. I've never heard of someone starting as a "junior manager." It's a role you're expected to be able to do, but how can you if you haven't had the chance or the training?
 
-If I started again I'd do more volunteering and coaching outside of my work role. The work I did at [Codebar](https://codebar.io/) and mentoring bootcamp students really help give me the opportunity to learn away from the pressures of work. Having mentors has also been very helpful to my own development. I feel there is a difference having a mentor who isn't my line manager. It's given me the space to work with someone who isn't in the weeds of my day job. I think of this as self development time for me as a manager. 
+If I could start over, I would engage in more volunteering and coaching outside of my work role. The work I did at [Codebar](https://codebar.io/) and mentoring bootcamp students provided valuable opportunities to learn away from the pressures of work. Having mentors has also been instrumental in my development. There's a significant difference when you have a mentor who isn't your direct line manager—it provides space to work with someone who isn't involved in the day-to-day aspects of your job. I consider this self-development time crucial to my growth as a manager.
 
-Finally I've been very fortunate to have my dad as my long suffering mentor. He's someone who's done huge management jobs, the likes of which I'll likely never take on. He always makes time to listen to my problems and give me ways I could approach them. More over he's very much lived by his own values and this, as with the best managers I've had is the most powerful way to empower someone.
+Finally, I've been very fortunate to have my dad as my long-suffering mentor. He's someone who's handled huge management responsibilities, the likes of which I'll likely never take on. He always makes time to listen to my problems and offers ways to approach them. Moreover, he has always lived by his own values, and this, as with the best managers I've had, is the most powerful way to empower someone.
 
-If you have any comments/feedback/questions on this article or the accordion please get in touch! I'd love to hear about your management journeys or if your looking to get into management what your approach will be.
+If you have any comments, feedback, or questions about this article or the accordion, please get in touch! I'd love to hear about your management journeys or, if you're looking to get into management, what your approach will be.
