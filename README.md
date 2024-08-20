@@ -21,9 +21,9 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [x] Updating links to be light blue rather than red for underline as looks like spelling mistake - see stash `update links to be blue rather than red`
 - [ ] improve a11y for `article.hbs` for date. Right now it'll be read out weird for ATs
 - [x] prep LinkedIn post to share it
-- [ ] move todos to Github issues
-- [ ] write blog post on advise monster
 - [ ] write blog post on my journey as a line manager
+- [ ] write blog post on advise monster
+- [ ] move todos to Github issues
 - [ ] link blog posts with a next and previous at the bottom
 - [ ] create a way to filter blog posts by tag
 - [x] write blog post on upgrading blog
@@ -34,3 +34,6 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [ ] Write blog post on draft posts in 11ty
 - [ ] Write blog post on my handrolled meta/OG data
 - [ ] Write blog post on ditching GA for Simple Analytics
+- [ ] Write blog post on three mistakes as a manager
+- [ ] Write blog post on three lessons as a manager
+ 
