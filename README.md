@@ -23,8 +23,10 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [x] Add anchor links for blog post headings - `markdown-it-anchor` - https://11ty.rocks/eleventyjs/slugs-anchors/
 - [ ] improve a11y for `article.hbs` for date. Right now it'll be read out weird for ATs
 - [x] prep LinkedIn post to share it
-- [ ] write blog post on my journey as a line manager
-- [ ] write blog post on advise monster
+- [x] write blog post on my journey as a line manager
+- [x] write blog post on advise monster
+- [ ] Convert tag `Becoming a better manager` to be stored as slugified version `becoming-a-better-manager`
+- [ ] stop using `pubdate` Frontmatter prop and create an 11ty filter
 - [ ] move todos to Github issues
 - [ ] link blog posts with a next and previous at the bottom
 - [ ] create a way to filter blog posts by tag
