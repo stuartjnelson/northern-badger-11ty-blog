@@ -24,3 +24,19 @@ keywords: []
 {{excerpt}}
 
 <some text>
+
+## The problem
+<why I don't want to use GA>
+
+## The constraints
+* Be easy to add to 11ty
+* Respect privacy
+* Minimal performance constraints  
+* Free
+
+## The contenders
+
+## Simple Analytics - my tool of choice for personal projetcs
+
+## Conclusion
+If you have any comments/feedback/questions on this article please get in touch! I'd love to know what your using for analytics on your personal projects.
