@@ -40,9 +40,7 @@
 			</h1>
 
 			{{#if date}}
-				{{#if pubdate}}
-					<p class="banner__date"><time datetime="{{ date }}">{{ pubdate }}</time></p>
-				{{/if}}
+				<p class="banner__date"><time datetime="{{ date }}">{{ formatDate date }}</time></p>
 			{{/if}}
 		</div>
 	</div>
