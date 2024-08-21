@@ -5,7 +5,6 @@ excerpt: >-
   Since I started making websites 3.5 years ago I’ve been using Sass. Out of the
   box Vue.js doesn’t expos Sass globally
 date: '2018-03-06T16:05:17.467Z'
-pubdate: '6/3/2018'
 tags: posts
 categories: []
 keywords: []

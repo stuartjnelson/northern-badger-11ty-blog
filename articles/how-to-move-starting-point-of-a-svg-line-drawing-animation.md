@@ -5,7 +5,6 @@ excerpt: >-
   Does your SVG line drawing animation start in the wrong place? I’ll show you
   here how to move the animations start point.
 date: '2018-01-16T18:16:02.434Z'
-pubdate: '16/1/2018'
 tags: posts
 categories: []
 keywords: []

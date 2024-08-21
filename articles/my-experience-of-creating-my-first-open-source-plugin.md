@@ -5,7 +5,6 @@ excerpt: >-
   I wanted to share my experiences, what I learnt and tools I discovered while
   creating my first open-source plugin.
 date: '2018-01-23T16:01:01.594Z'
-pubdate: '23/1/2018'
 tags: posts
 categories: []
 keywords: []

@@ -5,7 +5,6 @@ excerpt: >-
   A step by step guide for how to use Sass to replace values in an SVG so you
   can animate it with CSS.
 date: '2018-02-20T16:36:01.994Z'
-pubdate: '20/2/2018'
 tags: posts
 categories: []
 keywords: []

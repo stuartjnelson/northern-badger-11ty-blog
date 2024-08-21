@@ -5,7 +5,6 @@ title: >-
   with an extensible API
 excerpt: 'An introduction to my plugin, Badger Accordion and how to use it.'
 date: '2017-12-15T23:08:49.708Z'
-pubdate: '15/12/2017'
 tags: posts
 categories: []
 keywords: []
