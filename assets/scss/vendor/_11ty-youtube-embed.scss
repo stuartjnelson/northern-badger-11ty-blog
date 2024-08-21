@@ -10,4 +10,9 @@
 //    BASE
 // ==========================================================================
 
-.vendor-11ty-youtube-embed + p { margin-top: $spacing-unit; } 
+.vendor-11ty-youtube-embed {
+    margin-top: $spacing-unit;
+    
+    & + p { margin-top: $spacing-unit; } 
+}
+
