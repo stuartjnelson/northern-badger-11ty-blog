@@ -32,9 +32,10 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [ ] create a way to filter blog posts by tag
 - [x] write blog post on upgrading blog
 - [ ] get inline CSS working again
-- [ ] Find a way to include expert & featured img in `layout-post` template
+- [ ] Find a way to include expert & featured img in `layout-post` template to prevent duplication
 - [ ] Share a counter on the readme and inital manager article about how im getting on with my 10 blog posts
 - [ ] Create roadmap page that is powered by GitHub issues
+- [ ] Template abbreviations into a component (see `becoming-a-better-manager-reflecting-on-my-leadership-journey.md`)
 - [ ] Write blog post on adding [Utterances](https://utteranc.es/) to the blog
 - [ ] Write blog post on draft posts in 11ty
 - [ ] Write blog post on my handrolled meta/OG data
