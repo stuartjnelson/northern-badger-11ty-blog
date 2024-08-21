@@ -7,7 +7,9 @@ excerpt: >-
 date: "2024-08-18T11:14:00.000Z"
 pubdate: "18/08/2024"
 featuredImg: /assets/img/upgrading-11ty-handlebars-blog-from-2020.webp
-tags: posts
+tags: 
+  - posts
+  - 11ty-blog-project
 categories: []
 keywords: []
 ---
