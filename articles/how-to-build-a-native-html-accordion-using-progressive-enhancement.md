@@ -5,7 +5,6 @@ excerpt: >-
   92.26% of browsers support native accordion but what about those that don’t?
   Here how to create a clean base experience for those browsers
 date: '2020-01-17T13:47:20.510Z'
-pubdate: '17/1/2020'
 tags: posts
 categories: []
 keywords: []

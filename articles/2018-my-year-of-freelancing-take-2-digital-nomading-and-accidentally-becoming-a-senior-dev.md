@@ -7,7 +7,6 @@ excerpt: >-
   2018 what a year! I managed to do a ski season while working remotely doing
   web development work, spend 3 months travelling around USA and…
 date: '2019-01-02T09:36:00.805Z'
-pubdate: '2/1/2019'
 tags: posts
 categories: []
 keywords: []

@@ -5,7 +5,6 @@ excerpt: >-
   A step-by-step tutorial for how to create an animated single element CSS
   loading spinner that is accessible!
 date: '2018-04-24T19:31:01.112Z'
-pubdate: '24/4/2018'
 tags: posts
 categories: []
 keywords: []

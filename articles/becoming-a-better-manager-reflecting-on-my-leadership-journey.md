@@ -5,7 +5,6 @@ title: >-
 excerpt: >-
   Reflecting on my journey to becoming an engineering manager, I share the challenges and lessons learned in balancing technical expertise with the essential people skills needed for effective leadership. This post explores how my experiences shaped my management style and approach to team-building.
 date: "2024-08-20T21:15:00.000Z"
-pubdate: "20/08/2024"
 featuredImg: /assets/img/becoming-a-better-manager-reflecting-on-my-leadership-journey--featured-img.webp
 meta:
   ogImg: /assets/img/becoming-a-better-manager-reflecting-on-my-leadership-journey--og-img.jpg
