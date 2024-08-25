@@ -5,7 +5,6 @@ excerpt: >-
   I wanted to be able to optimise a directory of SVG with SVGO. Currently I
   would optimise them either one at a time using Jake Archibald’s…
 date: '2017-09-16T09:46:33.907Z'
-pubdate: '19/9/2017'
 tags: posts
 ---
 

@@ -1,11 +1,10 @@
 ---
 layout: layout-post.hbs
 title: >-
-  Becoming a better manager - What I learnt about my advise monster
+  Becoming a better manager - What I learnt about my advice monster
 excerpt: >-
   I know when I'm being managed, I don't like being given unsolicited advice. From watching this TED talk it really gave me perspective on how I conduct myself as a manager.
 date: '2024-08-21T11:02:00.994Z'
-pubdate: '21/08/2024'
 featuredImg: /assets/img/becoming-a-better-manager-what-i-learnt-about-my-advice-monster--featured-img.webp
 meta:
   ogImg: /assets/img/becoming-a-better-manager-what-i-learnt-about-my-advice-monster--og-img.jpg

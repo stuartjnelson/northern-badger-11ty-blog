@@ -7,7 +7,6 @@ excerpt: >-
   It’s a funny that a lot of web developers don’t have an up to date website. My
   guess is like myself, it’s hard to find time/enthusiasm to…
 date: '2018-03-30T14:58:29.115Z'
-pubdate: '30/3/2018'
 tags: posts
 categories: []
 keywords: []

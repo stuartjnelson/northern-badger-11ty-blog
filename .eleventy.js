@@ -104,15 +104,18 @@ module.exports = (eleventyConfig) => {
 		   return globalMetaData.baseUrl + "/assets/img/og-fallback-image.png";
 		 }
 	});
-	  
 
-	// Making the date valid for `datetime` attirbute
-	eleventyConfig.addHandlebarsHelper("convertPubdateForDatetimeAttr", str => {
-		return str.split('/')
-			.map(item => item.length === 1 ? `0${item}` : item)
-			.reverse()
-			.join('-')
-	})
+	// Define the helper function
+	const formatDate = (dateString) => {
+		const date = new Date(dateString);
+		const day = String(date.getDate()).padStart(2, '0');
+		const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+		const year = date.getFullYear();
+		return `${day}/${month}/${year}`;
+	};
+
+	// Register the helper with Handlebars
+	eleventyConfig.addHandlebarsHelper('formatDate', formatDate);
 
 	// @NOTE: Leaving in here in case need this in the future
 	// Add a custom logger to debug partial paths
