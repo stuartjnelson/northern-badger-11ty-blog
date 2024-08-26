@@ -25,15 +25,18 @@ keywords: []
 <some text>
 
 ## The problem
-<why I don't want to use GA>
+I want to add analytics to my [11ty](https://www.11ty.dev/) blog that respects my users privacy and takes less than an hour to setup with costing me anything.
 
-## The constraints
-* Be easy to add to 11ty
-* Respect privacy
-* Minimal performance constraints  
-* Free
 
 ## The contenders
+### Netlify Analytics
+[Netlify Analytics](https://www.netlify.com/platform/core/analytics/)
+
+### Ackee
+A free, self hosted open source platform, [Ackee](https://ackee.electerious.com/) was a recommendation I came across on a [Readit thread about Google Analytics alternatives](https://www.reddit.com/r/webdev/comments/qety61/what_is_a_good_lightweight_free_alternative_to/).
+
+### Simple Analytics
+A cookieless tool that focuses on privacy. Their free plan gives you access to the platform but with data only being stored for 30-60 days as well as your dashboard being public. 
 
 ## Simple Analytics - my tool of choice for personal projetcs
 
