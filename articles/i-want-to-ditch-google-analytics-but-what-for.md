@@ -36,37 +36,32 @@ I still think Google Analytics is a great tool but for a simple site where I've 
 ### Netlify Analytics
 When you host a site on Netlify you're also able to use their analytics tools, [Netlify Analytics](https://www.netlify.com/platform/core/analytics/). This is a server side analytics tool which respects your users privacy and doesn't affect the performance of your site. To start using Netlify Analytics it's just a click of a button in the Netlify dashboard however it does cost £9/month. The [data is only retained for 30 days](https://answers.netlify.com/t/historical-analytics-data-more-than-30-days/26466/30) but you can apparently export it using an Netlify API.
 
-**Pros**
+**Pros** ✅
 * Very easy to setup
 * Great for privacy and performance 
 
-**Cons**
+**Cons** ❌
 * Costs £9/month
 * Only have 30 days of data
 
-* User privacy: 5/5
-* Ease of setup: 5/5
-* Cost: 2/5
-* Data retention: 2/5
-* Analytics dashboard: 3/5
 
 ### Ackee Analytics 
 A free, self hosted open source platform, [Ackee](https://ackee.electerious.com/) was a recommendation I came across on a [Readit thread about Google Analytics alternatives](https://www.reddit.com/r/webdev/comments/qety61/what_is_a_good_lightweight_free_alternative_to/).
 
-**Pros**
+**Pros** ✅
 * 
 
-**Cons**
+**Cons** ❌
 * 
 
 
 ### Simple Analytics
 A cookieless tool that focuses on privacy. Their free plan gives you access to the platform but with data only being stored for 30-60 days as well as your dashboard being public. 
 
-**Pros**
+**Pros** ✅
 *
 
-**Cons**
+**Cons** ❌
 *
 
 
