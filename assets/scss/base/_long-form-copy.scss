@@ -134,4 +134,19 @@
     //         margin-bottom: 0.5rem;
     //     }
     // }
+
+    table {
+        border-spacing: 0;
+        margin: $spacing-unit 0;
+        width: 100%;
+
+        th,
+        td {
+            @include base-border(bottom);
+            padding: $quarter-spacing-unit;
+            text-align: left;
+
+            &:not(:last-of-type) { @include base-border(right); }
+        }
+    }
 }
