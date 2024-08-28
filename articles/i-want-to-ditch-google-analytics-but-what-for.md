@@ -46,23 +46,26 @@ When you host a site on Netlify you're also able to use their analytics tools, [
 
 
 ### Ackee Analytics 
-A free, self hosted open source platform, [Ackee](https://ackee.electerious.com/) was a recommendation I came across on a [Readit thread about Google Analytics alternatives](https://www.reddit.com/r/webdev/comments/qety61/what_is_a_good_lightweight_free_alternative_to/).
+A free, self hosted open source platform, [Ackee](https://ackee.electerious.com/) was a recommendation I came across on a [Readit thread about Google Analytics alternatives](https://www.reddit.com/r/webdev/comments/qety61/what_is_a_good_lightweight_free_alternative_to/). I've never used a self hosted analytics tool before so I was intrigued. Like Netlify Analytics, the data is captured server side. By default you only get pages views and time on page with Ackee. If you want to capture more such as device type or region you need to include Ackee Detailed Tracking which does involve dropping a cookie. They have a really nice [docs page explaining how to setup more detailed data capture](https://docs.ackee.electerious.com/#/docs/Anonymization#personal-data) in a privacy focused way. You can manually add a `source` query parameter to any URL (eg. `example.com?source=LinkedIn`) so you know where your traffic has come from.
 
 **Pros** ✅
-* 
+* Free
+* Full control over the analytics web app
 
 **Cons** ❌
-* 
+* A little bit of effort to get setup
+* Dashboard not as slick as other providers
 
 
 ### Simple Analytics
-A cookieless tool that focuses on privacy. Their free plan gives you access to the platform but with data only being stored for 30-60 days as well as your dashboard being public. 
+Like the other two tools, a server side analytics data capturing platform. They offer a free tier for personal projects which has some limitations including data being stored for only 30 days. Its a cookieless tool that focuses on privacy. Their free plan gives you access to the platform but with data only being stored for 30-60 days as well as your dashboard being public. Getting setup was as simple as adding the tracking script to my blogs `<footer>`. I am a fan of how well put together the product feels, from logging in using password-less authentication to their being "AI" built in to make it easy to answer specific analytics questions. If this blog made some money I'd defiantly pay to access a higher level of the tool.
 
 **Pros** ✅
-*
+* Easy setup
+* Excellent dashboard
 
 **Cons** ❌
-*
+* Only 30 days data retention 
 
 
 
