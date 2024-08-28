@@ -79,8 +79,8 @@ Here is a comparison table for you that I used when assessing the tools.
 
 | Tool                | User Privacy | Ease of Setup | Cost  | Data Retention | Analytics Dashboard | Mean Average |
 |---------------------|--------------|---------------|-------|----------------|---------------------|--------------|
-| Netlify Analytics | 5/5          | 5/5           | 2/5   | 2/5            | 3/5                 | 3.4          |
-| Ackee Analytics   | 5/5          | 2/5           | 5/5   | 5/5            | 3/5                 | 4.0          |
-| Simple Analytics  | 5/5          | 5/5           | 5/5   | 2/5            | 4/5                 | 4.2          |
+| Netlify Analytics   | 5/5          | 5/5           | 2/5   | 2/5            | 3/5                 | 3.4          |
+| Ackee Analytics     | 5/5          | 2/5           | 5/5   | 5/5            | 3/5                 | 4.0          |
+| Simple Analytics    | 5/5          | 5/5           | 5/5   | 2/5            | 4/5                 | 4.2          |
 
 If you have any comments/feedback/questions on this article please get in touch! I'd love to know what your using for analytics on your personal projects.
