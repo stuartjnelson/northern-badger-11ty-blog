@@ -1,0 +1,11 @@
+{{# if (eq envData.env "deploy_preview") }}
+    <script async src="https://nb-blog-analytics.netlify.app/tracker.js"
+        data-ackee-server="https://nb-blog-analytics.netlify.app"
+        data-ackee-domain-id="530f5f99-2cbf-45c6-8c05-c1cf907901bd"></script>
+{{/ if }}
+
+{{# if (eq envData.env "production") }}
+    <script async src="https://nb-blog-analytics.netlify.app/tracker.js"
+        data-ackee-server="https://nb-blog-analytics.netlify.app"
+        data-ackee-domain-id="938b4288-7bf0-4cb8-bde9-e3c47f08bef5"></script>
+{{/ if }}
