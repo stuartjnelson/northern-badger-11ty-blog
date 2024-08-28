@@ -14,11 +14,7 @@
         {{!-- <link rel="stylesheet" href="/assets/main.css"> --}}
         <link rel="stylesheet" href="/assets/scss/main.css">
 
-{{# if (eq envData.env "production") }}
-        <script async src="https://frabjous-horse-7bb0fb.netlify.app/tracker.js"
-            data-ackee-server="https://frabjous-horse-7bb0fb.netlify.app"
-            data-ackee-domain-id="938b4288-7bf0-4cb8-bde9-e3c47f08bef5"></script>
-{{/ if }}
+        {{> ackee-analytics }}
     </head>
 
     <body>
