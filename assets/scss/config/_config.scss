@@ -39,6 +39,9 @@ $brand-colors: (
     interactive: (
         // @TODO: Make this reference value for seondary light in a better way
         default: $secondary-light
+    ),
+    error: (
+        default: #D32F2F
     )
 );
 
