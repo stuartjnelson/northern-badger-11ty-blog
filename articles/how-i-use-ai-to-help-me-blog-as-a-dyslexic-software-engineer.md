@@ -3,7 +3,7 @@ layout: layout-post.hbs
 title: >-
   How I use AI to help me blog as a dyslexic software engineer
 excerpt: >-
-  Some excerpt text
+  When talking to an engineer friend the other day he asked how I go about blogging. It inspired me to document my process for myself and share it to see how others are blogging in 2024. AI is a masive help to me as someone who is dyslexic. I removes a lot of stress from writing and streamlines my process.
 date: "2024-09-09T08:32:00.994Z"
 featuredImg: /assets/img/how-i-use-ai-to-help-me-blog-as-a-dyslexic-software-engineer--featured-img.webp
 meta:
@@ -24,19 +24,21 @@ keywords: []
 {{excerpt}}
 
 ## My high level processes
-1. Add idea to my "roadmap" when I come up with it
-2. When I want to write the post duplicate my markdown template
-3. Come up with the title
-4. Draft the section titles
+1. Add idea to my ["roadmap"](https://github.com/stuartjnelson/northern-badger-11ty-blog?tab=readme-ov-file#roadmap) when I come up with it
+2. TO start writing the post, I duplicate my [markdown post template](https://github.com/stuartjnelson/northern-badger-11ty-blog/blob/main/articles/__TEMPLATE.md)
+3. Come up with the actual title - sometimes use AI here 🤖
+4. Draft the section titles so I have a document outline
+5. Create images using ChatGPT/DALL-E
+5. Use ChatGPT to optimise/resize/format images
 5. Write my first draft
 6. Use ChatGPT to proof my work, section by section
-7. Create images using ChatGPT/DALL-E
-8. Use ChatGPT to optimise/resize/format images
+9. Write the excerpt and any additional meta data
 9. Final checks including checking OG data using [OGraph Previewer browser extension](https://chromewebstore.google.com/detail/ograph-previewer/ggcfeakcnodgcmmllfdbmngekljbhiim)
+10. Merge in the PR and Netlify takes care of getting the post into production
 10. Schedule to share on LinkedIn
 
 
-## AI for proof ideation
+## AI for content ideation
 I'm coming up with the ideas myself for the articles but I use ChatGPT to improve them. For instacne my draft title for this post was _As a Dyslexic software engineer how I use AI to help me blog_ and I asked ChatGPT to improve this title. It return _How I use AI to help me blog as a dyslexic software engineer_. Sometimes, like on this occasion I use exactly what ChatGPT gives me. Often I'll take what it returns to me and tweak it to better fit what I'm after.
 
 I know my ide is a bit clunky and I could manually improve it but thats not a strenth of mine. I'm an ideas person. Written English is a challenge.
