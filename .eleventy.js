@@ -311,10 +311,7 @@ module.exports = (eleventyConfig) => {
 	// Filter to exclude drafts unless in development
 	eleventyConfig.addCollection("posts", function(collectionApi) {
 		return collectionApi.getFilteredByGlob("./articles/*.md").filter(post => {
-			// @NOTE: Leaving here but for now I feel makes sense to always exclude drafts for a consistent experience
-			// return process.env.NODE_ENV === "production" ? !post.data.draft : true
-
-			return !post.data.draft;
+			return process.env.NODE_ENV === "production" ? !post.data.draft : true
 		});
 	});
 

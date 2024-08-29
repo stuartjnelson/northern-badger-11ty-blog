@@ -14,24 +14,25 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 
 ## Roadmap
 
-- [x] publish blog post on new blog series
-- [x] make repo public
-- [x] add ~~google~~ [simple analytics](https://www.simpleanalytics.com/)
-- [x] sort out post meta & OG data
+- [x] Publish blog post on new blog series
+- [x] Make repo public
+- [x] Add ~~google~~ [simple analytics](https://www.simpleanalytics.com/)
+- [x] Sort out post meta & OG data
 - [x] Updating links to be light blue rather than red for underline as looks like spelling mistake - see stash `update links to be blue rather than red`
 - [x] Add abbreviations to markdown articles
 - [x] Add anchor links for blog post headings - `markdown-it-anchor` - https://11ty.rocks/eleventyjs/slugs-anchors/
-- [ ] improve a11y for `article.hbs` for date. Right now it'll be read out weird for ATs
-- [x] prep LinkedIn post to share it
-- [x] write blog post on my journey as a line manager
-- [x] write blog post on advise monster
+- [ ] Improve a11y for `article.hbs` for date. Right now it'll be read out weird for ATs
+- [x] Prep LinkedIn post to share it
+- [x] Write blog post on my journey as a line manager
+- [x] Write blog post on advise monster
+- [x] Creating simple template for posts
 - [ ] Convert tag `Becoming a better manager` to be stored as slugified version `becoming-a-better-manager`
-- [ ] stop using `pubdate` Frontmatter prop and create an 11ty filter
-- [ ] move todos to Github issues
-- [ ] link blog posts with a next and previous at the bottom
-- [ ] create a way to filter blog posts by tag
-- [x] write blog post on upgrading blog
-- [ ] get inline CSS working again
+- [ ] Stop using `pubdate` Frontmatter prop and create an 11ty filter
+- [ ] Move todos to Github issues
+- [ ] Link blog posts with a next and previous at the bottom
+- [ ] Create a way to filter blog posts by tag
+- [x] Write blog post on upgrading blog
+- [ ] Get inline CSS working again
 - [ ] Find a way to include expert & featured img in `layout-post` template to prevent duplication
 - [ ] Share a counter on the readme and inital manager article about how im getting on with my 10 blog posts
 - [ ] Create roadmap page that is powered by GitHub issues
@@ -39,7 +40,8 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [ ] Write blog post on adding [Utterances](https://utteranc.es/) to the blog
 - [ ] Write blog post on draft posts in 11ty
 - [ ] Write blog post on my handrolled meta/OG data
-- [ ] Write blog post on ditching GA for Simple Analytics
+- [x] Write blog post on ditching GA for Simple Analytics
 - [ ] Write blog post on three mistakes as a manager
 - [ ] Write blog post on three lessons as a manager
+- [ ] Write blog post on how I use AI to help me blog
  

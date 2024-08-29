@@ -1,5 +1,11 @@
 <article class="article">
     <header class="article__header">
+        {{# if articleData.data.draft }}
+            <div class="band -error text-center landmark">
+                <p class="text--bold text--white">THIS POST IS A DRAFT</p>
+            </div>
+        {{/ if }}
+
         <div class="article__header-inner">
             <a href="{{ articleData.url }}" class="inline-link">
                 <h2 class="article__heading heading--bravo">
