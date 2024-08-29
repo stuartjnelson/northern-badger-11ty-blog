@@ -71,15 +71,17 @@ Like the other two tools, Simple Analytics is a server-side data capturing platf
 
 
 ## Conclusion
-Netlify Analytics was a no for me due to the cost and lack of data retention. I didn't realise when I started I'd care about this limitation but I actually do. Since it's a very low traffic site I'm interested to see over time what works and what doesn't. 
 
-Ackee Analytics since I didn't have an existing platform running a MongoDB database was a little fiddly to setup but fine in the end. It means I can access the data for as long as I need. 
+Netlify Analytics was a no for me due to the cost and limited data retention. I didn’t initially think I’d care about this limitation, but it turns out I do. Since my site receives very low traffic, I’m interested in tracking what works and what doesn’t over time.
 
-Simple Analytics is my favourite. Easy setup, great dashboard with the AI tool and just feels like a great product. However in the free plan I only get 30 days of data.
+Ackee Analytics, while a bit fiddly to set up since I didn’t have an existing MongoDB database, ultimately worked out fine. The advantage here is that I can access the data for as long as I need.
 
-I'm going to use both Simple and Ackee Analytics for a few months and see which I prefer. I could just export the data out of Simple Analytics into a Google sheet... Time will tell which I go for. I'll do a follow-up post in the future. 
+Simple Analytics is my favourite. It offers an easy setup, a great dashboard with the AI tool, and overall just feels like a well-crafted product. However, with the free plan, I only get 30 days of data retention.
 
-Here is a comparison table for you that I used when assessing the tools. 
+I’m going to use both Simple and Ackee Analytics for a few months to see which one I prefer. I could always export the data from Simple Analytics into a Google Sheet... Time will tell which I settle on. I’ll do a follow-up post in the future.
+
+Here is a comparison table that I used when assessing the tools.
+
 
 | Tool                | User Privacy | Ease of Setup | Cost  | Data Retention | Analytics Dashboard | Mean Average |
 |---------------------|--------------|---------------|-------|----------------|---------------------|--------------|
