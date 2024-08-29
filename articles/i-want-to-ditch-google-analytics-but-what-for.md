@@ -45,8 +45,8 @@ When you host a site on Netlify, you have the option to use their analytics tool
 * Only stores have 30 days of data
 
 
-### Ackee Analytics 
-A free, self hosted open source platform, [Ackee](https://ackee.electerious.com/) was a recommendation I came across on a [Readit thread about Google Analytics alternatives](https://www.reddit.com/r/webdev/comments/qety61/what_is_a_good_lightweight_free_alternative_to/). I've never used a self hosted analytics tool before so I was intrigued. Like Netlify Analytics, the data is captured server side. By default you only get pages views and time on page with Ackee. If you want to capture more such as device type or region you need to include Ackee Detailed Tracking which does involve dropping a cookie. They have a really nice [docs page explaining how to setup more detailed data capture](https://docs.ackee.electerious.com/#/docs/Anonymization#personal-data) in a privacy focused way. You can manually add a `source` query parameter to any URL (eg. `example.com?source=LinkedIn`) so you know where your traffic has come from.
+### Ackee Analytics
+One free, self-hosted, open-source platform I discovered is [Ackee](https://ackee.electerious.com/), which was recommended in a [Reddit thread about Google Analytics alternatives](https://www.reddit.com/r/webdev/comments/qety61/what_is_a_good_lightweight_free_alternative_to/). Having never used a self-hosted analytics tool before, I was intrigued. Like Netlify Analytics, Ackee captures data server-side. By default, Ackee only provides page views and time on page. If you want to capture more detailed information, such as device type or region, you need to enable Ackee Detailed Tracking, which does involve setting a cookie. They offer a well-documented [page explaining how to set up more detailed data capture](https://docs.ackee.electerious.com/#/docs/Anonymization#personal-data) in a privacy-focused manner. Additionally, you can manually add a `source` query parameter to any URL (e.g. `example.com?source=LinkedIn`) to track where your traffic is coming from.
 
 **Pros** ✅
 * Free
