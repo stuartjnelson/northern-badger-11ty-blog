@@ -42,7 +42,7 @@ When you host a site on Netlify, you have the option to use their analytics tool
 
 **Cons** ❌
 * Costs £9/month
-* Only stores have 30 days of data
+* Only 30 days data retention
 
 
 ### Ackee Analytics
@@ -58,14 +58,15 @@ One free, self-hosted, open-source platform I discovered is [Ackee](https://acke
 
 
 ### Simple Analytics
-Like the other two tools, a server side analytics data capturing platform. They offer a free tier for personal projects which has some limitations including data being stored for only 30 days. Its a cookieless tool that focuses on privacy. Their free plan gives you access to the platform but with data only being stored for 30-60 days as well as your dashboard being public. Getting setup was as simple as adding the tracking script to my blogs `<footer>`. I am a fan of how well put together the product feels, from logging in using password-less authentication to their being "AI" built in to make it easy to answer specific analytics questions. If this blog made some money I'd defiantly pay to access a higher level of the tool.
+Like the other two tools, Simple Analytics is a server-side data capturing platform. They offer a free tier for personal projects, which comes with some limitations, including data being stored for only 30 days. It's a cookieless tool that prioritises privacy. The free plan provides access to the platform, but data is only stored for 30-60 days, and your dashboard is public. Setting it up was as simple as adding the tracking script to my blog’s `<footer>`. I'm impressed with how well the product is put together, from logging in with passwordless authentication to the inclusion of "AI" that makes it easy to answer specific analytics questions. If this blog generated revenue, I’d definitely consider paying for a higher tier of the tool.
+
 
 **Pros** ✅
 * Easy setup
 * Excellent dashboard
 
 **Cons** ❌
-* Only 30 days data retention 
+* Only 30 days data retention
 
 
 
