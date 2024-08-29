@@ -41,7 +41,7 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [ ] Write blog post on draft posts in 11ty
 - [ ] Write blog post on my handrolled meta/OG data
 - [x] Write blog post on ditching GA for Simple Analytics
-- [ ] Write blog post on three mistakes as a manager
+- [x] Write blog post on three mistakes as a manager
 - [ ] Write blog post on three lessons as a manager
 - [x] Write blog post on how I use AI to help me blog
  
