@@ -4,7 +4,7 @@ title: >-
   I want to ditch Google Analytics but what for?
 excerpt: >-
   Google Analytics remains the most popular analytics platform, but I’ve grown tired of its privacy invasions and performance issues. This post is my journey to find a simple analytics tool that respects both my needs and my users' data.
-date: "2024-08-23T08:32:00.000Z"
+date: "2024-08-29T14:00:00.000Z"
 featuredImg: /assets/img/i-want-to-ditch-google-analytics-but-what-for--featured-img.webp
 meta:
   ogImg: /assets/img/i-want-to-ditch-google-analytics-but-what-for--og-img.jpg
