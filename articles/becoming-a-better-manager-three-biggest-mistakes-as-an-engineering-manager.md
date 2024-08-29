@@ -1,7 +1,7 @@
 ---
 layout: layout-post.hbs
 title: >-
-  Becoming a better manager - My new blog series
+  Becoming a better manager - Three biggest mistakes as an engineering manager
 excerpt: >-
   I want to resume regular blogging in the second half of 2024, focusing on my growth as a software engineering manager
 date: "2024-08-14T21:15:00.994Z"
