@@ -28,8 +28,9 @@ keywords: []
 I want to add analytics to my [11ty](https://www.11ty.dev/) blog that respects my users privacy and takes less than an hour to setup with costing me anything.
 
 
-## The contenders
-I still think Google Analytics is a great tool but for a simple site where I've no interests in more advanced features or using other related Google tools, it feels overkill. There are many, many analytics tools out there aside from Google Analytics. I choose three to asses because I feel choosing from three is a good amount of choice. Here's my analysis of those tools.
+## The Contenders
+I still believe Google Analytics is a great tool, but for a simple site where I have no need for advanced features or other related Google tools, it feels excessive. There are countless analytics tools available besides Google Analytics. I chose three to assess because I think three provides a good balance of options. Here’s my analysis of those tools.
+
 
 
 
