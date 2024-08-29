@@ -32,10 +32,9 @@ I want to add analytics to my [11ty](https://www.11ty.dev/) blog that respects m
 I still believe Google Analytics is a great tool, but for a simple site where I have no need for advanced features or other related Google tools, it feels excessive. There are countless analytics tools available besides Google Analytics. I chose three to assess because I think three provides a good balance of options. Here’s my analysis of those tools.
 
 
-
-
 ### Netlify Analytics
-When you host a site on Netlify you're also able to use their analytics tools, [Netlify Analytics](https://www.netlify.com/platform/core/analytics/). This is a server side analytics tool which respects your users privacy and doesn't affect the performance of your site. To start using Netlify Analytics it's just a click of a button in the Netlify dashboard however it does cost £9/month. The [data is only retained for 30 days](https://answers.netlify.com/t/historical-analytics-data-more-than-30-days/26466/30) but you can apparently export it using an Netlify API.
+When you host a site on Netlify, you have the option to use their analytics tool, [Netlify Analytics](https://www.netlify.com/platform/core/analytics/). This is a server-side analytics tool that respects your users' privacy and does not impact your site's performance. Activating Netlify Analytics is as simple as clicking a button in the Netlify dashboard, but it does come with a cost of £9 per month. The [data is only retained for 30 days](https://answers.netlify.com/t/historical-analytics-data-more-than-30-days/26466/30), though it can be exported using the Netlify API.
+
 
 **Pros** ✅
 * Very easy to setup
@@ -43,7 +42,7 @@ When you host a site on Netlify you're also able to use their analytics tools, [
 
 **Cons** ❌
 * Costs £9/month
-* Only have 30 days of data
+* Only stores have 30 days of data
 
 
 ### Ackee Analytics 
