@@ -1,9 +1,11 @@
 <article class="article">
     <header class="article__header">
-        {{# if articleData.data.draft }}
-            <div class="band -error text-center landmark">
-                <p class="text--bold text--white">THIS POST IS A DRAFT</p>
-            </div>
+        {{# if (eq env "development") }}
+            {{# if articleData.data.draft }}
+                <div class="band -error text-center landmark">
+                    <p class="text--bold text--white">THIS POST IS A DRAFT</p>
+                </div>
+            {{/ if }}
         {{/ if }}
 
         <div class="article__header-inner">

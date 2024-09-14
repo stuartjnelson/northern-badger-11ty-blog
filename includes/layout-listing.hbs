@@ -5,9 +5,9 @@
 		<section class="band -double">
 			<ul class="articles-list">
 				{{#each (reverse collections.posts) }}
-				<li class="articles-list__item">
-					{{> article articleData=this }}
-				</li>
+					<li class="articles-list__item">
+						{{> article articleData=this env=@root.envData.env }}
+					</li>
 				{{/each}}
 			</ul>
 		</section>
