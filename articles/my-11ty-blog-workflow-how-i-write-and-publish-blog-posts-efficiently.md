@@ -3,12 +3,11 @@ layout: layout-post.hbs
 title: >-
   My 11ty blog workflow - How I write and publish blog posts efficiently
 excerpt: >-
-  In this post, I walk through my personal process for writing blog posts using 11ty, from adding ideas to my roadmap to publishing with Netlify. I share how I use AI tools like ChatGPT and DALL-E to assist with brainstorming, image creation, and proofreading, while emphasizing the importance of documenting and automating repetitive tasks to stay focused on content creation. If you're curious about streamlining your own blogging process, this might provide some useful insights.
-date: "2024-09-09T08:32:00.994Z"
+  In this post, I walk through my process for writing blog posts on my 11ty site, from adding ideas to my roadmap to publishing with Netlify. I share how I use AI tools like ChatGPT and DALL-E to speed up repetitive tasks, while emphasizing the importance of documenting workflows. If you're curious about streamlining your own blogging process, this might give you some new ideas.
+date: "2024-09-14T16:10:00.000Z"
 featuredImg: /assets/img/my-11ty-blog-workflow-how-i-write-and-publish-blog-posts-efficiently--featured-img.webp
 meta:
   ogImg: /assets/img/my-11ty-blog-workflow-how-i-write-and-publish-blog-posts-efficiently--og-img.jpg
-draft: true
 tags:
   - posts
   - blogging
