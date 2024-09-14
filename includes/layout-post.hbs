@@ -1,11 +1,12 @@
 {{> head }}
 	{{> header}}
 
-
 	{{# if (eq envData.env "development") }}
-		<div class="band -error text-center">
-			<p class="heading--bravo text--white">THIS POST IS A DRAFT</p>
-		</div>
+		{{# if draft }}
+			<div class="band -error text-center">
+				<p class="heading--bravo text--white">THIS POST IS A DRAFT</p>
+			</div>
+		{{/ if }}
 	{{/ if }}
 
 	<main id="main-content" class="container -content">
