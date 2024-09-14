@@ -4,7 +4,7 @@ title: >-
   Title for post in sentance case - Use same text in kebab case for file name and image files
 excerpt: >-
   Some excerpt text
-date: "2024-09-09T08:32:00.994Z"
+date: "2024-09-09T08:32:00.000Z"
 featuredImg: /assets/img/your-post-file-name--featured-img.webp
 meta:
   ogImg: /assets/img/your-post-file-name--og-img.jpg
