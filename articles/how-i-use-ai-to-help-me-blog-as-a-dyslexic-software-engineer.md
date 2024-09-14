@@ -24,18 +24,7 @@ keywords: []
 {{excerpt}}
 
 ## My high level processes - ❓
-1. Add idea to my ["roadmap"](https://github.com/stuartjnelson/northern-badger-11ty-blog?tab=readme-ov-file#roadmap) when I come up with it
-2. To start writing the post, I duplicate my [markdown post template](https://github.com/stuartjnelson/northern-badger-11ty-blog/blob/main/articles/__TEMPLATE.md)
-3. Come up with the actual title - sometimes use AI here 🤖
-4. Draft the section titles so I have a document outline
-5. Create images using ChatGPT/DALL-E
-6. Use ChatGPT to optimise/resize/format images
-7. Write my first draft
-8. Use ChatGPT to proof my work, section by section
-9. Write the excerpt and any additional meta data
-10. Final checks including checking OG data using [OGraph Previewer browser extension](https://chromewebstore.google.com/detail/ograph-previewer/ggcfeakcnodgcmmllfdbmngekljbhiim)
-11. Merge in the PR and Netlify takes care of getting the post into production
-12. Schedule to share on LinkedIn
+<See other post>
 
 
 ## AI for content ideation - ❓
@@ -56,6 +45,10 @@ Probably my favourite part. I'm paying for ChatGPT so I get credits for image cr
 It can take quite a few back and forths to get the illustraion I want, especially if its trying to put text into the image. Once I'm happy with the image I get a couple of smallers sizes created. One for OG Image and one for my posts "featured image". I always commit these and the original image into my repo just inacse I need to generate some other sizes in the future.
 
 There are 11ty tools that can create other image formats as part of the build. I'll likely use them in the future but for now its very little effort for ChatGPT to help me do this.
+
+My prompt for creating optimised images in the correct format and size for my posts;
+> now I need to download this image as three different files. 1  as an optimized jpg og image, 2 as a optimized webp thats 780px wide and the 3rd as this high res version. Each file name should be the kebab case post title. The OG image and 780px wide featured files should have a modifier on the end of the file name; for the `--og-img` and `--featured-img`
+
 
 
 ## Conclusion -❓
