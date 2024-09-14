@@ -3,7 +3,7 @@ layout: layout-post.hbs
 title: >-
   My 11ty blog workflow - How I write and publish blog posts efficiently
 excerpt: >-
-  
+  In this post, I walk through my personal process for writing blog posts using 11ty, from adding ideas to my roadmap to publishing with Netlify. I share how I use AI tools like ChatGPT and DALL-E to assist with brainstorming, image creation, and proofreading, while emphasizing the importance of documenting and automating repetitive tasks to stay focused on content creation. If you're curious about streamlining your own blogging process, this might provide some useful insights.
 date: "2024-09-09T08:32:00.994Z"
 featuredImg: /assets/img/my-11ty-blog-workflow-how-i-write-and-publish-blog-posts-efficiently--featured-img.webp
 meta:
@@ -22,22 +22,22 @@ keywords: []
 {{excerpt}}
 
 ## My high level processes - ❓
-1. Add idea to my ["roadmap"](https://github.com/stuartjnelson/northern-badger-11ty-blog?tab=readme-ov-file#roadmap) when I come up with it
-2. To start writing the post, I duplicate my [markdown post template](https://github.com/stuartjnelson/northern-badger-11ty-blog/blob/main/articles/__TEMPLATE.md)
-3. Come up with the actual title - sometimes use AI here 🤖
+1. Add idea to my ["roadmap"](https://github.com/stuartjnelson/northern-badger-11ty-blog?tab=readme-ov-file#roadmap) when I come up with it. I feel this means when it comes to having time to write a post I can focus on writing rather than coming up with a new idea.
+2. To start writing the post, I duplicate my [markdown post template](https://github.com/stuartjnelson/northern-badger-11ty-blog/blob/main/articles/__TEMPLATE.md). This helps with making my posts consistent as well as removing the need to duplicate the basic layout and [Front Matter Data](https://www.11ty.dev/docs/data-frontmatter/) properties.
+3. Come up with the final title. Sometimes, I use AI 🤖 to brainstorm new ideas based on my original concept.
 4. Draft the section titles so I have a document outline
-5. Create images using ChatGPT/DALL-E
-6. Use ChatGPT to optimise/resize/format images
-7. Write my first draft
-8. Use ChatGPT to proof my work, section by section
-9. Write the excerpt and any additional meta data
-10. Final checks including checking OG data using [OGraph Previewer browser extension](https://chromewebstore.google.com/detail/ograph-previewer/ggcfeakcnodgcmmllfdbmngekljbhiim)
-11. Merge in the PR and Netlify takes care of getting the post into production
+5. Create images using ChatGPT/DALL-E 🤖.
+6. I then use ChatGPT 🤖 to optimise/resize/create different image formats for my needs. I have a prompt I used each time that just needs to be pasted into ChatGPT. I'll share this and more in my follow-up post focusing on my AI usage
+7. Write the first draft, focusing on simply getting _something_ down. I find it's much easier to refine and improve once I have a starting point. I don’t worry too much about perfection on the first pass.
+8. Use ChatGPT 🤖 to proof my work, section by section. This will be my final draft.
+9. Write the excerpt and any additional meta data I need; publish date, remove it being a draft, add tags used to filter my blog content & any SEO data.
+10. Final proof read and manual checks including reviewing OG data using [OGraph Previewer browser extension](https://chromewebstore.google.com/detail/ograph-previewer/ggcfeakcnodgcmmllfdbmngekljbhiim)
+11. Once I'm happy with the post I just merge in my GitHub Merge Request and Netlify takes care of getting the post into production.
 12. Schedule to share on LinkedIn
 
 
 
 ## Conclusion
-<TBC> - ever changing. I've spent time making repeatable tasks automated or very simple as I want focus on writing the content.
+That’s essentially the process. It’s always evolving, but I find writing it down helps solidify it in my mind. I also encourage my teams to document their workflows. Once a process is on documented, it becomes easier to reflect and often spot areas for improvement. I’ve invested time in automating or simplifying repeatable tasks so I can focus more on creating content rather than managing the workflow.
 
-If you have any comments/feedback/questions on this article please get in touch! I'd love to how you use AI to help you carry out tasks.
+If you have any comments/feedback/questions on this article please get in touch! I'd love to how go about writing posts for your blog.
