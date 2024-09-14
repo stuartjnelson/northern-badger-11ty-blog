@@ -20,7 +20,7 @@ keywords: []
 
 {{excerpt}}
 
-## My high level processes - ❓
+## My high level processes
 1. Add idea to my ["roadmap"](https://github.com/stuartjnelson/northern-badger-11ty-blog?tab=readme-ov-file#roadmap) when I come up with it. I feel this means when it comes to having time to write a post I can focus on writing rather than coming up with a new idea.
 2. To start writing the post, I duplicate my [markdown post template](https://github.com/stuartjnelson/northern-badger-11ty-blog/blob/main/articles/__TEMPLATE.md). This helps with making my posts consistent as well as removing the need to duplicate the basic layout and [Front Matter Data](https://www.11ty.dev/docs/data-frontmatter/) properties.
 3. Come up with the final title. Sometimes, I use AI 🤖 to brainstorm new ideas based on my original concept.
