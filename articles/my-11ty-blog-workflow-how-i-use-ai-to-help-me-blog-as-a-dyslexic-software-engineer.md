@@ -31,8 +31,13 @@ While I recognise that my initial ideas can be a bit clunky, and I could improve
 
 
 
-## AI for proof reading - ❓
-When the first draft is done I'll ask ChatGPT to proof read each section of my article with the following prompt; `Improve, check grammar, spelling (UK english) and flow of the text. Return as markdown`. I then in VSCode review the diff to see the changes. I will make nessacery manual adjsutments so the text makes sense. I find ChatGPT can make mistakes when it comes to the wider context, which I guess coudl be a downside to me going section by section. I feel the advantages are its less effort for me to understand the changes and I can really focus on proof reading due to taking it on as lots of small tasks. 
+## AI for proof reading
+Once the first draft is complete, I ask ChatGPT to proofread each section of my article using the following prompt: 
+
+`Improve, check grammar, spelling (UK English), and flow of the text. Return as markdown.`
+
+I then review the diff in VSCode to see the changes. I make any necessary manual adjustments to ensure the text makes sense. I’ve noticed that ChatGPT can sometimes miss the wider context, which I assume is a drawback of handling the article section by section. However, I feel the advantages outweigh this. It’s less effort for me to understand the changes, and by breaking it down into smaller tasks, I can really focus on proofreading.
+
 
 
 ## AI for image creation -❓
