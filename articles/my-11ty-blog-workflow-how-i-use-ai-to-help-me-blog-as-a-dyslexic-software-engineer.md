@@ -56,10 +56,11 @@ Here’s the prompt I use to create optimised images in the correct format and s
 There are 11ty tools that can create various image formats as part of the build process, and I’ll likely use them in the future. For now, though, it's very little effort to let ChatGPT help me with this.
 
 
-## Conclusion -❓
-This is my approach and im refining it all the time. I could probably improve it by using a VSCode extension for ChatGPT. I should really create my standard prompts as [Alfred Text Expanders](https://www.alfredapp.com/help/features/snippets/) which would be a nice little reduction in re-writing/copying my most common prompts.
+## Conclusion
+This is my current approach, and I’m constantly refining it. I could probably improve it by using a VSCode extension for ChatGPT. I should also create my standard prompts as [Alfred Text Expanders](https://www.alfredapp.com/help/features/snippets/), which would save me from re-writing or copying my most frequently used prompts.
 
-Is AI good for content creation? For my it helps reduce the effort it takes as someone who is dyslexic. I can see however how it could be see to devalue creative writing. Its here to stay and as wise friend always tells me "this is the dumbest it's every going to be". I go from feeling like its taking my job in the next fives years to feeling like AI is great and will help us do much more.
+Is AI good for content creation? For me, it significantly reduces the effort, especially as someone with dyslexia. However, I can understand how some might feel it devalues creative writing. AI is here to stay, though, and as a wise friend of mine always says, "This is the dumbest it's ever going to be." (should out to Richard Barnes)
 
+My perspective fluctuates—from worrying that AI might replace my job in the next five years, to feeling like it’s a fantastic tool that will help us accomplish much more so we can focus on other tasks.
 
-If you have any comments/feedback/questions on this article please get in touch! I'd love to how you use AI to help you carry out tasks.
+If you have any comments/feedback/questions on this article please get in touch! I'd love to how you use AI to help you help you generate content.
