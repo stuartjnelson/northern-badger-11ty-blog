@@ -3,12 +3,11 @@ layout: layout-post.hbs
 title: >-
   My 11ty blog workflow - How I use AI to help me blog as a dyslexic software engineer
 excerpt: >-
-  TBC
-date: "2024-09-09T08:32:00.994Z"
+  As someone with dyslexia, I’ve found that AI, particularly ChatGPT, plays a crucial role in my content creation process. From refining my blog post titles and proofreading drafts to generating illustrations with DALL-E, AI significantly reduces both the effort and stress involved in writing for me. Though it’s not without its limitations, like missing broader context in sections, the benefits far outweigh the drawbacks. AI has already become an invaluable tool that allows me to focus on creativity while handling the technical details.
+date: "2024-09-22T16:16:00.994Z"
 featuredImg: /assets/img/my-11ty-blog-workflow-how-i-use-ai-to-help-me-blog-as-a-dyslexic-software-engineer--featured-img.webp
 meta:
   ogImg: /assets/img/my-11ty-blog-workflow-how-i-use-ai-to-help-me-blog-as-a-dyslexic-software-engineer--og-img.jpg
-draft: true
 tags:
   - posts
   - dyslexia
