@@ -40,16 +40,20 @@ I then review the diff in VSCode to see the changes. I make any necessary manual
 
 
 
-## AI for image creation -❓
-Probably my favourite part. I'm paying for ChatGPT so I get credits for image creation. [Under the hood ChatGPT uses DALL-E](https://help.openai.com/en/articles/8932459-dall-e-in-chatgpt) for image creation. I ask it `I want an illustration for a blog post I'm writing "<post title>". Can it be landscape`.  I've found if I don't specifically ask for it to be landscape the default aspect ratio is 1:1.
+## AI for image creation
+This is probably my favourite part. As a paid ChatGPT user, I get credits for image creation. [Under the hood, ChatGPT uses DALL-E](https://help.openai.com/en/articles/8932459-dall-e-in-chatgpt) for generating images. I typically ask it: 
 
-It can take quite a few back and forths to get the illustraion I want, especially if its trying to put text into the image. Once I'm happy with the image I get a couple of smallers sizes created. One for OG Image and one for my posts "featured image". I always commit these and the original image into my repo just inacse I need to generate some other sizes in the future.
+`I want an illustration for a blog post I'm writing "<post title>". Can it be landscape?`
 
-My prompt for creating optimised images in the correct format and size for my posts;
-> now I need to download this image as three different files. 1  as an optimized jpg og image, 2 as a optimized webp thats 780px wide and the 3rd as this high res version. Each file name should be the kebab case using the post title. The OG image and 780px wide featured files should have a modifier on the end of the file name; for the `--og-img` and `--featured-img`
+I've found that if I don't specifically request a landscape format, the default aspect ratio is 1:1.
 
-There are 11ty tools that can create other image formats as part of the build. I'll likely use them in the future but for now its very little effort for ChatGPT to help me do this.
+It often takes a few iterations to get the illustration just right, especially when it tries to include text in the image. Once I’m happy with the result, I generate a couple of smaller sizes: one for the OG image and another for the post's "featured image". I always commit these, along with the original image, to my repository in case I need to generate other sizes in the future.
 
+Here’s the prompt I use to create optimised images in the correct format and size for my posts:
+
+> Now I need to download this image as three different files: 1) an optimised JPG OG image, 2) an optimised WebP image that's 780px wide, and 3) the high-resolution version. Each file name should use kebab-case based on the post title. The OG image and 780px-wide featured image should have a modifier at the end of the file name: `--og-img` for the OG image and `--featured-img` for the featured image.
+
+There are 11ty tools that can create various image formats as part of the build process, and I’ll likely use them in the future. For now, though, it's very little effort to let ChatGPT help me with this.
 
 
 ## Conclusion -❓
