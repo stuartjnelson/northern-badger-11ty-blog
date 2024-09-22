@@ -24,10 +24,11 @@ keywords: []
 {{excerpt}}
 
 
-## AI for improving my blog post title - ❓
-I'm coming up with the title ideas myself for the articles but I use ChatGPT to improve them. For instance my draft title for this post was _As a Dyslexic software engineer how I use AI to help me blog_ and I asked ChatGPT to improve this title. It return _How I use AI to help me blog as a dyslexic software engineer_. Sometimes, like on this occasion I use exactly what ChatGPT gives me. Often I'll take what it returns to me and tweak it to better fit what I'm after.
+## AI for improving my blog post title
+I'm responsible for coming up with title ideas for my articles, but I use ChatGPT to help refine them. For example, my initial draft for a recent post was _"As a Dyslexic Software Engineer, How I Use AI to Help Me Blog"_. I asked ChatGPT to improve it, and it returned _"How I Use AI to Help Me Blog as a Dyslexic Software Engineer"_. In this case, I used the exact suggestion. Other times, I tweak the suggestions slightly to better align with what I want.
 
-I know my ide is a bit clunky and I could manually improve it but that not a strength of mine. I'm an ideas person. Written English is a challenge.
+While I recognise that my initial ideas can be a bit clunky, and I could improve them manually, that’s not my strength. I'm more of an ideas person, and written English can be a challenge for me.
+
 
 
 ## AI for proof reading - ❓
@@ -40,7 +41,7 @@ Probably my favourite part. I'm paying for ChatGPT so I get credits for image cr
 It can take quite a few back and forths to get the illustraion I want, especially if its trying to put text into the image. Once I'm happy with the image I get a couple of smallers sizes created. One for OG Image and one for my posts "featured image". I always commit these and the original image into my repo just inacse I need to generate some other sizes in the future.
 
 My prompt for creating optimised images in the correct format and size for my posts;
-> now I need to download this image as three different files. 1  as an optimized jpg og image, 2 as a optimized webp thats 780px wide and the 3rd as this high res version. Each file name should be the kebab case post title. The OG image and 780px wide featured files should have a modifier on the end of the file name; for the `--og-img` and `--featured-img`
+> now I need to download this image as three different files. 1  as an optimized jpg og image, 2 as a optimized webp thats 780px wide and the 3rd as this high res version. Each file name should be the kebab case using the post title. The OG image and 780px wide featured files should have a modifier on the end of the file name; for the `--og-img` and `--featured-img`
 
 There are 11ty tools that can create other image formats as part of the build. I'll likely use them in the future but for now its very little effort for ChatGPT to help me do this.
 
