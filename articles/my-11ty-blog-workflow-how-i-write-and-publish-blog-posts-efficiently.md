@@ -20,7 +20,7 @@ keywords: []
 
 {{excerpt}}
 
-I decided to write this down after chatting to a friends who's an engineer (shout out to Vlad). He asked me how I went about turning my ideas into posts.
+I decided to write this down after chatting to a friends who's an engineer (shout out to Vlad). He asked me how I went about turning my ideas into posts. I've written a subsequent post going into more [detail about how I use AI in my workflow](https://northernbadger.co.uk/articles/my-11ty-blog-workflow-how-i-use-ai-to-help-me-blog-as-a-dyslexic-software-engineer/).
 
 ## My high level processes
 1. Add idea to my ["roadmap"](https://github.com/stuartjnelson/northern-badger-11ty-blog?tab=readme-ov-file#roadmap) when I come up with it. I feel this means when it comes to having time to write a post I can focus on writing rather than coming up with a new idea.
@@ -28,7 +28,7 @@ I decided to write this down after chatting to a friends who's an engineer (shou
 3. Come up with the final title. Sometimes, I use AI 🤖 to brainstorm new ideas based on my original concept.
 4. Draft the section titles so I have a document outline.
 5. Create images using ChatGPT/DALL-E 🤖.
-6. I then use ChatGPT 🤖 to optimise/resize/create different image formats for my needs. I have a prompt I used each time that just needs to be pasted into ChatGPT. I'll share this and more in my follow-up post focusing on my AI usage.
+6. I then use ChatGPT 🤖 to optimise/resize/create different image formats for my needs. I have a prompt I used each time that just needs to be pasted into ChatGPT. I'll share this and more in my [follow-up post focusing on my AI usage](https://northernbadger.co.uk/articles/my-11ty-blog-workflow-how-i-use-ai-to-help-me-blog-as-a-dyslexic-software-engineer/).
 7. Write the first draft, focusing on simply getting _something_ down. I find it's much easier to refine and improve once I have a starting point. I don’t worry too much about perfection on the first pass.
 8. Use ChatGPT 🤖 to proof my work, section by section. This will be my final draft.
 9. Write the excerpt and any additional meta data I need; publish date, remove it being a draft, add tags used to filter my blog content & any SEO data.
