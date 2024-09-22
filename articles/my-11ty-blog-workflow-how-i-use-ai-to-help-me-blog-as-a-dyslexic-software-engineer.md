@@ -1,13 +1,13 @@
 ---
 layout: layout-post.hbs
 title: >-
-  How I use AI to help me blog as a dyslexic software engineer
+  My 11ty blog workflow - How I use AI to help me blog as a dyslexic software engineer
 excerpt: >-
   TBC
 date: "2024-09-09T08:32:00.994Z"
-featuredImg: /assets/img/how-i-use-ai-to-help-me-blog-as-a-dyslexic-software-engineer--featured-img.webp
+featuredImg: /assets/img/my-11ty-blog-workflow-how-i-use-ai-to-help-me-blog-as-a-dyslexic-software-engineer--featured-img.webp
 meta:
-  ogImg: /assets/img/how-i-use-ai-to-help-me-blog-as-a-dyslexic-software-engineer--og-img.jpg
+  ogImg: /assets/img/my-11ty-blog-workflow-how-i-use-ai-to-help-me-blog-as-a-dyslexic-software-engineer--og-img.jpg
 draft: true
 tags:
   - posts
