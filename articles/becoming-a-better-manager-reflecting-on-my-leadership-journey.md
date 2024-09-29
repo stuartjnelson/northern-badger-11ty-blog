@@ -20,10 +20,6 @@ keywords: []
 *[QA]: Quality assurance
 *[JS]: JavaScript
 
-![]({{featuredImg}})
-
-{{excerpt}}
-
 ## How typically do you become an engineering manager?
 Becoming an engineering manager often seems to follow a common path where the role is awarded to those who have been with the company the longest or who possess the most technical expertise. Unfortunately, this approach frequently overlooks the importance of people skills, which are crucial for effective management. Many companies fail to provide training for aspiring managers, leaving individuals to transition into these roles without the necessary preparation. As a result, managers often struggle with fundamental people skills, such as fostering positive team cultures, giving constructive feedback, and navigating difficult conversations. This can lead to teams that are made up of technically strong individuals but lack cohesion, morale, and clear direction.
 

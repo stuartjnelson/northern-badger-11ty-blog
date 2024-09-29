@@ -11,6 +11,17 @@
 
 	<main id="main-content" class="container -content">
 		<article id="article-content" class="long-form-copy band -double -seperator">
+			{{# if featuredImg }}
+				<img src="{{ featuredImg }}" alt="" width="780" height="445">
+			{{/ if }}
+			
+			{{!-- @NOTE: Some old posts I manually have the excerpt in --}}
+			{{# if (not hideExcerptInTemplate) }}
+				<p>
+					{{ excerpt }}
+				</p>
+			{{/ if }}
+
 			{{{ content }}}
 		</article>
 

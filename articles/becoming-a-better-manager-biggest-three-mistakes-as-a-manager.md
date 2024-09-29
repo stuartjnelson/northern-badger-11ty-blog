@@ -16,8 +16,6 @@ categories: []
 keywords: []
 ---
 
-![]({{featuredImg}})
-
 ## Biggest three mistakes I've made as a manager ❓
 1. Feeling responsible for my reports actions
 2. Trying to be fair to everyone

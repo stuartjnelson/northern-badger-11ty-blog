@@ -4,6 +4,7 @@ title: >-
   Bringing my 2020 11ty blog up to date in 2024
 excerpt: >-
   Updating an outdated website can be a daunting task. Join me on my journey as I revive my 2020 blog in 2024, powered by 11ty, Handlebars, SCSS, Utterances, Netlify & GitHub Codespaces
+hideExcerptInTemplate: true
 date: "2024-08-18T11:14:00.000Z"
 featuredImg: /assets/img/upgrading-11ty-handlebars-blog-from-2020.webp
 tags: 
@@ -12,8 +13,6 @@ tags:
 categories: []
 keywords: []
 ---
-
-![]({{featuredImg}})
 
 Updating an outdated website can be a daunting task. Join me on my journey as I revive my 2020 blog in 2024, powered by [11ty](https://www.11ty.dev/), [Handlebars](https://handlebarsjs.com/), [GitHub Codespaces](https://github.com/features/codespaces), and more.
 

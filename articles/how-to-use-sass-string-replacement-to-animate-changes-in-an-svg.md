@@ -4,13 +4,13 @@ title: How to use Sass string replacement to animate changes in an SVG
 excerpt: >-
   A step by step guide for how to use Sass to replace values in an SVG so you
   can animate it with CSS.
+hideExcerptInTemplate: true
+featuredImg: /assets/img/1__xDZmGL23W31oCwVl5nxogA.jpeg  
 date: '2018-02-20T16:36:01.994Z'
 tags: posts
 categories: []
 keywords: []
 ---
-
-![](/assets/img/1__xDZmGL23W31oCwVl5nxogA.jpeg)
 
 Sometimes I want to have an SVG as a URL-encoded `background-image: url(path/to/your.svg);` , often on a pseudo element ([see Taylor Hunters article about URL-encoding an SVG](https://codepen.io/tigt/post/optimizing-svgs-in-data-uris)). I love doing it this way, as it means my SVG is then inside my stylesheets and saves me an additional server request. I use Sass to run a string replacement function to edit the SVG’s code and therefore animate it. Pretty cool right?! Here’s an example of how to apply this technique to a simple SVG that has a single fill color.
 

@@ -6,13 +6,13 @@ title: >-
 excerpt: >-
   It’s a funny that a lot of web developers don’t have an up to date website. My
   guess is like myself, it’s hard to find time/enthusiasm to…
+hideExcerptInTemplate: true
+featuredImg: /assets/img/1__dppO6YEptqKiEQBa4r5Rxg.jpeg  
 date: '2018-03-30T14:58:29.115Z'
 tags: posts
 categories: []
 keywords: []
 ---
-
-![Screenshot of northernbadger.co.uk homepage](/assets/img/1__dppO6YEptqKiEQBa4r5Rxg.jpeg)
 
 It’s a funny that a lot of web developers don’t have an up to date website. My guess is like myself, it’s hard to find time/enthusiasm to create your own site when you could be getting paid to make someone else. The [Northern Badger](http://northernbadger.co.uk/) website has been an inline SVG and two lines of text since I bought the domain 4 years ago. I‘ve started 3 versions of the website only to get loose interest/decided it was not good enough half way through and scrap the build.
 

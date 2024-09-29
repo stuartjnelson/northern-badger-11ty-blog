@@ -6,17 +6,13 @@ excerpt: >-
   How Action-Centred Leadership has helped me recognise my management style biases and become a crucial tool in my approach to coaching.
 date: "2024-09-29T19:35:00.994Z"
 meta:
-featuredImg: /assets/img/becoming-a-better-manager-action-centered-leadership--featured-img.webp
+featuredImg: /assets/img/becoming-a-better-manager-action-centred-leadership--featured-img.webp
 tags:
   - posts
   - Becoming a better manager
 categories: []
 keywords: []
 ---
-
-![]({{featuredImg}})
-
-{{ excerpt }}
 
 During the first management leadership training session at Hargreaves Lansdown, we explored a wide range of topics, from understanding what it means to be a manager to defining effective coaching. For me, the most valuable takeaway was Action-Centred Leadership. In the weeks that followed, I found myself applying it daily.
 
