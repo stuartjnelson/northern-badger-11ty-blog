@@ -16,8 +16,6 @@ categories: []
 keywords: []
 ---
 
-![]({{featuredImg}})
-
 ## Biggest three lessons I've made as a manager ❓
 1. Authority is given, not taken
 2. Early feedback is essential

@@ -18,11 +18,6 @@ categories: []
 keywords: []
 ---
 
-![]({{featuredImg}})
-
-{{excerpt}}
-
-
 ## AI for improving my blog post title
 I'm responsible for coming up with title ideas for my articles, but I use ChatGPT to help refine them. For example, my initial draft for a recent post was _"As a Dyslexic Software Engineer, How I Use AI to Help Me Blog"_. I asked ChatGPT to improve it, and it returned _"How I Use AI to Help Me Blog as a Dyslexic Software Engineer"_. In this case, I used the exact suggestion. Other times, I tweak the suggestions slightly to better align with what I want.
 

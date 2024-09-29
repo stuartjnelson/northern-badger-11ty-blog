@@ -6,13 +6,13 @@ title: >-
 excerpt: >-
   2018 what a year! I managed to do a ski season while working remotely doing
   web development work, spend 3 months travelling around USA and…
+hideExcerptInTemplate: true  
 date: '2019-01-02T09:36:00.805Z'
+featuredImg: /assets/img/1____FL36kByHJXn7g6Gy0Pvag.jpeg
 tags: posts
 categories: []
 keywords: []
 ---
-
-![](/assets/img/1____FL36kByHJXn7g6Gy0Pvag.jpeg)
 
 2018 what a year! I managed to do a ski season while working remotely doing web development work, spend 3 months travelling around USA and Canada, learned a load of new web dev skills, wrote some articles, moved back to England and landed myself an awesome job. If anyone cares (thanks for reading mum), here's what I did.
 

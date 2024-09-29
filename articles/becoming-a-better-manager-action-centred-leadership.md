@@ -14,10 +14,6 @@ categories: []
 keywords: []
 ---
 
-![]({{featuredImg}})
-
-{{ excerpt }}
-
 During the first management leadership training session at Hargreaves Lansdown, we explored a wide range of topics, from understanding what it means to be a manager to defining effective coaching. For me, the most valuable takeaway was Action-Centred Leadership. In the weeks that followed, I found myself applying it daily.
 
 In this post, I’d like to share my thoughts on this leadership model and how it has been beneficial in my role.

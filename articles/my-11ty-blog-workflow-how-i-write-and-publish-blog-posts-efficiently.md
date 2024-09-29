@@ -16,10 +16,6 @@ categories: []
 keywords: []
 ---
 
-![]({{featuredImg}})
-
-{{excerpt}}
-
 I decided to write this down after chatting to a friends who's an engineer (shout out to Vlad). He asked me how I went about turning my ideas into posts. I've written a subsequent post going into more [detail about how I use AI in my workflow](https://northernbadger.co.uk/articles/my-11ty-blog-workflow-how-i-use-ai-to-help-me-blog-as-a-dyslexic-software-engineer/).
 
 ## My high level processes

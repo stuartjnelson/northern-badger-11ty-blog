@@ -4,13 +4,13 @@ title: How to build a native HTML accordion using progressive enhancement
 excerpt: >-
   92.26% of browsers support native accordion but what about those that don’t?
   Here how to create a clean base experience for those browsers
+hideExcerptInTemplate: true
+featuredImg: /assets/img/how-to-build-a-native-html-accordion-using-progressive-enhancement--featured-img.webp
 date: '2020-01-17T13:47:20.510Z'
 tags: posts
 categories: []
 keywords: []
 ---
-
-![Table from caniuse.com showing browser support for HTML accordion using detail/summary elements](https://cdn-images-1.medium.com/max/800/1*9-lSOGZwQSgs2MuODLSyPA.png)
 
 I remember when I first came across Chris Coyer’s article; [Quick Reminder that Details/Summary is the Easiest Way Ever to Make an Accordion](https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/).
 

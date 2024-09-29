@@ -4,11 +4,11 @@ title: Optimise SVGs using SVGO CLI & bash function
 excerpt: >-
   I wanted to be able to optimise a directory of SVG with SVGO. Currently I
   would optimise them either one at a time using Jake Archibald’s…
+hideExcerptInTemplate: false
+featuredImg: /assets/img/1____CLWEESCbHJw6s0avPHGPg.png  
 date: '2017-09-16T09:46:33.907Z'
 tags: posts
 ---
-
-![Screenshot of optimised SVG](/assets/img/1____CLWEESCbHJw6s0avPHGPg.png)
 
 I wanted to be able to optimise a directory of `SVG` with SVGO. Currently I would optimise them either one at a time using Jake Archibald’s awesome [online GUI for SVGO](https://jakearchibald.github.io/svgomg) (if I felt I needed a lot of control) or using a Gulp task. As I’m trying to write more blogs and make Codepen’s I wanted a way to bulk optimise a multiple of SVG without using Gulp. I looked at [SVGO Docs](https://github.com/svg/svgo) to find out more about the Command Line Interface tool.
 

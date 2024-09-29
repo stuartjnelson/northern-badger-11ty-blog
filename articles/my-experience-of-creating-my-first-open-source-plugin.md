@@ -4,6 +4,7 @@ title: My experience of creating my first open-source plugin.
 excerpt: >-
   I wanted to share my experiences, what I learnt and tools I discovered while
   creating my first open-source plugin.
+hideExcerptInTemplate: false  
 date: '2018-01-23T16:01:01.594Z'
 tags: posts
 categories: []

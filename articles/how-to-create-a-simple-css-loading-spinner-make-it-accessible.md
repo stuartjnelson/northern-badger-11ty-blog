@@ -4,18 +4,15 @@ title: How to create a simple CSS loading spinner & make it accessible
 excerpt: >-
   A step-by-step tutorial for how to create an animated single element CSS
   loading spinner that is accessible!
+hideExcerptInTemplate: true  
+featuredImg: /assets/img/1__RR8oubeQOm63YN90Uth0CA.jpeg
 date: '2018-04-24T19:31:01.112Z'
 tags: posts
 categories: []
 keywords: []
 ---
 
-![Photo by NeONBRAND on Unsplash](/assets/img/1__RR8oubeQOm63YN90Uth0CA.jpeg)
-
 Back when I started web development a loading spinner used to be something that I’d use an animated `.gif` for.
-
-![An classic loading spinner that would have been a animated .gif](img/1__QiE4__0MPslYPvx2Fit1NIQ.jpeg)
-An classic loading spinner that would have been a animated .gif
 
 Since [CSS animations are now so well supported](https://caniuse.com/#feat=css-animation) using an animated `.gif` for a loading spinner is now no longer necessary. The mighty Developer [Jon Pearse](https://jonpearse.net/), showed me how to make a CSS loading spinner so I thought I’d share his technique using a flexible SCSS mixin step by step. This spinner will work in all modern browsers as well as in IE10+. I am presuming here you have used CSS animations before for this tutorial.
 

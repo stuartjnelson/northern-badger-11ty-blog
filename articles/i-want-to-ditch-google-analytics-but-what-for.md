@@ -18,10 +18,6 @@ keywords: []
 
 <!-- *[FE]: Front-End -->
 
-![]({{featuredImg}})
-
-{{excerpt}}
-
 ## The problem
 I want to add analytics to my [11ty](https://www.11ty.dev/) blog that respects my users privacy and takes less than an hour to setup with costing me anything.
 

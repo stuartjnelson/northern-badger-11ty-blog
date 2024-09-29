@@ -15,10 +15,6 @@ categories: []
 keywords: []
 ---
 
-![]({{featuredImg}})
-
-I know when I'm being managed, I don't like being given unsolicited advice. From watching this TED talk, How to tame your Advice Monster by Michael Bungay Stanier, it really gave me perspective on how I conduct myself as a manager.
-
 https://www.youtube.com/watch?v=Kl0rmx7aa0w
 
 TL'DR - Everyone wins when as a manager, you ask questions rather than giving advise. 

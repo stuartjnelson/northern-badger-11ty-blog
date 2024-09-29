@@ -4,14 +4,13 @@ title: >-
   Badger Accordion — An accessible light weight, vanilla JavaScript accordion
   with an extensible API
 excerpt: 'An introduction to my plugin, Badger Accordion and how to use it.'
+featuredImg: /assets/img/1__XvUWwkh__xUV8wAPW2dsWaQ.jpeg
+hideExcerptInTemplate: true
 date: '2017-12-15T23:08:49.708Z'
 tags: posts
 categories: []
 keywords: []
 ---
-
-![Badger accordion demo](/assets/img/1__XvUWwkh__xUV8wAPW2dsWaQ.jpeg)
-
 
 Like a lot of dev’s, I use [open source](https://hackernoon.com/tagged/open-source) [tools](https://hackernoon.com/tagged/tools) all the time. From my [text editor](https://atom.io/) to the CMS that I work with to my regular searches of Stack Overflow. I thought it was about time I made a meaningful contribution to the open source community ( article about my experience of making first open source tool coming soon…). Drum roll please… without further delay here is; [Badger Accordion](http://ba.northernbadger.co.uk/)!
 
