@@ -4,9 +4,9 @@ title: >-
   Becoming a better manager - Action Centred Leadership
 excerpt: >-
   How Action-Centred Leadership has helped me recognise my management style biases and become a crucial tool in my approach to coaching.
-date: "2024-09-29T21:15:00.994Z"
+date: "2024-09-29T19:35:00.994Z"
 meta:
-featuredImg: /assets/img/becoming-a-better-manager-action-centred-leadership.webp
+featuredImg: /assets/img/becoming-a-better-manager-action-centered-leadership--featured-img.webp
 tags:
   - posts
   - Becoming a better manager
@@ -45,7 +45,7 @@ In engineering, I’ve often seen this with technical debt. Focusing on delivery
 ## How I scored for Action Centred Leadership
 We were given a questionnaire to complete, which provided us with scores in each of the categories. It’s similar to a [Myers-Briggs](https://www.verywellmind.com/the-myers-briggs-type-indicator-2795583) questionnaire I’ve done before. Some of the questions were very similar, with slight variations, aiming to identify someone who has a relatively even score across all categories.
 
-I scored XX for task, YY for individual, and ZZ for team. I wasn’t surprised that my bias was towards the team, but I was a bit shocked by how much. I feel this is partly due to my current focus on my new team, which has been largely on team dynamics. At the moment, I’m less task-focused, as they are successfully delivering on tasks.
+I scored 34 for task, 40 for individual, and 76 for team. I wasn’t surprised that my bias was towards the team, but I was a bit shocked by how much. I feel this is partly due to my current focus on my new team, which has been largely on team dynamics. At the moment, I’m less task-focused, as they are successfully delivering on tasks.
 
 I don’t see this as a bad thing. It’s been really helpful to gain a fresh perspective on how I manage. I believe any test like this shouldn’t be seen as absolute truth, but rather as a useful indication.
 
