@@ -3,7 +3,7 @@ layout: layout-post.hbs
 title: >-
   Becoming a better manager - Action centred leadership
 excerpt: >-
-  TBC
+  How Action-Centred Leadership has helped me better understand my management style biases and become a key tool in how I coach
 date: "2024-09-29T21:15:00.994Z"
 meta:
 featuredImg: /assets/img/becoming-a-better-manager.webp
@@ -19,12 +19,45 @@ keywords: []
 
 {{ excerpt }}
 
-## What is actioned centred leadership?
+At the first Hargreaves Lansdown management leadership journey session we covered a wide variety of topics. I found the most valuable thing we learnt about was Actioned Centred Leadership. In the few weeks following I've found myself using it on a daily basis. 
 
-## My tear results
+## What is actioned centred leadership?
+Action Centred Leadership (ACL), developed by John Adair, who was notably influenced by his experiences at the Royal Military Academy Sandhurst.
+
+This leadership model emphasises a balance between three core responsibilities:
+
+* Task: Ensuring that the team accomplishes the tasks and objectives effectively.
+
+* Team: Fostering team cohesion and ensuring effective collaboration.
+
+* Individual: Supporting and developing individuals within the team.
+
+Adair’s model highlights that a good leader must balance these three elements to ensure overall team success, acknowledging that prioritising only one aspect (such as focusing solely on individuals) can lead to poor outcomes for the team as a whole.
+
+## What does a action centred leadership mean in practice?
+As with many things in life, it's all about seeking balance. Too much focus on one area means the other suffers which likely means the focus areas suffers. If you're only focusing on the task then individuals won't progress as they need to. Over time this results in the task am suffering due to individuals lack of progression. Those both suffering will result in the team as a whole suffering.
+
+In engineering I've seen this often with tech debt. Focusing on delivery is good commercially but if this is at the cost of taking short cuts it'll catch up with you as your start to scale. I believe engineers are often happiest when they are working on both product tasks balanced with technical tasks. Often technical tasks will result in learning, so individual improvements. When the team are doing technical as well as product work it's likely they are very involved in the planning of tasks as well as how the team functionss, so the team benefits. 
+
+
+## How I scored for action centred leadership 
+We were given a questionnaire to complete which gave us results for how we scored in each of the categories. It's not unlike a [Myers Briggs](https://www.verywellmind.com/the-myers-briggs-type-indicator-2795583) questionnaire I've done before. Some questions were very like others which slight variations. Ideally looking to be someone who has a relatively even score for each category.
+
+I came out with XX task, YY individual and ZZ team. I wasn't surprised my bias was towards the team but I was a bit shocked by how much. I feel in part this is down to mt focus with my new team being, well on the team. Right now I'm less task focused as they are delivering on tasks.
+
+I don't see it as a bad thing. Ir has been really helpful to get a new perspective on how I manage. I feel any test like this shouldn't be taken as an absolute truth but as an indication. 
+
 
 ## How I apply actioned centred leadership to how I manage
+It's made me aware that I lean towards the best outcome for the team over the task. I can see this in how I like to not take tactical decisions at the moment. I'm making a conscious effort if we need to get something done, due to a commercial requirement I find a way to do this while balancing doing it properly.
+
+I wouldn't say it's had a massive impact on how I manage but has given me the awareness of my bias.
+
 
 ## How I use action centered leadership in coaching
+In coaching is where action centred leadership has has a big impact. I now often find myself saying things like "what would the impact be on the team as a result of that solution?". If I feel someone is overly focused on one area, especially the task when there is commercial pressure, it can be hard to zoom out and understand the conciquenes of that decision. In the past I've found it hard to coach in these situations as I've lacked a simple way to frame these questions. Now I find it's pretty simple! As with any good process, I now don't need to focus on _how_ I'm going to coach around these scenarios and I can focus on _what_ I should do.
 
 ## Conclusion
+I'm a big fan of action centred leadership. Like with most good ideas, it's simple. In engineering the balance between delivering commercial value quickly against delivery robust solutions is hard. I feel now as a coach I've got framework I can use to help have better conversations.
+
+Shout out to Ade from 
