@@ -6,8 +6,7 @@ excerpt: >-
   How Action-Centred Leadership has helped me recognise my management style biases and become a crucial tool in my approach to coaching.
 date: "2024-09-29T21:15:00.994Z"
 meta:
-featuredImg: /assets/img/becoming-a-better-manager-action-centered-leadership.webp
-draft: true
+featuredImg: /assets/img/becoming-a-better-manager-action-centred-leadership.webp
 tags:
   - posts
   - Becoming a better manager
