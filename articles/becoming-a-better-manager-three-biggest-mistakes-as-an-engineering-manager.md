@@ -24,9 +24,15 @@ keywords: []
 
 
 ## 2. Trying to be fair to everyone
+I have a strong sense of fairness. I believe it's really important for everyone to have been treated equally. 
+
+When it comes to managing a team, I believe trying to be fair to everyone as individuals can result poor outcomes for the team as a whole. For example when it comes to working on a new project XXX
 
 
 ## 3. Not making time to work on myself as a manager
+One of the most common topics I've discussed at 1:1s is about my reports protecting their self development time. It can be too easy to prioritise tasks we need to complete over self development. I strongly believe in working with my team to give them time to work on their own development.
+
+Rarely 
 
 
 ## Conclusion
