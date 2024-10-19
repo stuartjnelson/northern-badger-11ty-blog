@@ -6,6 +6,7 @@ const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItAbbr = require('markdown-it-abbr');
 const markdownItAnchor = require('markdown-it-anchor');
+const markdownItAttribution = require('markdown-it-attribution');
 
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 
@@ -304,7 +305,11 @@ module.exports = (eleventyConfig) => {
 	const markdownLib = markdownIt(mardownItOptions)
 		.use(markdownItAttrs)
 		.use(markdownItAbbr)
-		.use(markdownItAnchor, markdownItAnchorOptions);
+		.use(markdownItAnchor, markdownItAnchorOptions)
+		.use(markdownItAttribution, {
+			marker: '--',
+			removeMarker: true
+		});
 	eleventyConfig.setLibrary("md", markdownLib);
 
 
