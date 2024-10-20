@@ -14,7 +14,7 @@
     &.-container { @include container($container-width-reduced); }
 
     p,
-    li, {
+    li {
         @include fsz(large);
     }
 
