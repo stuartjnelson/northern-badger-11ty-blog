@@ -36,14 +36,14 @@ For me, as a manager, this translates to understanding that ensuring everyone ha
 
 
 ## How I want to put equity into practice
-My management style is very much about empowerment. Creating a culture where the team carve out their own direction. At times I feel I've been hesitant to encourage someone to take up a task if they feel uncomfortable to do so. For example not everyone feels comfortable suggesting technical ideas in a team meeting. Often due to their confidence and their own perceived lack of experience. 
+My management style is centered around empowerment, creating a culture where the team can carve out their own direction. At times, I’ve been hesitant to encourage someone to take on a task if they feel uncomfortable doing so. For example, not everyone feels confident suggesting technical ideas in a team meeting, often due to a lack of confidence or perceived inexperience. I’ve made a point of "walking the room" and asking everyone to share their perspective on a topic. While this helps to some extent, I realize this is more about equality than equity. I’m giving everyone the opportunity to speak, but not necessarily providing the support they need to contribute meaningfully.
 
-I'm now going to make a conscious effort to give a stronger steer if I feel someone isn't contributing technical ideas. I'll start by raising it with them at our 1:1. I'll make sure we agree a clear goal "at next weeks engineering weekly catch-up to suggest XX idea". We'll discuss if they'd like any extra support for instance for me to set the scene around the idea. 
+I’m now going to make a conscious effort to provide more support if I feel someone isn’t contributing technical ideas. I’ll start by discussing it with them during our 1:1s, setting a clear goal such as, “At next week’s engineering catch-up, suggest the idea for XX.” We’ll also discuss if they’d like any additional support, such as having me set the context for the idea.
 
-I feel I have done this before but now I have a better understanding of my role as the manager when it comes to equity in the team. 
+I feel I’ve done this in the past, but now I have a clearer understanding of my role as a manager when it comes to fostering equity within the team.
 
 
 ## Conclusion
-Inclusive teams ensure everyone feels they belong and are able to contribute to. At times this will mean I need to ensure some members of the team have extra support in order to do this.
+Inclusive teams ensure that everyone feels they belong and can contribute. Sometimes, this means providing extra support to ensure everyone is able to participate. Equity may seem like a subtle difference, but it's a crucial one as I strive to improve how I empower my team.
 
 If you have any comments/feedback/questions on this article please get in touch! I'd love to know how you ensure you team is inclusive.
