@@ -25,20 +25,25 @@ In more simple terms I belive an inclusive team is one where we celebrate differ
 
 
 ## How is equality different from equity?
-At the training I was introduced to equity in the context of inclusion. I'd never come across this term before and didn't at first understand the difference.
+At October's installment of HLs Manager Learning Journey training I was introduced to equity in the context of inclusion. I'd never come across this term before and didn't at first understand the difference.
 
 > Equality means each individual or group of people is given the same resources or opportunities.
 >
 > Equity recognizes that each person has different circumstances, and allocates the exact resources and opportunities needed to reach an equal outcome.
 > -- [internationalwomensday.com](https://www.internationalwomensday.com/Missions/18707/Equality-versus-Equity-What-s-the-difference-as-we-EmbraceEquity-for-IWD-2023-and-beyond)
 
-For me as a manager this translate into the fact ensuring everyone has an opportunoty to do something, doesn't mean I've necessarily created equal opporunities. We are all different and different people will need differnet levels of support. In the past I've over thought "pushing" something towards a task they don't feel comfortable with. This new perspective has made me realise its something I should do more of.
+For me as a manager this translate into the fact ensuring everyone has an opportunoty to do something, doesn't mean I've necessarily created equal opporunities for everyone in the team. We are all different and different people will need differnet levels of support. In the past I've over thought "pushing" something towards a task they don't feel comfortable with. This new perspective has made me realise its something I should do more in a balanced way that doesn't force anyone but gives them a gentle push.
 
 
 ## How I want to put equity into practice
+My management style is very much about empowerment. Creating a culture where the team carve out their own direction. At times I feel I've been hesitant to encourage someone to take up a task if they feel uncomfortable to do so. For example not everyone feels comfortable suggesting technical ideas in a team meeting. Often due to their confidence and their own perceived lack of experience. 
+
+I'm now going to make a conscious effort to give a stronger steer if I feel someone isn't contributing technical ideas. I'll start by raising it with them at our 1:1. I'll make sure we agree a clear goal "at next weeks engineering weekly catch-up to suggest XX idea". We'll discuss if they'd like any extra support for instance for me to set the scene around the idea. 
+
+I feel I have done this before but now I have a better understanding of my role as the manager when it comes to equity in the team. 
 
 
 ## Conclusion
+Inclusive teams ensure everyone feels they belong and are able to contribute to. At times this will mean I need to ensure some members of the team have extra support in order to do this.
 
-If you have any comments/feedback/questions on this article please get in touch! I'd love to know what your biggest mistakes have been as a manager
-
+If you have any comments/feedback/questions on this article please get in touch! I'd love to know how you ensure you team is inclusive.
