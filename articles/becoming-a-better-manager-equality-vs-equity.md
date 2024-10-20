@@ -17,12 +17,10 @@ categories: []
 keywords: []
 ---
 
-now I need to download this image as three different files. 1  as an optimised jpg og image, 2 as a optimised webp thats 780px wide and the 3rd as this high res version. Each file name should be the kebab case post title. The OG image and 780px wide featured files shoudl have a modifier on the end of the file name; for the `--og-img` and `--featured-img`
-
 ## What an inclusive team means to me
-An inclusive team values and respects diverse perspectives, ensuring every voice is heard and appreciated. It fosters a culture of belonging where all team members feel supported, regardless of their background or identity. Inclusive teams create an environment where collaboration thrives, and everyone has equal opportunities to contribute and grow.
+An inclusive team values and respects diverse perspectives, ensuring every voice is heard and appreciated. It fosters a culture of belonging, where all team members feel supported, regardless of their background or identity. Inclusive teams create an environment where collaboration thrives, giving everyone equal opportunities to contribute and grow.
 
-In more simple terms I belive an inclusive team is one where we celebrate differences and everyone feels they can be part of shaping how the team operates.
+Simply put, I believe an inclusive team is one that celebrates differences, where everyone feels they can be part of shaping how the team operates.
 
 
 ## How is equality different from equity?
