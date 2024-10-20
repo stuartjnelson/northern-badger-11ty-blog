@@ -14,7 +14,7 @@
     &.-container { @include container($container-width-reduced); }
 
     p,
-    li, {
+    li {
         @include fsz(large);
     }
 
@@ -147,6 +147,23 @@
             text-align: left;
 
             &:not(:last-of-type) { @include base-border(right); }
+        }
+    }
+
+    figure {
+        margin: 0;
+
+        & + p {
+            margin-top: $spacing-unit;
+        }
+    }
+
+    .figure-featured-img {
+        // @NOTE: This is assuming that always used inside 11ty frontmatter > markdown where a p is inserted
+        p {
+            color: get-color(grey, dark);
+            font-size: 0.85rem;
+            font-style: italic;
         }
     }
 }

@@ -6,6 +6,7 @@ const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItAbbr = require('markdown-it-abbr');
 const markdownItAnchor = require('markdown-it-anchor');
+const markdownItAttribution = require('markdown-it-attribution');
 
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 
@@ -62,13 +63,13 @@ module.exports = (eleventyConfig) => {
 
 	// Register each partial in the partials directory with Handlebars
 	fs.readdirSync(partialsDir).forEach(file => {
-	  const matches = /^([^.]+).hbs$/.exec(file);
-	  if (!matches) {
-		return;
-	  }
-	  const name = matches[1];
-	  const template = fs.readFileSync(path.join(partialsDir, file), "utf8");
-	  handlebars.registerPartial(name, template);
+		const matches = /^([^.]+).hbs$/.exec(file);
+		if (!matches) {
+			return;
+		}
+		const name = matches[1];
+		const template = fs.readFileSync(path.join(partialsDir, file), "utf8");
+		handlebars.registerPartial(name, template);
 	});
 
 
@@ -79,30 +80,54 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addHandlebarsHelper("not", exp => !exp)
 	eleventyConfig.addHandlebarsHelper("reverse", array => array.reverse())
 	eleventyConfig.addHandlebarsHelper("getYear", () => new Date().getFullYear())
-	eleventyConfig.addHandlebarsHelper('ternary', function(condition, valueIfTrue, valueIfFalse) {
+	eleventyConfig.addHandlebarsHelper('ternary', function (condition, valueIfTrue, valueIfFalse) {
 		return condition ? valueIfTrue : valueIfFalse;
 	});
-	eleventyConfig.addHandlebarsHelper('concat', function() {
+	eleventyConfig.addHandlebarsHelper('concat', function () {
 		var outStr = '';
-		for(var arg in arguments){
-			if(typeof arguments[arg]!='object'){
+		for (var arg in arguments) {
+			if (typeof arguments[arg] != 'object') {
 				outStr += arguments[arg];
 			}
 		}
 		return outStr;
 	});
+	// {{#ifCond condition1 "&&" condition2}}
+	eleventyConfig.addHandlebarsHelper('ifCond', function (v1, operator, v2, options) {
+		switch (operator) {
+			case '==':
+				return v1 == v2 ? options.fn(this) : options.inverse(this);
+			case '!=':
+				return v1 != v2 ? options.fn(this) : options.inverse(this);
+			case '>':
+				return v1 > v2 ? options.fn(this) : options.inverse(this);
+			case '<':
+				return v1 < v2 ? options.fn(this) : options.inverse(this);
+			case '&&':
+				return v1 && v2 ? options.fn(this) : options.inverse(this);
+			case '||':
+				return v1 || v2 ? options.fn(this) : options.inverse(this);
+			default:
+				return options.inverse(this);
+		}
+	})
+	// {{markdown <frontmatter prop with markdown in it that will be rendered as HTML>}}
+	eleventyConfig.addHandlebarsHelper("markdown", function (content) {
+		return new handlebars.SafeString(markdownLib.render(content))
+	});
+
 
 	// First look for `meta.ogImg`
 	// If cant find that try `featuredImg`
 	// Finally as the fallback use `globalMetaData.baseUrl "/assets/img/og-fallback-image.png"`
-	eleventyConfig.addHandlebarsHelper('getOgImage', function(meta, featuredImg, globalMetaData) {
-		 if (meta && meta.ogImg) {
-		   return globalMetaData.baseUrl + meta.ogImg;
-		 } else if (featuredImg) {
-		   return globalMetaData.baseUrl + featuredImg;
-		 } else {
-		   return globalMetaData.baseUrl + "/assets/img/og-fallback-image.png";
-		 }
+	eleventyConfig.addHandlebarsHelper('getOgImage', function (meta, featuredImg, globalMetaData) {
+		if (meta && meta.ogImg) {
+			return globalMetaData.baseUrl + meta.ogImg;
+		} else if (featuredImg) {
+			return globalMetaData.baseUrl + featuredImg;
+		} else {
+			return globalMetaData.baseUrl + "/assets/img/og-fallback-image.png";
+		}
 	});
 
 	// Define the helper function
@@ -293,8 +318,8 @@ module.exports = (eleventyConfig) => {
 		// permalink: true,
 		permalink: markdownItAnchor.permalink.linkInsideHeader({
 			class: "inline-link -interactive",
-			symbol: 
-			`
+			symbol:
+				`
 				<span class="vh">Jump to heading</span>
 				<span aria-hidden="true">#</span>`,
 			placement: 'before'
@@ -304,12 +329,16 @@ module.exports = (eleventyConfig) => {
 	const markdownLib = markdownIt(mardownItOptions)
 		.use(markdownItAttrs)
 		.use(markdownItAbbr)
-		.use(markdownItAnchor, markdownItAnchorOptions);
+		.use(markdownItAnchor, markdownItAnchorOptions)
+		.use(markdownItAttribution, {
+			marker: '--',
+			removeMarker: true
+		});
 	eleventyConfig.setLibrary("md", markdownLib);
 
 
 	// Filter to exclude drafts unless in development
-	eleventyConfig.addCollection("posts", function(collectionApi) {
+	eleventyConfig.addCollection("posts", function (collectionApi) {
 		return collectionApi.getFilteredByGlob("./articles/*.md").filter(post => {
 			return process.env.NODE_ENV === "production" ? !post.data.draft : true
 		});
