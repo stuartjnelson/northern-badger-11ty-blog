@@ -157,4 +157,13 @@
             margin-top: $spacing-unit;
         }
     }
+
+    .figure-featured-img {
+        // @NOTE: This is assuming that always used inside 11ty frontmatter > markdown where a p is inserted
+        p {
+            color: get-color(grey, dark);
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+    }
 }
