@@ -5,10 +5,10 @@ title: >-
 excerpt: >-
   For me, striving to create an inclusive team is a no-brainer. While equality offers everyone the same opportunities, equity takes it a step further. This reflection explores how focusing on individual needs, rather than simply offering the same opportunities to everyone, can make my team more inclusive.
 date: "2024-10-19T12:32:00.000Z"
-featuredImg: /assets/img/becoming-a-better-manager-equality-vs-equity--featured-img.webp
+featuredImg: /assets/img/becoming-a-better-manager-why-equity-matters-more-than-equality-in-an-inclusive-team--featured-img.webp
 featuredImgCaption: Credit to [sketchplanations.com](https://sketchplanations.com) for the cartoon
 meta:
-  ogImg: /assets/img/becoming-a-better-manager-equality-vs-equity--og-img.jpg
+  ogImg: /assets/img/becoming-a-better-manager-why-equity-matters-more-than-equality-in-an-inclusive-team--og-img.jpg
 draft: true
 tags:
   - posts
