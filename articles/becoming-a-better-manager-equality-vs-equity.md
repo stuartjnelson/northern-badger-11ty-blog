@@ -6,6 +6,7 @@ excerpt: >-
   TBC
 date: "2024-10-19T12:32:00.000Z"
 featuredImg: /assets/img/becoming-a-better-manager-equality-vs-equity--featured-img.webp
+featuredImgCaption: Credit to [sketchplanations.com](https://sketchplanations.com) for the cartoon
 meta:
   ogImg: /assets/img/becoming-a-better-manager-equality-vs-equity--og-img.jpg
 draft: true
