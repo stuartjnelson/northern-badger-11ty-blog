@@ -23,15 +23,16 @@ An inclusive team values and respects diverse perspectives, ensuring every voice
 Simply put, I believe an inclusive team is one that celebrates differences, where everyone feels they can be part of shaping how the team operates.
 
 
-## How is equality different from equity?
-At October's installment of HLs Manager Learning Journey training I was introduced to equity in the context of inclusion. I'd never come across this term before and didn't at first understand the difference.
+## How is equality different from equity
+At October's [Hargreaves Lansdown](https://www.hl.co.uk/) Manager Learning Journey training, I was introduced to the concept of equity in the context of inclusion. I hadn't come across this term before and initially struggled to understand the difference.
 
 > Equality means each individual or group of people is given the same resources or opportunities.
 >
-> Equity recognizes that each person has different circumstances, and allocates the exact resources and opportunities needed to reach an equal outcome.
+> Equity recognizes that each person has different circumstances and allocates the exact resources and opportunities needed to achieve an equal outcome.
 > -- [internationalwomensday.com](https://www.internationalwomensday.com/Missions/18707/Equality-versus-Equity-What-s-the-difference-as-we-EmbraceEquity-for-IWD-2023-and-beyond)
 
-For me as a manager this translate into the fact ensuring everyone has an opportunoty to do something, doesn't mean I've necessarily created equal opporunities for everyone in the team. We are all different and different people will need differnet levels of support. In the past I've over thought "pushing" something towards a task they don't feel comfortable with. This new perspective has made me realise its something I should do more in a balanced way that doesn't force anyone but gives them a gentle push.
+For me, as a manager, this translates to understanding that ensuring everyone has the opportunity to do something doesn’t necessarily mean I’ve created equal opportunities for everyone on the team.
+
 
 
 ## How I want to put equity into practice
