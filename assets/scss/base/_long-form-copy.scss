@@ -149,4 +149,12 @@
             &:not(:last-of-type) { @include base-border(right); }
         }
     }
+
+    figure {
+        margin: 0;
+
+        & + p {
+            margin-top: $spacing-unit;
+        }
+    }
 }
