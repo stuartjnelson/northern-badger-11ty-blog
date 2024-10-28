@@ -20,7 +20,8 @@ keywords: []
 
 {{excerpt}}
 
-## 1. Feeling responsible for all my teams problems
+## 1. Jumping into help
+Ah a classic. This came up at 
 
 
 ## 2. Trying to be fair to everyone
