@@ -44,5 +44,4 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [x] Write blog post on three mistakes as a manager
 - [ ] Write blog post on three lessons as a manager
 - [x] Write blog post on how I use AI to help me blog
-- [ ] Write blog post on how I use AI to help me blog
  
