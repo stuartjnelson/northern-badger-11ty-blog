@@ -4,7 +4,7 @@ title: >-
   Becoming a better manager - Three biggest mistakes as an engineering manager
 excerpt: >-
   Reflecting on my journey as an engineering manager, I delve into the three biggest mistakes I've made—feeling overly responsible for my team's actions, striving to be fair to everyone, and neglecting my own development. Each mistake taught me valuable lessons that have shaped my approach to leadership.
-date: "2024-09-09T08:32:00.994Z"
+date: "2024-10-28T12:32:00.000Z"
 featuredImg: /assets/img/becoming-a-better-manager-three-biggest-mistakes-as-an-engineering-manager--featured-img.webp
 meta:
   ogImg: /assets/img/becoming-a-better-manager-three-biggest-mistakes-as-an-engineering-manager--og-img.jpg
@@ -15,14 +15,11 @@ categories: []
 keywords: []
 ---
 
-![]({{featuredImg}})
+## 1. Jumping in to help
+Ah, a classic. This came up during management leadership training at [Hargreaves Lansdown](https://www.hl.co.uk/) as something many in the group had experienced. Often, being a manager means you have a background in the role your team members are performing. Chances are, you’re skilled at it. When pressure mounts, it’s tempting to jump in and start contributing directly to meet a deadline or solve a complex problem. The rationale many of us shared was that we felt we could probably do it faster ourselves. For some, this approach allowed them to meet the deadline. For others, myself included, it seemed like the best way to support the team and reduce the immediate pressure, which is both a nice thing to do and demonstrates to your team you'll muck in when things get tough.
 
-{{excerpt}}
+Reflecting on this approach, however, I realised it doesn’t help in the long term. Yes, you might fix the problem in the short term, but the real outcome is that you’ve taken away an opportunity for your team to work through the issue and learn from it, making it easier for them to solve similar problems in the future. I’m not saying you should leave your team to struggle when things get tough. I believe you should support them by encouraging collaboration, offering coaching, and finding ways to give your team the time and space to tackle challenges on their own.
 
-## 1. Jumping into help
-Ah a classic. This came up at the management leadership training session at [https://www.hl.co.uk/](Hargreaves Lansdown) as something many of the group had expereicned. Often being a manager means you've got experience in the role your team are doing. There is a good chance you are experiecned at it. When preasure mounts it is tempting to jump in and start contributing to meet a deadline or fix a complexed problem. Often the rational the group discussed is we felt we could likely do it quicker. For some this meant they then met the deadline. For others, including myself, we told ourselves this was the best way to help the team as it would reduce the preasure.
-
-Sitting back and reflecting on this it doesn't help long term. Sure, in the short term you might fix the problem. But the real outcome is you've taken away the opportunity for your team to work through a problem. So next time it'll be easier for them to solve it. I'm not saying you should leave your team to it when things get hard. I do feel you should suppoort by encouraging collaboration with others and through coaching. Find a way to give the team time to fix it.
 
 
 ## 2. Trying to be fair to everyone
