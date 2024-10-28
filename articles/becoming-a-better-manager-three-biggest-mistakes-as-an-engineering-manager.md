@@ -3,7 +3,7 @@ layout: layout-post.hbs
 title: >-
   Becoming a better manager - Three biggest mistakes as an engineering manager
 excerpt: >-
-  Reflecting on my journey as an engineering manager, I delve into the three biggest mistakes I've made—feeling overly responsible for my team's actions, striving to be fair to everyone, and neglecting my own development. Each mistake taught me valuable lessons that have shaped my approach to leadership.
+  Reflecting on my journey as an engineering manager, I explore three of my biggest mistakes: jumping in to help too quicklu, always trying to be fair to everyone, and neglecting my own development as a manager. Each misstep has taught me valuable lessons that have refined my approach to leadership and shaped how I support my team’s growth.
 date: "2024-10-28T12:32:00.000Z"
 featuredImg: /assets/img/becoming-a-better-manager-three-biggest-mistakes-as-an-engineering-manager--featured-img.webp
 meta:
@@ -22,7 +22,7 @@ Reflecting on this approach, however, I realised it doesn’t help in the long t
 
 
 
-## 2. Trying to be fair to everyone
+## 2. Always trying to be fair to everyone
 I have a strong sense of fairness and believe it’s essential for everyone to feel they’ve been treated equally.
 
 However, when managing a team, trying to be fair to everyone as individuals can sometimes lead to poor outcomes for the team as a whole. For example, when selecting a solution to a problem, I like to give all team members the chance to contribute. In the past, I’ve been _too_ democratic, which means discussions can drag on without clear direction as the more vocal members of the team continue to share their views. The balance I’ve missed is that, in trying to give everyone an equal platform, we can end up spending too much time discussing ideas. What the team often needs is a decision, and when we can’t reach one, it’s the manager’s role to step in and make the call. Some members may not fully agree with the approach, but that’s better than a lack of clear direction.
@@ -30,11 +30,14 @@ However, when managing a team, trying to be fair to everyone as individuals can 
 
 
 ## 3. Not making time to work on myself as a manager
-One of the most common topics I've discussed at 1:1s is about my reports protecting their self development time. It can be too easy to prioritise tasks we need to complete over self development. I strongly believe in working with my team to give them time to work on their own development.
+One of the most common topics I discuss in 1:1s is encouraging my team to protect their self-development time. It’s all too easy to prioritise tasks over personal growth, but I believe strongly in working with my team to ensure they have time for their own development.
 
-Rarely though have I done this for myself. Partly, writing these blog posts is my carving out time to reflect. In the last year I've found a couple of mentors both inside and outside HL which has been awesome. I've started to block out the last hour on a Friday to write up a post for my team about the week as well as spending 15mins myself reflecting on my week. This gives me space to review what I did well and what I could have done better.
+However, I’ve rarely done this for myself. While I’m learning on the job, I’m missing the chance to identify areas for improvement and reflect on things I could have done better, which ultimately means I’m not progressing as quickly as I could.
+
+Writing these blog posts is one way I’m carving out time to reflect. Over the past year, I’ve found a couple of mentors, both inside and outside HL, which has been invaluable. I’ve also started blocking out the last hour on Fridays to write a weekly post for my team and spend 15 minutes reflecting on my own week. This gives me space to review what went well and where I could improve.
+
 
 
 ## Conclusion
-If you have any comments/feedback/questions on this article please get in touch! I'd love to know what your biggest mistakes have been as a manager
+If you have any comments/feedback/questions on this article please get in touch! I’d love to hear about your biggest mistakes as a manager. What challenges have you faced, and how have you learned from them?
 
