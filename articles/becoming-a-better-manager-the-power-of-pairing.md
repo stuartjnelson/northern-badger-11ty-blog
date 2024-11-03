@@ -26,7 +26,9 @@ To me, its two engineers working together on the same problem using a single com
 
 
 ## My experience of pair programing
-Its something I still feel relativly new too. I feel the first person who introduced it to me in this more defined form was Darren West, in early 2022. I'll admit, I didn't get it at first. I couldn't get my hear around how this would be more productive. I feel this is a pretty common reaction for engineers and non-technical stakeholders alike. It clicked for me with in 2023 when as the design system team at (HL)[https://hl.co.uk] I was re-architecting our CI pipelines. Jonny Spry in my team hadn't done a lot of work with GitLab pipelines and I was getting to grips with our codebase. This created an ideal scenario for pairing. We were both bringing to the table difference levels of experience. What we wanted to do was create a quality CI pipeline where I was bringing more GitLab CI knowledge and Jonny brought his knowledge of our codebase. 
+Its something I still feel relativly new too. The first person who introduced it to me in this more defined form was Darren West, in early 2022. I'll admit, I didn't get it at first. I couldn't get my head around how this would be more productive. I feel this is a pretty common reaction for engineers and non-technical stakeholders alike.
+
+It clicked for me with in 2023 when as the design system team at [HL](https://hl.co.uk) I was re-architecting our CI pipelines. Jonny Spry in my team hadn't done a lot of work with GitLab pipelines and I was getting to grips with our codebase. This created an ideal scenario for pairing. We were both bringing to the table difference levels of experience. What we wanted to do was create a quality CI pipeline where I was bringing more GitLab CI knowledge and Jonny brought his knowledge of our codebase. 
 
 The outcome was I understood ourcodebase better through Jonny's support and I was able to support Jonny becoming more familiar with GitLab CI. We could have both done the work independantly and upon submitting merge requests reviewed each others work. We were a collaborative team so if while completiing a task we'd reguallar jump on a call to help each other. However this is very different to pairing. When pairing it's like you've aquried a human linter/requirements reviewer/AI ideas machine in real time. You can pass on small things such as "on line XX you missed a full stop" to "I haven't seen that shortcut before what was it?". 
 
@@ -40,14 +42,17 @@ If I have a specific problem to solve thats complicated or someone is picking up
 
 1. Have a clear objective.
 2. Rotate between navigating and driving.
-3. Use (Pomodoro Technique)[https://en.wikipedia.org/wiki/Pomodoro_Technique] to timebox driving/navigating and factoring in breaks. I find without regular 5min breaks it can be easy to drift, especially when remote. I use (TomatoTimer)[https://www.toptal.com/project-managers/tomato-timer] which is a free web app.
+3. Use [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) to timebox driving/navigating and factoring in breaks. I find without regular 5min breaks it can be easy to drift, especially when remote. I use [TomatoTimer](https://www.toptal.com/project-managers/tomato-timer) which is a free web app.
 4. Where possible use [VSCode Liveshare](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)* to allow the navigator to edit the code in real time.
 
 
 *It can be VERY buggy. I've found it works best when the person whos wanting to edit remotely does so in their browser rather than in their own VSCode
 
 
+## Pair programming as a engineering manager
+Bringing it back to the post title. I feel as a manager it's an ideal way to support your team with their progression. As I've coded less at work over the last few years I'm not as sharp as I was BUT through pairing I'm away to work one-on-one with someone and focus on giving higher level support. I might not know the exact answer but I can bring along my debugging skills and core programming experience. For instance last week I was working with one of my team on a unit test for a componet. I couldn't remeber the exact syntax I needed to allow Jest to mock the feature. I was able to go over simplyingygin the code and making it more testable so we didn't have to create a complexed mock.
+
 
 ## Conclusion
-If you have any comments/feedback/questions on this article please get in touch! I'd love to know if you us pair programming and how you find it.
+If you have any comments/feedback/questions on this article please get in touch! I'd love to know if you use pair programming and how you find it.
 
