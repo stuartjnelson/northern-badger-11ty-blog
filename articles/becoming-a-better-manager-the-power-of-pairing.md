@@ -15,13 +15,11 @@ categories: []
 keywords: []
 ---
 
-now I need to download this image as three different files. 1  as an optimised jpg og image, 2 as a optimised webp thats 780px wide and the 3rd as this high res version. Each file name should be the kebab case post title. The OG image and 780px wide featured files shoudl have a modifier on the end of the file name; for the `--og-img` and `--featured-img`
-
 ## What is pair programming?
-To me, its two engineers working together on the same problem using a single computer. One person primary role is to write the code where as the other person is driving the ideas as well as being a real time code checker. I've got a more detailed quote below from Datadog.
+To me, pair programming is when two engineers work together on the same problem using a single computer. One person’s primary role is to write the code, while the other drives the ideas and acts as a real-time code reviewer. Here is a more detailed explanation from Datadog.
 
-> Pair programming refers to a common practice in software development where two developers work on the same coding task at the same time. Traditionally, pair programmers worked behind a single computer, with one developer acting as “the driver” who controlled the keyboard and mouse, and the other developer acting as the “navigator” who offered suggestions. Today, teammates coding in tandem usually work remotely with the help of collaboration tools. But whether they are working together physically or virtually, pair programmers often find this technique allows them to be more productive and write higher-quality code because they are discussing, reviewing, and testing the code as it gets written.
-> -- [https://www.datadoghq.com/knowledge-center/pair-programming/](https://www.datadoghq.com/knowledge-center/pair-programming/)
+> Pair programming refers to a common practice in software development where two developers work on the same coding task simultaneously. Traditionally, pair programmers shared a single computer, with one developer acting as “the driver” who controlled the keyboard and mouse, while the other served as the “navigator,” offering suggestions. Today, teammates often work in tandem remotely with the help of collaboration tools. Whether they’re working together physically or virtually, pair programmers often find that this technique boosts productivity and results in higher-quality code, as they discuss, review, and test the code as it’s written.
+> -- [Datadog](https://www.datadoghq.com/knowledge-center/pair-programming/)
 
 
 ## My experience of pair programing
