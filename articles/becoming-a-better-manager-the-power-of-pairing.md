@@ -22,16 +22,16 @@ To me, pair programming is when two engineers work together on the same problem 
 > -- [Datadog](https://www.datadoghq.com/knowledge-center/pair-programming/)
 
 
-## My experience of pair programing
-Its something I still feel relativly new too. The first person who introduced it to me in this more defined form was Darren West, in early 2022. I'll admit, I didn't get it at first. I couldn't get my head around how this would be more productive. I feel this is a pretty common reaction for engineers and non-technical stakeholders alike.
+## My experience of pair programming
+Pair programming is something I still feel relatively new to. The first person who introduced it to me in a more structured form was Darren West, in early 2022. I’ll admit, I didn’t get it at first. I couldn’t wrap my head around how it could be more productive. I think this is a pretty common reaction for both engineers and non-technical stakeholders.
 
-It clicked for me with in 2023 when as the design system team at [HL](https://hl.co.uk) I was re-architecting our CI pipelines. Jonny Spry in my team hadn't done a lot of work with GitLab pipelines and I was getting to grips with our codebase. This created an ideal scenario for pairing. We were both bringing to the table difference levels of experience. What we wanted to do was create a quality CI pipeline where I was bringing more GitLab CI knowledge and Jonny brought his knowledge of our codebase. 
+It finally clicked for me in 2023 when, as part of the design system team at [HL](https://hl.co.uk), I was re-architecting our CI pipelines. Jonny Spry, a teammate, hadn’t worked much with GitLab pipelines, and I was still getting familiar with our codebase. This created an ideal scenario for pairing: we both brought different levels of experience to the table. I had more knowledge of GitLab CI, while Jonny was more familiar with the codebase. Together, we aimed to build a high-quality CI pipeline.
 
-The outcome was I understood ourcodebase better through Jonny's support and I was able to support Jonny becoming more familiar with GitLab CI. We could have both done the work independantly and upon submitting merge requests reviewed each others work. We were a collaborative team so if while completiing a task we'd reguallar jump on a call to help each other. However this is very different to pairing. When pairing it's like you've aquried a human linter/requirements reviewer/AI ideas machine in real time. You can pass on small things such as "on line XX you missed a full stop" to "I haven't seen that shortcut before what was it?". 
+The result was that I gained a better understanding of our codebase with Jonny’s support, and I was able to help Jonny become more comfortable with GitLab CI. We could have completed the work independently and then reviewed each other’s merge requests, but pairing was a different experience altogether. It’s like having a human linter, requirements reviewer, and AI ideas machine in real time. You can quickly share insights, from small things like, “You missed a full stop on line XX,” to “I haven’t seen that shortcut before—what was it?”
 
-You share knowledge while working on a task. One of the biggest killers for productivity for a team is single points of failure, where one person is the go-to person for a specific task. In the short term this isn't a problem but when about when they are on holiday/go on leave/are working on another high prioity task. Pairing is one of the best ways to solve this.
+Pairing helps share knowledge as you work, which addresses one of the biggest threats to team productivity: single points of failure, where only one person is the go-to expert on a task. In the short term, this may not seem like an issue, but it becomes a problem when that person is on holiday, on leave, or occupied with a high-priority task. Pairing is one of the best ways to prevent this.
 
-Finally I belive it created better wins for you as a team. Its awesome when you've been able to come together to solve a complicated problem. 
+Lastly, I believe pairing leads to greater wins for the team. There’s a fantastic sense of accomplishment when you come together to solve a complex problem. In the short term, it might require more “resource hours,” but in the long term, the shared knowledge and collaboration lead to better outcomes for the team.
 
 
 ## How I like to pair program
@@ -41,7 +41,6 @@ If I have a specific problem to solve thats complicated or someone is picking up
 2. Rotate between navigating and driving.
 3. Use [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) to timebox driving/navigating and factoring in breaks. I find without regular 5min breaks it can be easy to drift, especially when remote. I use [TomatoTimer](https://www.toptal.com/project-managers/tomato-timer) which is a free web app.
 4. Where possible use [VSCode Liveshare](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)* to allow the navigator to edit the code in real time.
-
 
 *It can be VERY buggy. I've found it works best when the person whos wanting to edit remotely does so in their browser rather than in their own VSCode
 
