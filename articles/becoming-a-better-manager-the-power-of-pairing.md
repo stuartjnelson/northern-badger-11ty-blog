@@ -35,14 +35,15 @@ Lastly, I believe pairing leads to greater wins for the team. There’s a fantas
 
 
 ## How I like to pair program
-If I have a specific problem to solve thats complicated or someone is picking up a ticket on something they aren't familiar with, pairing is the perfect solution. Here my top pairing tips;
+When I have a specific, complex problem to solve or someone is working on a task they’re unfamiliar with, pairing is the perfect solution. Here are my top tips for effective pairing:
 
 1. Have a clear objective.
-2. Rotate between navigating and driving.
-3. Use [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) to timebox driving/navigating and factoring in breaks. I find without regular 5min breaks it can be easy to drift, especially when remote. I use [TomatoTimer](https://www.toptal.com/project-managers/tomato-timer) which is a free web app.
-4. Where possible use [VSCode Liveshare](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)* to allow the navigator to edit the code in real time.
+2. Rotate between navigating and driving roles.
+3. Use the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) to timebox driving/navigating sessions and include regular breaks. Without a quick 5-minute break every so often, it’s easy to lose focus, especially when working remotely. I use [TomatoTimer](https://www.toptal.com/project-managers/tomato-timer), a free web app, to keep track.
+4. Where possible, use [VSCode Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)* to allow the navigator to edit code in real time.
 
-*It can be VERY buggy. I've found it works best when the person whos wanting to edit remotely does so in their browser rather than in their own VSCode
+*It can be _very_ buggy. I’ve found it works best when the person who needs to edit remotely does so through their browser rather than their own VSCode.
+
 
 
 ## Pair programming as a engineering manager
