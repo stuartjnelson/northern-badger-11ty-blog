@@ -45,11 +45,12 @@ When I have a specific, complex problem to solve or someone is working on a task
 *It can be _very_ buggy. I’ve found it works best when the person who needs to edit remotely does so through their browser rather than their own VSCode.
 
 
+## Pair programming as an engineering manager
+Bringing it back to the post title, I believe that as a manager, pair programming is an ideal way to support your team’s growth. Over the past few years, I’ve been coding less at work, so I’m not as sharp as I once was. However, through pairing, I can work one-on-one with team members and provide higher-level support. I might not always know the exact solution, but I can offer my debugging skills and core programming experience.
 
-## Pair programming as a engineering manager
-Bringing it back to the post title. I feel as a manager it's an ideal way to support your team with their progression. As I've coded less at work over the last few years I'm not as sharp as I was BUT through pairing I'm away to work one-on-one with someone and focus on giving higher level support. I might not know the exact answer but I can bring along my debugging skills and core programming experience. For instance last week I was working with one of my team on a unit test for a componet. I couldn't remeber the exact syntax I needed to allow Jest to mock the feature. I was able to go over simplyingygin the code and making it more testable so we didn't have to create a complexed mock.
+For example, last week I paired with a team member on a unit test for a component. I couldn’t recall the exact Jest syntax needed to mock a feature, but I was able to suggest ways to simplify the code and make it more testable, allowing us to avoid creating a complex mock.
 
 
 ## Conclusion
-If you have any comments/feedback/questions on this article please get in touch! I'd love to know if you use pair programming and how you find it.
+If you have any comments/feedback/questions on this article please get in touch! I’d love to hear if you use pair programming and how you find it.
 
