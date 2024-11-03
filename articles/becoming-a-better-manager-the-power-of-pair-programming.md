@@ -1,13 +1,13 @@
 ---
 layout: layout-post.hbs
 title: >-
-  Becoming a better manager - The power of pairing
+  Becoming a better manager - The power of pair programming
 excerpt: >-
-  <Some excerpt text>
-date: "2024-11-03T21:32:00.000Z"
-featuredImg: /assets/img/becoming-a-better-manager-the-power-of-pairing--featured-img.webp
+  In this post, I dive into the concept of pair programming and share my personal experiences with it. Pair programming involves two engineers working together on the same problem, often boosting productivity and code quality through real-time collaboration. I discuss how pairing has enhanced my understanding of team workflows, reduced single points of failure, and allowed me to support my team’s growth as an engineering manager.
+date: "2024-11-03T22:12:00.000Z"
+featuredImg: /assets/img/becoming-a-better-manager-the-power-of-pair-programming--featured-img.webp
 meta:
-  ogImg: /assets/img/becoming-a-better-manager-the-power-of-pairing--og-img.jpg
+  ogImg: /assets/img/becoming-a-better-manager-the-power-of-pair-programming--og-img.jpg
 tags:
   - posts
   - Becoming a better manager
