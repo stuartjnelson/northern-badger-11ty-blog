@@ -16,7 +16,7 @@ categories: []
 keywords: []
 ---
 
-now I need to download this image as three different files. 1  as an optimised jpg og image, 2 as a optimised webp thats 780px wide and the 3rd as this high res version. Each file name should be the kebab case post title. The OG image and 780px wide featured files shoudl have a modifier on the end of the file name; for the `--og-img` and `--featured-img`
+now I need to download this image as three different files. 1  as an optimised jpg og image thats 1200px wide, 2 as a optimised webp thats 780px wide and the 3rd as this high res version. Each file name should be the kebab case post title. The OG image and 780px wide featured files shoudl have a modifier on the end of the file name; for the `--og-img` and `--featured-img`
 
 ## First section
 
