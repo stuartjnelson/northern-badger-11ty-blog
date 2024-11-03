@@ -13,7 +13,22 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [GitHub Codespaces](https://github.com/features/codespaces) - virtual dev environment. I now only develop this site in the cloud
 
 ## Roadmap
+- [ ] Improve a11y for `article.hbs` for date. Right now it'll be read out weird for ATs
+- [ ] Convert tag `Becoming a better manager` to be stored as slugified version `becoming-a-better-manager`
+- [ ] Stop using `pubdate` Frontmatter prop and create an 11ty filter
+- [ ] Move todos to Github issues
+- [ ] Link blog posts with a next and previous at the bottom
+- [ ] Create a way to filter blog posts by tag
+- [ ] Get inline CSS working again
+- [ ] Create roadmap page that is powered by GitHub issues
+- [ ] Template abbreviations into a component (see `becoming-a-better-manager-reflecting-on-my-leadership-journey.md`)
+- [ ] Write blog post on adding [Utterances](https://utteranc.es/) to the blog
+- [ ] Write blog post on draft posts in 11ty
+- [ ] Write blog post on my handrolled meta/OG data
+- [ ] Write blog post on three lessons as a manager
+- [ ] The power of pairing as a software engineering manager
 
+### Done
 - [x] Publish blog post on new blog series
 - [x] Make repo public
 - [x] Add ~~google~~ [simple analytics](https://www.simpleanalytics.com/)
@@ -21,27 +36,16 @@ My blog powered by 11ty. Its a work in progress since I've not really updated it
 - [x] Updating links to be light blue rather than red for underline as looks like spelling mistake - see stash `update links to be blue rather than red`
 - [x] Add abbreviations to markdown articles
 - [x] Add anchor links for blog post headings - `markdown-it-anchor` - https://11ty.rocks/eleventyjs/slugs-anchors/
-- [ ] Improve a11y for `article.hbs` for date. Right now it'll be read out weird for ATs
 - [x] Prep LinkedIn post to share it
 - [x] Write blog post on my journey as a line manager
 - [x] Write blog post on advise monster
 - [x] Creating simple template for posts
-- [ ] Convert tag `Becoming a better manager` to be stored as slugified version `becoming-a-better-manager`
-- [ ] Stop using `pubdate` Frontmatter prop and create an 11ty filter
-- [ ] Move todos to Github issues
-- [ ] Link blog posts with a next and previous at the bottom
-- [ ] Create a way to filter blog posts by tag
 - [x] Write blog post on upgrading blog
-- [ ] Get inline CSS working again
-- [ ] Find a way to include expert & featured img in `layout-post` template to prevent duplication
-- [ ] Share a counter on the readme and inital manager article about how im getting on with my 10 blog posts
-- [ ] Create roadmap page that is powered by GitHub issues
-- [ ] Template abbreviations into a component (see `becoming-a-better-manager-reflecting-on-my-leadership-journey.md`)
-- [ ] Write blog post on adding [Utterances](https://utteranc.es/) to the blog
-- [ ] Write blog post on draft posts in 11ty
-- [ ] Write blog post on my handrolled meta/OG data
+- [x] Find a way to include expert & featured img in `layout-post` template to prevent duplication
 - [x] Write blog post on ditching GA for Simple Analytics
 - [x] Write blog post on three mistakes as a manager
-- [ ] Write blog post on three lessons as a manager
 - [x] Write blog post on how I use AI to help me blog
+
+### Cancelled
+- [ ] ~~Share a counter on the readme and install manager article about how im getting on with my 10 blog posts~~
  
