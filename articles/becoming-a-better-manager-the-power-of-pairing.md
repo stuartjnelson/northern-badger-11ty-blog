@@ -5,10 +5,9 @@ title: >-
 excerpt: >-
   <Some excerpt text>
 date: "2024-11-03T21:32:00.000Z"
-featuredImg: /assets/img/your-post-file-name--featured-img.webp
+featuredImg: /assets/img/becoming-a-better-manager-the-power-of-pairing--featured-img.webp
 meta:
-  ogImg: /assets/img/your-post-file-name--og-img.jpg
-draft: true
+  ogImg: /assets/img/becoming-a-better-manager-the-power-of-pairing--og-img.jpg
 tags:
   - posts
   - Becoming a better manager
