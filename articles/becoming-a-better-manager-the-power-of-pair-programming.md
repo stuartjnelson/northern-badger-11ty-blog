@@ -25,7 +25,7 @@ To me, pair programming is when two engineers work together on the same problem 
 ## My experience of pair programming
 Pair programming is something I still feel relatively new to. The first person who introduced it to me in a more structured form was Darren West, in early 2022. I’ll admit, I didn’t get it at first. I couldn’t wrap my head around how it could be more productive. I think this is a pretty common reaction for both engineers and non-technical stakeholders.
 
-It finally clicked for me in 2023 when, as part of the design system team at [HL](https://hl.co.uk), I was re-architecting our CI pipelines. Jonny Spry, a teammate, hadn’t worked much with GitLab pipelines, and I was still getting familiar with our codebase. This created an ideal scenario for pairing: we both brought different levels of experience to the table. I had more knowledge of GitLab CI, while Jonny was more familiar with the codebase. Together, we aimed to build a high-quality CI pipeline.
+It finally clicked for me in 2023 when, as part of the design system team at [HL](https://hl.co.uk), I was re-architecting our CI pipelines. [Jonny Spry](https://www.linkedin.com/in/jonny-spry-81751a62), a teammate, hadn’t worked much with GitLab pipelines, and I was still getting familiar with our codebase. This created an ideal scenario for pairing: we both brought different levels of experience to the table. I had more knowledge of GitLab CI, while Jonny was more familiar with the codebase. Together, we aimed to build a high-quality CI pipeline.
 
 The result was that I gained a better understanding of our codebase with Jonny’s support, and I was able to help Jonny become more comfortable with GitLab CI. We could have completed the work independently and then reviewed each other’s merge requests, but pairing was a different experience altogether. It’s like having a human linter, requirements reviewer, and AI ideas machine in real time. You can quickly share insights, from small things like, “You missed a full stop on line XX,” to “I haven’t seen that shortcut before—what was it?”
 
@@ -52,5 +52,7 @@ For example, last week I paired with a team member on a unit test for a componen
 
 
 ## Conclusion
+Pair programming is a great way to work. It speeds up the sharing of knowledge, improves quality and makes for a more cohesive team. I did struggle with it at first. I could understand how it would save time. I feel in part my reservations were that I was worried about coding in front of someone. Getting over this took me to be more open minded and was well worth it.
+
 If you have any comments/feedback/questions on this article please get in touch! I’d love to hear if you use pair programming and how you find it.
 
