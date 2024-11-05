@@ -52,7 +52,7 @@ For example, last week I paired with a team member on a unit test for a componen
 
 
 ## Conclusion
-Pair programming is a great way to work. It speeds up the sharing of knowledge, improves quality and makes for a more cohesive team. I did struggle with it at first. I could understand how it would save time. I feel in part my reservations were that I was worried about coding in front of someone. Getting over this took me to be more open minded and was well worth it.
+Pair programming is a fantastic way to collaborate. It accelerates knowledge sharing, enhances code quality, and fosters a more cohesive team environment. Initially, I found it challenging, particularly in seeing how it could save time. Part of my hesitation stemmed from the discomfort of coding in front of someone else. However, embracing an open-minded approach helped me overcome this, and the experience has proven to be highly rewarding.
 
 If you have any comments/feedback/questions on this article please get in touch! I’d love to hear if you use pair programming and how you find it.
 
