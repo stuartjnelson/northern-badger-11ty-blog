@@ -18,7 +18,7 @@ keywords: []
 
 ## What does working in an agile way mean?
 > Agile is a framework and a working mind-set which helps respond to changing requirements. It focuses on delivering maximum value against business priorities in the time and budget allowed, especially when the drive to deliver is greater than the risk.
-> -- [Association for Project Management]https://www.apm.org.uk/resources/find-a-resource/agile-project-management/what-are-the-principles-of-agile-working/
+> -- [Association for Project Management](https://www.apm.org.uk/resources/find-a-resource/agile-project-management/what-are-the-principles-of-agile-working/)
 
 In other words working in an agile way means you know from the start things will change as you go. Your focused on delivery value or deliverying the thing you said you would at the start. More often this is shipping inciremental changes over the BIG BANG feature all in one go.
 
@@ -30,13 +30,9 @@ Kanban is all about keeping work flowing smoothly, using a board to see what’s
 
 
 ## Approaching a problem in an agile way
-* Get requirements as a problem not a solution or pre-determined deadline
-* Focus on digging into the problem as a team first
-* When the problem is understood then start to solutionise as a team
-* Focus on shipping the most basic version to prod as soon as you can. This often reveals new things that you couldn't have forseen and allows you to adjust accordionyl 
-* Now the baseline is established continue to add functionality, reviewing as you go to make sure they help you achive your goals
+Approach requirements as a problem to be solved, rather than a pre-determined solution or fixed deadline. Start by digging into the problem as a team, ensuring that everyone understands the context and challenges before moving on to solution design. Once the problem is clearly understood, collaborate as a team to begin solutionising. Prioritise shipping the most basic version to production as soon as possible; this often reveals unforeseen insights and allows you to adjust accordingly. With the baseline established, continue adding functionality incrementally, reviewing each step to ensure it contributes to achieving your goals.
 
-Why does this way of working help? It gets the people creating the solution involved from the start, leveraging their skills as part of the discovery phase. This empoweres motivated invididales as they are much more than their invidual contribution skills but here to be code moneys/design monkey. Reduces wasted time plowing ahead with an idea that was dirrived before the problem was understood at a low level.
+This way of working is effective because it involves the people creating the solution from the start, leveraging their expertise during the discovery phase. It empowers motivated individuals, recognising that they contribute far more than just coding or design skills. It also reduces wasted effort on solutions that were conceived before the problem was fully understood, ensuring the team works efficiently and purposefully.
 
 
 ## Setting goals
@@ -44,23 +40,21 @@ I have seven years’ experience using OKRs and have found them most effective w
 
 
 ## My favourite agile workflow
-* Keep standing meetings to a minimum and prioritise meeting only when necessary. Standing meetings can be costly and often lack purpose, so I focus on meaningful collaboration.
-* Hold a brief daily standup first thing in the morning to align the team. Its a nice way to start the day getting everyone together.
-* Bring the engineering team together as a disapling daily. I like to have a brief session to review merge requests. This gives chance to share knowledge, discuss more complexed points and keep MRs moving.
-* Conduct refinement sessions as needed, with a baseline of once a week, focusing on value rather than doing it for the sake of it. I like to estimate on based on half a day, 1 or 2 days. It its more than 2 days of work the ticket should be further broken down. This can give us a high level idea of when work will land but more importanly enables us to question if the ticket makes sense as something atomic that can be shipped.
-* Run regular retrospectives every 2–4 weeks to reflect, learn, and continuously improve team processes.
+* **Keep standing meetings to a minimum** and prioritise meeting only when necessary. Standing meetings can be costly and often lack purpose, so I focus on meaningful collaboration.
+* Hold a **brief daily standup first thing** in the morning to align the team. Its a nice way to start the day getting everyone together.
+* **Bring the engineering team together as a disapling daily**. I like to have a brief session to review merge requests. This gives chance to share knowledge, discuss more complexed points and keep MRs moving.
+* **Conduct refinement sessions as needed**, with a baseline of once a week, focusing on value rather than doing it for the sake of it. I like to estimate on based on half a day, 1 or 2 days. It its more than 2 days of work the ticket should be further broken down. This can give us a high level idea of when work will land but more importanly enables us to question if the ticket makes sense as something atomic that can be shipped.
+* **Run regular retrospectives** every 2–4 weeks to reflect, learn, and continuously improve team processes.
 
 
 ## How do you workout the best way for your team to be agile?
-* Pick the simplest and lightest weight process to get you going. Stick with it for 2-4 weeks and review
-* Ensure that everyone in the team can be part of shaping how you work
-* Principles over Process. Trust your team to make decisions rather than relaying on standing ceromines and minutly defined process.
+Start by picking the simplest, lightest-weight process to get the team moving, and stick with it for two to four weeks before reviewing its effectiveness. It’s important to ensure that everyone in the team has a voice in shaping how you work, fostering a sense of ownership and collaboration. Focus on principles over rigid processes—trust your team to make decisions rather than relying heavily on standing ceremonies or overly detailed rules.
 
-Give it a go! I've had fortune to work with some really great workshop facilitors like Luke Albest who was really good at getting us thinking about how we wanted to work. When I joined my current team i gather feedback from all the engineers and shared it with our PM, Tom Davis. He then came up with a few ideas, like his genious New
+I’ve been fortunate to work with some excellent workshop facilitators, such as Luke Albest, who were brilliant at guiding us to reflect on how we wanted to work. When I joined my current team, I gathered feedback from all the engineers and shared it with our PM, Tom Davis. He came up with several ideas, including the ingenious use of a weekly plan. This approach has helped us manage conflicting priorities and gives the team a clear opportunity to set out our goals for the week.
 
 
 ## Conclusion
-Working in an Agile way in its very nature should be different for every team. Its not a way of working you rigidly copy from a book or can do because you've been certified. My ideas I've shared above have worked well for me but even right now in my current team we don't follow all of them as it doesn't work for us. Be flexible, 
+Working in an Agile way in its very nature should be different for every team. Its not a way of working you rigidly copy from a book or can do because you've been certified. My ideas I've shared above have worked well for me but even right now in my current team we don't follow all of them as it doesn't work for us. Be flexible, give it a go and always focus on outcomes.
 
 If you have any comments/feedback/questions on this article please get in touch! I'd love to know what your biggest mistakes have been as a manager
 
